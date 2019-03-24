@@ -1,0 +1,12 @@
+{
+  "modid": "StuffTheSpire",
+  "name": "Stuff the Spire",
+  "author_list": ["Lobbienjonsji"],
+  "description": "Adds new cards, relics, events and other stuff with full GifTheSpireLib support.",
+  "version": "${project.version}",
+  "sts_version": "${SlayTheSpire.version}",
+  "mts_version": "${ModTheSpire.version}",
+  "dependencies": ["basemod", "stslib", "GifTheSpireLib"],
+  "update_json": ""
+}
+
