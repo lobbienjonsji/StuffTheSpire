@@ -66,5 +66,12 @@
     "DESCRIPTIONS": [
       "At the start of each turn reduce the cost of one of the cheapest cards in you hand to #b0 for one turn."
     ]
+  },
+  "StuffTheSpire:DullRazor": {
+    "NAME": "Dull Razor",
+    "FLAVOR": "It hurts a little bit.",
+    "DESCRIPTIONS": [
+      "At the start of each turn trigger the effects of all cards, relics, powers that have an effect when taking damage."
+    ]
   }
 }
