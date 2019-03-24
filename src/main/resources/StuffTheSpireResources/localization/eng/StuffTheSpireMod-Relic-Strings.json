@@ -57,7 +57,14 @@
     "NAME": "Coconut",
     "FLAVOR": "If you eat to much you'll get very fat.",
     "DESCRIPTIONS": [
-      "Upon Pickup gain 5 max HP. At the start of each combat gain 1 Juggernaut."
+      "Upon Pickup gain 5 max HP. At the start of each combat gain 3 Juggernaut."
+    ]
+  },
+  "StuffTheSpire:Expresso": {
+    "NAME": "Cup of Expresso",
+    "FLAVOR": "Made from delicious java code beans.",
+    "DESCRIPTIONS": [
+      "At the start of each turn reduce the cost of one of the cheapest cards in you hand to #b0 for one turn."
     ]
   }
 }

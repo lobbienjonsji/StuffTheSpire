@@ -40,6 +40,7 @@ public class NeowsTribute extends CustomRelic implements ClickableRelic { // You
             stopPulse();
         }
     }
+    @Override
     public void atTurnStart() {
         if ( this.counter > 1) {
             beginLongPulse();
