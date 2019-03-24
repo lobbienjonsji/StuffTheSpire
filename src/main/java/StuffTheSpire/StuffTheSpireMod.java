@@ -217,6 +217,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new NeowsTribute(), RelicType.SHARED);
         BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
         BaseMod.addRelic(new Mouthbags(), RelicType.SHARED);
+        BaseMod.addRelic(new Coconut(), RelicType.SHARED);
         UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
         logger.info("Done adding relics!");
     }

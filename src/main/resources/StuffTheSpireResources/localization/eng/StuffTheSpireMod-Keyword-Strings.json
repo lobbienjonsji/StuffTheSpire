@@ -23,5 +23,12 @@
       "decreasing"
     ],
     "DESCRIPTION": "Decreases the orange Value by 1 for the rest of this Combat."
+  },
+  {
+    "PROPER_NAME": "Juggernaut",
+    "NAMES": [
+      "juggernaut"
+    ],
+    "DESCRIPTION": "Whenever you gain block deal damage to a random enemy."
   }
 ]
