@@ -42,14 +42,14 @@
     "NAME": "Runic Hypercube",
     "FLAVOR": "It seems to shift in size and shape. Strange.",
     "DESCRIPTIONS": [
-      "After the first turn of combat gain 3 [E] and draw 5 additional cards at the start of each turn. NL At the end of your turn count the total cost of all cards in your hand. NL Loose that much [e] and draw fewer cards equal to the total cost next turn."
+      "After the first turn of combat gain 3 [E] and draw #b5 additional cards at the start of each turn. NL At the end of your turn count the total cost of all cards in your hand. NL Loose that much [E] and draw fewer cards equal to the total cost next turn."
     ]
   },
   "StuffTheSpire:Mouthbags": {
     "NAME": "Mouthbags",
     "FLAVOR": "The better alternative to Ravioli.",
     "DESCRIPTIONS": [
-      "Upon Pickup choose a card and increase it's damage and block by 2.",
+      "Upon Pickup choose a card and increase it's damage and block by #b2.",
       "Choose a card to improve"
     ]
   },
@@ -57,7 +57,7 @@
     "NAME": "Coconut",
     "FLAVOR": "If you eat to much you'll get very fat.",
     "DESCRIPTIONS": [
-      "Upon Pickup gain 5 max HP. At the start of each combat gain 3 Juggernaut."
+      "Upon Pickup gain #b5 max HP. At the start of each combat gain #b3 Juggernaut."
     ]
   },
   "StuffTheSpire:Expresso": {
@@ -72,6 +72,13 @@
     "FLAVOR": "It hurts a little bit.",
     "DESCRIPTIONS": [
       "At the start of each turn trigger the effects of all cards, relics, powers that have an effect when taking damage."
+    ]
+  },
+  "StuffTheSpire:PointBlank": {
+    "NAME": "Point Blank",
+    "FLAVOR": "Not the evil one.",
+    "DESCRIPTIONS": [
+      "Attacks that target multiple enemies deal #p50% more damage if only one enemy is in the room."
     ]
   }
 }

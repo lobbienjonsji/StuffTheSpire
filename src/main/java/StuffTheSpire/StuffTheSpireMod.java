@@ -220,6 +220,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new Coconut(), RelicType.SHARED);
         BaseMod.addRelic(new Expresso(), RelicType.SHARED);
         BaseMod.addRelic(new DullRazor(), RelicType.RED);
+        BaseMod.addRelic(new PointBlank(), RelicType.SHARED);
         UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
         logger.info("Done adding relics!");
     }

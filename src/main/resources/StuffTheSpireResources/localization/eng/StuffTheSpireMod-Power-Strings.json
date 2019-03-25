@@ -6,5 +6,9 @@
 "StuffTheSpire:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
-}
+},
+"StuffTheSpire:PointBlankPower": {
+        "NAME": "Point Blank",
+        "DESCRIPTIONS": ["Attacks that Deal damage to all enemies deal #p50% percent more #ydamage if only #b1 enemy is in the room."]
+        }
 }
