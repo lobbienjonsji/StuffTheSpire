@@ -2,14 +2,9 @@ package StuffTheSpire;
 
 import GifTheSpire.util.GifAnimation;
 import StuffTheSpire.cards.*;
-import StuffTheSpire.characters.TheDefault;
-import StuffTheSpire.events.IdentityCrisisEvent;
-import StuffTheSpire.potions.PlaceholderPotion;
 import StuffTheSpire.relics.*;
 import StuffTheSpire.util.IDCheckDontTouchPls;
 import StuffTheSpire.util.TextureLoader;
-import StuffTheSpire.variables.DefaultCustomVariable;
-import StuffTheSpire.variables.DefaultSecondMagicNumber;
 import StuffTheSpire.variables.DiminishingVariable;
 import basemod.BaseMod;
 import basemod.ModLabel;
@@ -41,7 +36,6 @@ public class StuffTheSpireMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        EditCharactersSubscriber,
         PostInitializeSubscriber {
     public static final Logger logger = LogManager.getLogger(StuffTheSpireMod.class.getName());
     private static String modID;
@@ -110,15 +104,7 @@ public class StuffTheSpireMod implements
 
         BaseMod.subscribe(this);
         setModID("StuffTheSpire");
-        logger.info("Done subscribing");
-        logger.info("Creating the color " + TheDefault.Enums.COLOR_GRAY.toString());
-        BaseMod.addColor(TheDefault.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-                DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-                ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
-                ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
-                ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
-        logger.info("Done creating the color");
-    }
+            }
 
     // ====== NO EDIT AREA ======
     // DON'T TOUCH THIS STUFF. IT IS HERE FOR STANDARDIZATION BETWEEN MODS AND TO ENSURE GOOD CODE PRACTICES.
@@ -169,16 +155,6 @@ public class StuffTheSpireMod implements
         logger.info("Wer das ließt ist doof");
     }
 
-    @Override
-    public void receiveEditCharacters() {
-        logger.info("Beginning to edit characters. " + "Add " + TheDefault.Enums.THE_DEFAULT.toString());
-
-        BaseMod.addCharacter(new TheDefault("the Default", TheDefault.Enums.THE_DEFAULT),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheDefault.Enums.THE_DEFAULT);
-
-        receiveEditPotions();
-        logger.info("Added " + TheDefault.Enums.THE_DEFAULT.toString());
-    }
 
     @Override
     public void receivePostInitialize() {
@@ -191,7 +167,6 @@ public class StuffTheSpireMod implements
                 settingsPanel, (me) -> {
         }));
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
-        BaseMod.addEvent(IdentityCrisisEvent.ID, IdentityCrisisEvent.class, TheCity.ID);
         logger.info("Done loading badge Image and mod options");
         Plasmapunch.create();
         Plasmapunch.addAsCardAnimation("StuffTheSpire:PlasmaPunch");
@@ -202,26 +177,20 @@ public class StuffTheSpireMod implements
     }
     public void receiveEditPotions() {
         logger.info("Beginning to edit potions");
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheDefault.Enums.THE_DEFAULT);
         logger.info("Done editing potions");
     }
 
     @Override
     public void receiveEditRelics() {
         logger.info("Adding relics");
-
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_GRAY);
         BaseMod.addRelic(new RunicHypercube(), RelicType.SHARED);
         BaseMod.addRelic(new NeowsTribute(), RelicType.SHARED);
-        BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
         BaseMod.addRelic(new Mouthbags(), RelicType.SHARED);
         BaseMod.addRelic(new Coconut(), RelicType.SHARED);
         BaseMod.addRelic(new Expresso(), RelicType.SHARED);
         BaseMod.addRelic(new DullRazor(), RelicType.RED);
         BaseMod.addRelic(new PointBlank(), RelicType.SHARED);
-        UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
+        BaseMod.addRelic(new Nightcore(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 
@@ -230,38 +199,11 @@ public class StuffTheSpireMod implements
         logger.info("Adding variables");
         pathCheck();
         logger.info("Add variabls");
-        BaseMod.addDynamicVariable(new DefaultCustomVariable());
-        BaseMod.addDynamicVariable(new DefaultSecondMagicNumber());
         BaseMod.addDynamicVariable(new DiminishingVariable());
         logger.info("Adding cards");
-        BaseMod.addCard(new OrbSkill());
-        BaseMod.addCard(new DefaultSecondMagicNumberSkill());
-        BaseMod.addCard(new DefaultCommonAttack());
-        BaseMod.addCard(new DefaultAttackWithVariable());
-        BaseMod.addCard(new DefaultCommonSkill());
-        BaseMod.addCard(new DefaultCommonPower());
-        BaseMod.addCard(new DefaultUncommonSkill());
-        BaseMod.addCard(new DefaultUncommonAttack());
-        BaseMod.addCard(new DefaultUncommonPower());
-        BaseMod.addCard(new DefaultRareAttack());
-        BaseMod.addCard(new DefaultRareSkill());
-        BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new PlasmaPunch());
         BaseMod.addCard(new PlasmaPulse());
-
         logger.info("Making sure the cards are unlocked.");
-        UnlockTracker.unlockCard(OrbSkill.ID);
-        UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);
-        UnlockTracker.unlockCard(DefaultCommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonPower.ID);
-        UnlockTracker.unlockCard(DefaultUncommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultUncommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultUncommonPower.ID);
-        UnlockTracker.unlockCard(DefaultRareAttack.ID);
-        UnlockTracker.unlockCard(DefaultRareSkill.ID);
-        UnlockTracker.unlockCard(DefaultRarePower.ID);
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);
 

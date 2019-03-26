@@ -1,23 +1,5 @@
 [
   {
-    "NAMES": [
-      "keyword",
-      "keywords"
-    ],
-    "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
-  },
-  {
-    "PROPER_NAME": "Multiword Keyword",
-    "NAMES": [
-      "Multiword Keyword",
-      "multiword_keyword",
-      "multiword_keywords",
-      "multikey",
-      "multikeyword"
-    ],
-    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
-  },
-  {
     "PROPER_NAME": "Decreasing",
     "NAMES": [
       "decreasing"
@@ -30,5 +12,12 @@
       "juggernaut"
     ],
     "DESCRIPTION": "Whenever you gain block deal damage to a random enemy."
+  },
+  {
+    "PROPER_NAME": "Dark Fade",
+    "NAMES": [
+      "dark_fade"
+    ],
+    "DESCRIPTION": "While active, #b75% of all damage taken by enemies, including damage from this power is dealt to the enemy at the start of the next turn."
   }
 ]
