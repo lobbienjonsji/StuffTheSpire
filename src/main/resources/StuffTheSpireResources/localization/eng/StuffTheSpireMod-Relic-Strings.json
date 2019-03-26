@@ -55,5 +55,12 @@
     "DESCRIPTIONS": [
       "At the start of each combat gain #b2 #ystuffthespire:Dark_fade."
     ]
+  },
+  "StuffTheSpire:Kangaroo": {
+    "NAME": "Paper Kängäröö",
+    "FLAVOR": "It's on my NotTodo list.",
+    "DESCRIPTIONS": [
+      "At the start of each turn reduce all Buffs and Debuffs by 1(Increase them if you have negative stacks). Whenever you gain a Buff, gain an additional stack."
+    ]
   }
 }
