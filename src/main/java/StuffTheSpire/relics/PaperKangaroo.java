@@ -1,14 +1,10 @@
 package StuffTheSpire.relics;
 
 import StuffTheSpire.StuffTheSpireMod;
-import StuffTheSpire.actions.DecreaseCardCost;
-import StuffTheSpire.powers.PointBlankPower;
 import StuffTheSpire.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -24,13 +20,14 @@ public class PaperKangaroo extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
 
     public PaperKangaroo() {
-        super(ID, IMG, OUTLINE, AbstractRelic.RelicTier.UNCOMMON, AbstractRelic.LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.SHOP, AbstractRelic.LandingSound.MAGICAL);
     }
 
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];
     }
+
 
     public void atTurnStartPostDraw() {
         for (AbstractPower p : AbstractDungeon.player.powers) {

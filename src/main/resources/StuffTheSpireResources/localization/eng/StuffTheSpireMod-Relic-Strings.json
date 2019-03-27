@@ -58,9 +58,9 @@
   },
   "StuffTheSpire:Kangaroo": {
     "NAME": "Paper Kängäröö",
-    "FLAVOR": "It's on my NotTodo list.",
+    "FLAVOR": "It's on my NotTodo™ list.",
     "DESCRIPTIONS": [
-      "At the start of each turn reduce all Buffs and Debuffs by 1(Increase them if you have negative stacks). Whenever you gain a Buff, gain an additional stack."
+      "At the start of each turn reduce #yall #yBuffs and #yDebuffs by #b1 (Increase them if you have negative stacks). Whenever you gain a #yBuff, increase it by #b2."
     ]
   }
 }
