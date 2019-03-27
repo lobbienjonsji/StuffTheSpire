@@ -29,7 +29,5 @@ public class ApplyPowersPatch {
             __instance.damage = MathUtils.floor((float) (__instance.damage * 1.5));
             __instance.isDamageModified = true;
         }
-        logger.info("Applied Powers");
-        logger.info(enemynumber);
     }
 }
