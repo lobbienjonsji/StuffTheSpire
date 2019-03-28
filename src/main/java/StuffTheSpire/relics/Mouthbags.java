@@ -20,7 +20,7 @@ public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
     private boolean cardsSelected = true;
-    private int selectedcard = 0;
+    AbstractCard selectedcard = null;
     public Mouthbags() {
         super(ID, IMG, RelicTier.COMMON, LandingSound.CLINK);
     }
@@ -50,14 +50,14 @@ public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
             for (AbstractCard card : tmp.group)
             {
                 AbstractDungeon.player.masterDeck.removeCard(card);
-                card.baseBlock += 2;
+                card.baseBlock += 4;
                 card.block = card.baseBlock;
                 card.isBlockModified = true;
-                card.baseDamage += 2;
+                card.baseDamage += 4;
                 card.damage = card.baseDamage;
                 card.isDamageModified = true;
                 AbstractDungeon.player.masterDeck.addToBottom(card);
-                selectedcard = AbstractDungeon.player.masterDeck.group.indexOf(card);
+                selectedcard = card;
             }
             this.cardsSelected = true;
         }
@@ -87,14 +87,14 @@ public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
                 card.untip();
                 card.unhover();
                 AbstractDungeon.player.masterDeck.removeCard(card);
-                card.baseBlock += 2;
+                card.baseBlock += 4;
                 card.block = card.baseBlock;
                 card.isBlockModified = true;
-                card.baseDamage += 2;
+                card.baseDamage += 4;
                 card.damage = card.baseDamage;
                 card.isDamageModified = true;
                 AbstractDungeon.player.masterDeck.addToBottom(card);
-                selectedcard = AbstractDungeon.player.masterDeck.group.indexOf(card);
+                selectedcard = card;
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
             AbstractDungeon.getCurrRoom().rewardPopOutTimer = 0.25F;
@@ -108,17 +108,17 @@ public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
 
     @Override
     public Integer onSave() {
-        return selectedcard;
+        return AbstractDungeon.player.masterDeck.group.indexOf(selectedcard);
     }
 
     @Override
     public void onLoad(Integer integer) {
         AbstractCard card = AbstractDungeon.player.masterDeck.group.get(integer);
         AbstractDungeon.player.masterDeck.removeCard(card);
-        card.baseBlock += 2;
+        card.baseBlock += 4;
         card.block = card.baseBlock;
         card.isBlockModified = true;
-        card.baseDamage += 2;
+        card.baseDamage += 4;
         card.damage = card.baseDamage;
         card.isDamageModified = true;
         AbstractDungeon.player.masterDeck.addToBottom(card);

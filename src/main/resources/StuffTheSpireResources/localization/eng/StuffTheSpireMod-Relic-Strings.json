@@ -17,7 +17,7 @@
     "NAME": "Mouthbags",
     "FLAVOR": "The better alternative to Ravioli.",
     "DESCRIPTIONS": [
-      "Upon Pickup choose a card and increase it's damage and block by #b2.",
+      "Upon Pickup choose a card and increase it's damage and block by #b4.",
       "Choose a card to improve"
     ]
   },
@@ -75,6 +75,13 @@
     "FLAVOR": "In vino veritas",
     "DESCRIPTIONS": [
       "Every third #yAttack you play applies #b2 #ystuffthespire:constricted."
+    ]
+  },
+  "StuffTheSpire:HeavyRock": {
+    "NAME": "Heavy Rock",
+    "FLAVOR": "Sisyphos was here",
+    "DESCRIPTIONS": [
+      "At the start of each turn gain 3 #yDexterity until the end of the turn or until you play a skill."
     ]
   }
 }

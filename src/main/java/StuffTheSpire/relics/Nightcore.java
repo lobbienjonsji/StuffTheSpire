@@ -38,4 +38,4 @@ public class Nightcore extends CustomRelic {
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DarkFadePower(AbstractDungeon.player, AbstractDungeon.player, 2), 2));
         AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
-   }
+}
