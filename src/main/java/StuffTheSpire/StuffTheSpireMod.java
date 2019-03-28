@@ -192,6 +192,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new PointBlank(), RelicType.SHARED);
         BaseMod.addRelic(new Nightcore(), RelicType.SHARED);
         BaseMod.addRelic(new PaperKangaroo(), RelicType.SHARED);
+        BaseMod.addRelic(new Wildfire(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 

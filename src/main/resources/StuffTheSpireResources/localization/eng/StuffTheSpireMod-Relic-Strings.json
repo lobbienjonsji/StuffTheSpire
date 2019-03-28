@@ -62,5 +62,12 @@
     "DESCRIPTIONS": [
       "At the start of each turn reduce #yall #yBuffs and #yDebuffs by #b1 (Increase them if you have negative stacks). Whenever you gain a #yBuff, increase it by #b2."
     ]
+  },
+  "StuffTheSpire:Wildfire": {
+    "NAME": "Wild Fire",
+    "FLAVOR": "Get Mad",
+    "DESCRIPTIONS": [
+      "Whenever you play #b #yAttacks, add a #ySkill from your draw pile to your hand."
+    ]
   }
 }
