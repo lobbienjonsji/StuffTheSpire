@@ -20,7 +20,7 @@ public class PaperKangaroo extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
 
     public PaperKangaroo() {
-        super(ID, IMG, OUTLINE, RelicTier.SHOP, AbstractRelic.LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, AbstractRelic.LandingSound.MAGICAL);
     }
 
     @Override

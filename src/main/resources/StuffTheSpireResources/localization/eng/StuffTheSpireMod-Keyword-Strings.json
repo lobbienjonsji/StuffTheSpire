@@ -19,5 +19,12 @@
       "dark_fade"
     ],
     "DESCRIPTION": "While active, #b75% of all damage taken by enemies, including damage from this power is dealt to the enemy at the start of the next turn."
+  },
+  {
+    "PROPER_NAME": "Constricted",
+    "NAMES": [
+      "constricted"
+    ],
+    "DESCRIPTION": "At the end of each turn, the target takes damage equal to the amount of Constricted"
   }
 ]

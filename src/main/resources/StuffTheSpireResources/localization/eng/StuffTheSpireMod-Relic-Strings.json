@@ -69,5 +69,12 @@
     "DESCRIPTIONS": [
       "Whenever you play #b #yAttacks, add a #ySkill from your draw pile to your hand."
     ]
+  },
+  "StuffTheSpire:GrapeVine": {
+    "NAME": "Grape Vine",
+    "FLAVOR": "In vino veritas",
+    "DESCRIPTIONS": [
+      "Every third #yAttack you play applies #b2 #ystuffthespire:constricted."
+    ]
   }
 }
