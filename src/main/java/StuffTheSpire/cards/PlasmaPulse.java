@@ -1,6 +1,7 @@
 package StuffTheSpire.cards;
 
 import StuffTheSpire.StuffTheSpireMod;
+import StuffTheSpire.patches.cards.CardTags;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -30,8 +31,13 @@ public class PlasmaPulse extends AbstractDefaultCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        tags.add(StuffTheSpire.patches.cards.CardTags.DECREASING);
     }
-
+    public void recharge(int amount)
+    {
+        baseMagicNumber += amount;
+        magicNumber = baseMagicNumber;
+    }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (int i = 0; i < this.magicNumber; i++) {
@@ -41,7 +47,6 @@ public class PlasmaPulse extends AbstractDefaultCard {
             baseMagicNumber--;
             magicNumber = baseMagicNumber;
         }
-
     }
 
     @Override

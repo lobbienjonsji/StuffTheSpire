@@ -44,39 +44,10 @@ public class StuffTheSpireMod implements
     private static final String MODNAME = "Stuff the Spire";
     private static final String AUTHOR = "Lobbienjonsji"; // And pretty soon - You!
     private static final String DESCRIPTION = "Adds new cards, relics, events and other stuff with full GifTheSpireLib support";
-    public static final Color DEFAULT_GRAY = CardHelper.getColor(64.0f, 70.0f, 70.0f);
-
-    public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
-    public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f); // Near White
-    public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f); // Super Dark Red/Brown
-
-    private static final String ATTACK_DEFAULT_GRAY = "StuffTheSpireResources/images/512/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY = "StuffTheSpireResources/images/512/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY = "StuffTheSpireResources/images/512/bg_power_default_gray.png";
-
-    private static final String ENERGY_ORB_DEFAULT_GRAY = "StuffTheSpireResources/images/512/card_default_gray_orb.png";
-    private static final String CARD_ENERGY_ORB = "StuffTheSpireResources/images/512/card_small_orb.png";
-
-    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/bg_power_default_gray.png";
-    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/card_default_gray_orb.png";
-
-    private static final String THE_DEFAULT_BUTTON = "StuffTheSpireResources/images/charSelect/DefaultCharacterButton.png";
-    private static final String THE_DEFAULT_PORTRAIT = "StuffTheSpireResources/images/charSelect/DefaultCharacterPortraitBG.png";
-    public static final String THE_DEFAULT_SHOULDER_1 = "StuffTheSpireResources/images/char/defaultCharacter/shoulder.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "StuffTheSpireResources/images/char/defaultCharacter/shoulder2.png";
-    public static final String THE_DEFAULT_CORPSE = "StuffTheSpireResources/images/char/defaultCharacter/corpse.png";
-
     public static final String BADGE_IMAGE = "StuffTheSpireResources/images/Badge.png";
-
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "StuffTheSpireResources/images/char/defaultCharacter/skeleton.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "StuffTheSpireResources/images/char/defaultCharacter/skeleton.json";
-
     public static String makeCardPath(String resourcePath) {
         return getModID() + "Resources/images/cards/" + resourcePath;
     }
-
     public static String makeRelicPath(String resourcePath) {
         return getModID() + "Resources/images/relics/" + resourcePath;
     }
@@ -88,7 +59,6 @@ public class StuffTheSpireMod implements
     public static String makeOrbPath(String resourcePath) {
         return getModID() + "Resources/orbs/" + resourcePath;
     }
-
     public static String makePowerPath(String resourcePath) {
         return getModID() + "Resources/images/powers/" + resourcePath;
     }
@@ -195,6 +165,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new Wildfire(), RelicType.SHARED);
         BaseMod.addRelic(new GrapeVine(), RelicType.SHARED);
         BaseMod.addRelic(new HeavyRock(), RelicType.SHARED);
+        BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 

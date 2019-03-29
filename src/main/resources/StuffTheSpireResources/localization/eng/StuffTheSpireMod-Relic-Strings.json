@@ -83,5 +83,12 @@
     "DESCRIPTIONS": [
       "At the start of each turn gain 3 #yDexterity until the end of the turn or until you play a skill."
     ]
+  },
+  "StuffTheSpire:MyLittleGreenCactus": {
+    "NAME": "My little green Cactus",
+    "FLAVOR": "It stings, stings, stings!",
+    "DESCRIPTIONS": [
+      "Whenever you deal non-attack and non-hp-loss damage, apply #b1 #yPoison."
+    ]
   }
 }

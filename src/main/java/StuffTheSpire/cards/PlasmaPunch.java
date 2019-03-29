@@ -1,6 +1,7 @@
 package StuffTheSpire.cards;
 
 import StuffTheSpire.StuffTheSpireMod;
+import StuffTheSpire.patches.cards.CardTags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -33,6 +34,12 @@ public class PlasmaPunch extends AbstractDefaultCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseMagicNumber = MAGICNUMBER;
+        magicNumber = baseMagicNumber;
+        tags.add(StuffTheSpire.patches.cards.CardTags.DECREASING);
+    }
+    public void recharge(int amount)
+    {
+        baseMagicNumber += amount;
         magicNumber = baseMagicNumber;
     }
 
