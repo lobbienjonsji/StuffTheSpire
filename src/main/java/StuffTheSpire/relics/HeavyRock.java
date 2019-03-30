@@ -17,11 +17,11 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class HeavyRock extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("HeavyRock");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("heavyrock.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("heavyrock.png"));
     private boolean Dexremoved = false;
     public HeavyRock() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
     }
     @Override
     public void atBattleStartPreDraw() {

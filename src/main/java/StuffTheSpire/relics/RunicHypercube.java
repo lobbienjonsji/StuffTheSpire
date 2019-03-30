@@ -15,8 +15,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 
 public class RunicHypercube extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("RunicHypercube");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("hypercube.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("hypercube.png"));
     public RunicHypercube() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.MAGICAL);
     }

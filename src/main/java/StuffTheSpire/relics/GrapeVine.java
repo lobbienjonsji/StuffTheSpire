@@ -20,8 +20,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class GrapeVine extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("GrapeVine");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("grapevine.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("grapevine.png"));
     private boolean trigger = false;
     public GrapeVine() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);

@@ -15,8 +15,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class Coconut extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("CocoNut");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("coconut.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("coconut.png"));
 
     public Coconut() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);

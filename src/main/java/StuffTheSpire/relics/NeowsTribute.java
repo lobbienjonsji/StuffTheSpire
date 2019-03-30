@@ -17,8 +17,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 
 public class NeowsTribute extends CustomRelic implements ClickableRelic { // You must implement things you want to use from StSlib
     public static final String ID = StuffTheSpireMod.makeID("NeowsTribute");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("neowstribute.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("neowstribute.png"));
     public NeowsTribute() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.CLINK);
         tips.clear();

@@ -28,11 +28,13 @@ public class LittleGreenCactus extends CustomRelic {
     }
 
     @Override
-    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if ((damageAmount > 0) && (target != AbstractDungeon.player) && (info.type == DamageInfo.DamageType.THORNS))
+    public int onAttackedMonster(DamageInfo info, int damageAmount) {
+        if ((damageAmount > 0) && (info.owner != AbstractDungeon.player) && (info.type == DamageInfo.DamageType.THORNS))
         {
             flash();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(target, AbstractDungeon.player, new PoisonPower(target, AbstractDungeon.player, 1), 1, true));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(info.owner, AbstractDungeon.player, new PoisonPower(info.owner, AbstractDungeon.player, 1), 1, true));
         }
+
+        return damageAmount;
     }
 }

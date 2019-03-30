@@ -14,8 +14,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 
 public class Expresso extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("Expresso");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("expresso.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("expresso.png"));
     private int cardcost = 99;
     private ArrayList<AbstractCard> CheapestCards = new ArrayList();
     public Expresso() {

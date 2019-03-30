@@ -22,7 +22,7 @@ public class ApplyPowerPatch {
         @SpirePostfixPatch
         public static void Patch(ApplyPowerAction __instance, AbstractCreature target, AbstractCreature source,
                                  AbstractPower powerToApply, int stackAmount, boolean isFast, AbstractGameAction.AttackEffect effect) {
-            if (target.isPlayer) {
+            if (!(target == null) && target.isPlayer) {
                 if (AbstractDungeon.player.hasRelic("StuffTheSpire:Kangaroo") && (powerToApply.type.equals(AbstractPower.PowerType.BUFF)) && __instance.amount >= 0) {
                     powerToApply.amount += 2;
                     __instance.amount += 2;
