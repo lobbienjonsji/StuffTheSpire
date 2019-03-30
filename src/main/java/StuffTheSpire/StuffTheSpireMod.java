@@ -165,6 +165,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new Wildfire(), RelicType.SHARED);
         BaseMod.addRelic(new GrapeVine(), RelicType.SHARED);
         BaseMod.addRelic(new HeavyRock(), RelicType.SHARED);
+        BaseMod.addRelic(new HighNoonTea(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE
         logger.info("Done adding relics!");
     }

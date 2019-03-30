@@ -90,5 +90,12 @@
     "DESCRIPTIONS": [
       "Whenever you deal non-attack and non-hp-loss damage, apply #b1 #yPoison."
     ]
+  },
+  "StuffTheSpire:HighNoonTea": {
+    "NAME": "High Noon Tea",
+    "FLAVOR": "Dedicated to HighOnTea",
+    "DESCRIPTIONS": [
+      "For every twelve cards you play, reduce the cost of all #yAttacks in your hand by #b1 for one turn."
+    ]
   }
 }
