@@ -7,6 +7,13 @@
     "DESCRIPTION": "Decreases the orange Value by 1 for the rest of this Combat."
   },
   {
+    "PROPER_NAME": "Unique",
+    "NAMES": [
+      "unique"
+    ],
+    "DESCRIPTION": "If you attempt to copy this card during combat, obtain a copy of #yDazed instead."
+  },
+  {
     "PROPER_NAME": "Juggernaut",
     "NAMES": [
       "juggernaut"

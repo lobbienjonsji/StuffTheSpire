@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 
-public class PlasmaPunch extends AbstractDefaultCard {
+public class PlasmaPunch extends AbstractDecreasingCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("PlasmaPunch");
@@ -37,6 +37,7 @@ public class PlasmaPunch extends AbstractDefaultCard {
         magicNumber = baseMagicNumber;
         tags.add(StuffTheSpire.patches.cards.CardTags.DECREASING);
     }
+    @Override
     public void recharge(int amount)
     {
         baseMagicNumber += amount;

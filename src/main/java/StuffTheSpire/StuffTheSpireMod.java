@@ -166,7 +166,8 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new GrapeVine(), RelicType.SHARED);
         BaseMod.addRelic(new HeavyRock(), RelicType.SHARED);
         BaseMod.addRelic(new HighNoonTea(), RelicType.SHARED);
-        //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE
+        BaseMod.addRelic(new HistoryBook(), RelicType.SHARED);
+        //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
 
@@ -178,11 +179,11 @@ public class StuffTheSpireMod implements
         BaseMod.addDynamicVariable(new DiminishingVariable());
         logger.info("Adding cards");
         BaseMod.addCard(new PlasmaPunch());
+        BaseMod.addCard(new FreeRealEstate());
         BaseMod.addCard(new PlasmaPulse());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);
-
         logger.info("Done adding cards!");
     }
     @Override

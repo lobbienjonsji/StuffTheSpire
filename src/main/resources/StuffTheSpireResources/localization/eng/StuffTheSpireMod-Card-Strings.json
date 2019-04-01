@@ -1,10 +1,14 @@
 {
   "StuffTheSpire:PlasmaPunch": {
     "NAME": "Plasma Punch",
-    "DESCRIPTION": "Deal !D! damage !StuffTheSpire:Diminishing! times. Draw 1 card. stuffthespire:Decreasing 1."
+    "DESCRIPTION": "Deal !D! damage !StuffTheSpire:Diminishing! times. Draw 1 card. NL stuffthespire:Decreasing 1."
   },
   "StuffTheSpire:PlasmaPulse": {
     "NAME": "Plasma Pulse",
-    "DESCRIPTION": "Gain !B! block !StuffTheSpire:Diminishing! times. Draw 1 card. stuffthespire:Decreasing 1."
+    "DESCRIPTION": "Gain !B! block !StuffTheSpire:Diminishing! times. Draw 1 card. NL stuffthespire:Decreasing 1."
+  },
+  "StuffTheSpire:FreeRealEstate": {
+    "NAME": "Free Real Estate",
+    "DESCRIPTION": "stuffthespire:unique. NL Gain !StuffTheSpire:Diminishing! Gold. Draw 1 card. NL stuffthespire:Decreasing 1."
   }
 }

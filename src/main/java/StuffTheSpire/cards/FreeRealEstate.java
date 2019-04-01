@@ -1,20 +1,18 @@
 package StuffTheSpire.cards;
 
 import StuffTheSpire.StuffTheSpireMod;
-import StuffTheSpire.patches.cards.CardTags;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class PlasmaPulse extends AbstractDecreasingCard {
+public class FreeRealEstate extends AbstractDecreasingCard {
 
 
-    public static final String ID = StuffTheSpireMod.makeID("PlasmaPulse");
+    public static final String ID = StuffTheSpireMod.makeID("FreeRealEstate");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = StuffTheSpireMod.makeCardPath("PlasmaPulse.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Skill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -22,16 +20,15 @@ public class PlasmaPulse extends AbstractDecreasingCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.COLORLESS;
     private static final int COST = 0;
-    private static final int BLOCK = 1;
-    private static final int MAGICNUMBER = 3;
-    private static final int MAGICNUMBER_UPGR = 1;
+    private static final int MAGICNUMBER = 5;
+    private static final int MAGICNUMBER_UPGR = 2;
 
-    public PlasmaPulse() {
+    public FreeRealEstate() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
         tags.add(StuffTheSpire.patches.cards.CardTags.DECREASING);
+        tags.add(StuffTheSpire.patches.cards.CardTags.UNIQUE);
     }
     @Override
     public void recharge(int amount)
@@ -41,9 +38,7 @@ public class PlasmaPulse extends AbstractDecreasingCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = 0; i < this.magicNumber; i++) {
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
-        }
+        AbstractDungeon.player.gainGold(this.magicNumber);
         if(this.magicNumber > 0) {
             baseMagicNumber--;
             magicNumber = baseMagicNumber;
