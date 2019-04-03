@@ -17,8 +17,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class Wildfire extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("Wildfire");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("wildfire.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("wildfire.png"));
 
     public Wildfire() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.MAGICAL);

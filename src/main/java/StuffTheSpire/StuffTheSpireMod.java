@@ -164,6 +164,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new HeavyRock(), RelicType.SHARED);
         BaseMod.addRelic(new HighNoonTea(), RelicType.SHARED);
         BaseMod.addRelic(new HistoryBook(), RelicType.SHARED);
+        BaseMod.addRelic(new WitherSkull(), RelicType.GREEN);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }

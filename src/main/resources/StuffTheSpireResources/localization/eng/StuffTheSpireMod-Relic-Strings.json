@@ -78,7 +78,7 @@
     ]
   },
   "StuffTheSpire:HeavyRock": {
-    "NAME": "Heavy Rock",
+    "NAME": "Rolling Stone",
     "FLAVOR": "Sisyphos was here",
     "DESCRIPTIONS": [
       "At the start of each turn gain 3 #yDexterity until the end of the turn or until you play a skill."
@@ -99,10 +99,24 @@
     ]
   },
   "StuffTheSpire:HistoryBook": {
-    "NAME": "HistoryBook",
+    "NAME": "History Book",
     "FLAVOR": "Your entire past and future is written down here",
     "DESCRIPTIONS": [
       "Cards in your draw pile are now always sorted in the order they were added to your deck."
+    ]
+  },
+  "StuffTheSpire:WitherSkull": {
+    "NAME": "Withered Skull",
+    "FLAVOR": "They are so rare",
+    "DESCRIPTIONS": [
+      "While below 50% of your max. HP apply #b2 Poison to all enemies at the end of your turn."
+    ]
+  },
+  "StuffTheSpire:Gunfinga": {
+    "NAME": "Gunfinga",
+    "FLAVOR": "It's a bad man signal",
+    "DESCRIPTIONS": [
+      "At the start of each turn gain 3 #yStrength until the end of the turn or until you play an attack."
     ]
   }
 }

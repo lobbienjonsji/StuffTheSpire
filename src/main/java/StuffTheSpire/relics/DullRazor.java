@@ -18,8 +18,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 
 public class DullRazor extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("DullRazor");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("dullrazor.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("dullrazor.png"));
     private int cardcost = 99;
     private ArrayList<AbstractCard> CheapestCards = new ArrayList();
     public DullRazor() {
