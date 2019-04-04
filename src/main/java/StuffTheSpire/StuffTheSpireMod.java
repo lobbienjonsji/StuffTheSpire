@@ -17,6 +17,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
@@ -150,12 +151,14 @@ public class StuffTheSpireMod implements
     @Override
     public void receiveEditRelics() {
         logger.info("Adding relics");
+        RelicLibrary.addGreen(new WitherSkull());
+        RelicLibrary.addRed(new DullRazor());
         BaseMod.addRelic(new RunicHypercube(), RelicType.SHARED);
         BaseMod.addRelic(new NeowsTribute(), RelicType.SHARED);
         BaseMod.addRelic(new Mouthbags(), RelicType.SHARED);
         BaseMod.addRelic(new Coconut(), RelicType.SHARED);
         BaseMod.addRelic(new Expresso(), RelicType.SHARED);
-        BaseMod.addRelic(new DullRazor(), RelicType.RED);
+        //BaseMod.addRelic(new DullRazor(), RelicType.RED);
         BaseMod.addRelic(new PointBlank(), RelicType.SHARED);
         BaseMod.addRelic(new Nightcore(), RelicType.SHARED);
         BaseMod.addRelic(new PaperKangaroo(), RelicType.SHARED);
@@ -164,7 +167,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new HeavyRock(), RelicType.SHARED);
         BaseMod.addRelic(new HighNoonTea(), RelicType.SHARED);
         BaseMod.addRelic(new HistoryBook(), RelicType.SHARED);
-        BaseMod.addRelic(new WitherSkull(), RelicType.GREEN);
+        //BaseMod.addRelic(new WitherSkull(), RelicType.GREEN);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -173,12 +176,13 @@ public class StuffTheSpireMod implements
     public void receiveEditCards() {
         logger.info("Adding variables");
         pathCheck();
-        logger.info("Add variabls");
+        logger.info("Add variable");
         BaseMod.addDynamicVariable(new DiminishingVariable());
         logger.info("Adding cards");
         BaseMod.addCard(new PlasmaPunch());
         BaseMod.addCard(new FreeRealEstate());
         BaseMod.addCard(new PlasmaPulse());
+        BaseMod.addCard(new BloodClot());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);

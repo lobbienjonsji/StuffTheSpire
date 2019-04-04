@@ -1,10 +1,14 @@
 {
-"StuffTheSpire:PointBlankPower": {
-        "NAME": "Point Blank",
-        "DESCRIPTIONS": ["Attacks that Deal damage to all enemies deal #b50% percent more #ydamage if only #b1 enemy is in the room."]
-},
-"StuffTheSpire:DarkFadePower": {
-        "NAME": "Dark Fade",
-        "DESCRIPTIONS": ["While active, #b75% of all damage taken by enemies, including damage from this power is dealt to the enemy at the start of the next turn."]
-}
+        "StuffTheSpire:PointBlankPower": {
+                "NAME": "Point Blank",
+                "DESCRIPTIONS": ["Attacks that Deal damage to all enemies deal #b50% percent more #ydamage if only #b1 enemy is in the room."]
+        },
+        "StuffTheSpire:DarkFadePower": {
+                "NAME": "Dark Fade",
+                "DESCRIPTIONS": ["While active, #b75% of all damage taken by enemies, including damage from this power is dealt to the enemy at the start of the next turn."]
+        },
+        "StuffTheSpire:BloodClotPower": {
+                "NAME": "Blood Clot",
+                "DESCRIPTIONS": ["The next time you loose health from a card gain", "temporary max. HP"]
+        }
 }

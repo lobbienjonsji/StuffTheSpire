@@ -10,5 +10,9 @@
   "StuffTheSpire:FreeRealEstate": {
     "NAME": "Free Real Estate",
     "DESCRIPTION": "stuffthespire:unique. NL Gain !StuffTheSpire:Diminishing! Gold. Draw 1 card. NL stuffthespire:Decreasing 1."
+  },
+  "StuffTheSpire:BloodClot": {
+    "NAME": "Blood Clot",
+    "DESCRIPTION": "Gain !StuffTheSpire:Diminishing! temporary max. Hp when you loose health from a card next time. NL stuffthespire:Decreasing 1."
   }
 }

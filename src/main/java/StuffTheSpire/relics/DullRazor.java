@@ -23,7 +23,7 @@ public class DullRazor extends CustomRelic {
     private int cardcost = 99;
     private ArrayList<AbstractCard> CheapestCards = new ArrayList();
     public DullRazor() {
-        super(ID, IMG, RelicTier.SHOP, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
     }
     public String getUpdatedDescription()
     {

@@ -23,7 +23,7 @@ public class WitherSkull extends CustomRelic {
     private boolean isActive;
 
     public WitherSkull() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
     }
     public void atBattleStart() {
         this.isActive = false;
@@ -71,4 +71,7 @@ public class WitherSkull extends CustomRelic {
         this.isActive = false;
     }
 
+    public String getUpdatedDescription() {
+        return DESCRIPTIONS[0];
+    }
 }
