@@ -14,5 +14,9 @@
   "StuffTheSpire:BloodClot": {
     "NAME": "Blood Clot",
     "DESCRIPTION": "Gain !StuffTheSpire:Diminishing! temporary max. Hp when you loose health from a card next time. NL stuffthespire:Decreasing 1."
+  },
+  "StuffTheSpire:TitanForm": {
+    "NAME": "Titan Form",
+    "DESCRIPTION": "Gain !M! stuffthespire:Dark_fade. At the end of each turn loose 1 Strength."
   }
 }

@@ -33,7 +33,7 @@ public class DarkFadePower extends AbstractPower implements CloneablePowerInterf
         this.owner = owner;
         this.amount = amount;
         this.source = source;
-        type = PowerType.DEBUFF;
+        type = PowerType.BUFF;
         isTurnBased = true;
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
@@ -83,6 +83,12 @@ public class DarkFadePower extends AbstractPower implements CloneablePowerInterf
                 Damage.put((AbstractMonster) target, new DamageInfo(AbstractDungeon.player,(int)Math.floor(damageAmount*0.75) + amount, DamageInfo.DamageType.THORNS));
             }
         }
+    }
+    @Override
+    public void stackPower(int stackAmount)
+    {
+        this.fontScale = 8.0F;
+        this.amount += stackAmount;
     }
     @Override
     public AbstractPower makeCopy() {

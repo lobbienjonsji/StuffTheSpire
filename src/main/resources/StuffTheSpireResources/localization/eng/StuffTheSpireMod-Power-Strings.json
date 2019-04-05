@@ -10,5 +10,9 @@
         "StuffTheSpire:BloodClotPower": {
                 "NAME": "Blood Clot",
                 "DESCRIPTIONS": ["The next time you loose health from a card gain", "temporary max. HP"]
+        },
+        "StuffTheSpire:Titan": {
+                "NAME": "Titan Form",
+                "DESCRIPTIONS": ["At the end of your turn loose", "Strength"]
         }
 }
