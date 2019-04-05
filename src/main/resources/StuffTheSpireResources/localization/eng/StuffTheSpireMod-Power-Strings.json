@@ -14,5 +14,9 @@
         "StuffTheSpire:Titan": {
                 "NAME": "Titan Form",
                 "DESCRIPTIONS": ["At the end of your turn loose", "Strength"]
+        },
+        "StuffTheSpire:ForceGauntletPower": {
+                "NAME": "Force Gauntlet",
+                "DESCRIPTIONS": ["Your attack damage is increased by 20%"]
         }
 }
