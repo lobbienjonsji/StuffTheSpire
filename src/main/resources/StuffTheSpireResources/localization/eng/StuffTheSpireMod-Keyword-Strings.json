@@ -32,6 +32,13 @@
     "NAMES": [
       "constricted"
     ],
-    "DESCRIPTION": "At the end of each turn, the target takes damage equal to the amount of Constricted"
+    "DESCRIPTION": "At the end of each turn, the target takes damage equal to the amount of Constricted."
+  },
+  {
+    "PROPER_NAME": "Recharge",
+    "NAMES": [
+      "recharge"
+    ],
+    "DESCRIPTION": "Increase the value of all decreasing cards in your hand."
   }
 ]

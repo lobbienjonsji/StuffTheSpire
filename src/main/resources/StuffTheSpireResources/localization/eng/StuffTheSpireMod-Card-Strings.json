@@ -9,7 +9,7 @@
   },
   "StuffTheSpire:FreeRealEstate": {
     "NAME": "Free Real Estate",
-    "DESCRIPTION": "stuffthespire:unique. NL Gain !StuffTheSpire:Diminishing! Gold. Draw 1 card. NL stuffthespire:Decreasing 1."
+    "DESCRIPTION": "stuffthespire:Unique. NL Gain !StuffTheSpire:Diminishing! Gold. Draw 1 card. NL stuffthespire:Decreasing 1."
   },
   "StuffTheSpire:BloodClot": {
     "NAME": "Blood Clot",
@@ -18,5 +18,9 @@
   "StuffTheSpire:TitanForm": {
     "NAME": "Titan Form",
     "DESCRIPTION": "Gain !M! stuffthespire:Dark_fade. At the end of each turn loose 1 Strength."
+  },
+  "StuffTheSpire:Recharge": {
+    "NAME": "Recharge",
+    "DESCRIPTION": "stuffthespire:Unique. NL stuffthespire:Recharge !M!. Draw 1 card. NL Exhaust."
   }
 }

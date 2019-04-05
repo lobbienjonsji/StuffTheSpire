@@ -1,7 +1,6 @@
 package StuffTheSpire.cards;
 
 import StuffTheSpire.StuffTheSpireMod;
-import StuffTheSpire.characters.TheDefault;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -11,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class ${NAME} extends AbstractDefaultCard {
+public class ${NAME} extends AbstractDecreasingCard {
 
   
     public static final String ID = StuffTheSpireMod.makeID("${NAME}");
@@ -29,6 +28,13 @@ public class ${NAME} extends AbstractDefaultCard {
     private static final int UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE};
     private static final int MAGICNUMBER = ${MAGICNUMBER};
     private static final int MAGICNUMBER_UPGR = ${MAGICNUMBER_UPGRADED_INCREASE};
+    @Override
+    public void recharge(int amount)
+            {
+            baseMagicNumber += amount;
+            magicNumber = baseMagicNumber;
+            }
+
     public  ${NAME}() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
