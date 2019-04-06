@@ -22,5 +22,13 @@
   "StuffTheSpire:Recharge": {
     "NAME": "Recharge",
     "DESCRIPTION": "stuffthespire:Unique. NL stuffthespire:Recharge !M!. Draw 1 card. NL Exhaust."
+  },
+  "StuffTheSpire:ReptileScales": {
+    "NAME": "ReptileScales",
+    "DESCRIPTION": "Gain !StuffTheSpire:Diminishing! Plated Armor. NL Gain !B! Block. NL stuffthespire:Decreasing 1."
+  },
+  "StuffTheSpire:Shiver": {
+    "NAME": "Shiver",
+    "DESCRIPTION": "Gain 1 Strength. NL Discard a card. NL Add !M! Shivs to your hand. NL Apply 1 Weak to yourself and all enemies."
   }
 }

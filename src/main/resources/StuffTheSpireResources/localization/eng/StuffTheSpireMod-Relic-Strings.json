@@ -119,7 +119,7 @@
       "At the start of each turn gain 3 #yStrength until the end of the turn or until you play an attack."
     ]
   },
-  "StuffTheSpire:ForceGauntletPower": {
+  "StuffTheSpire:ForceGauntlet": {
     "NAME": "Force Gauntlet",
     "FLAVOR": "Be gone!",
     "DESCRIPTIONS": ["Your attack damage is increased by #b20%"]

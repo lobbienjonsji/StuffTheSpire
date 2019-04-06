@@ -158,7 +158,6 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new Mouthbags(), RelicType.SHARED);
         BaseMod.addRelic(new Coconut(), RelicType.SHARED);
         BaseMod.addRelic(new Expresso(), RelicType.SHARED);
-        //BaseMod.addRelic(new DullRazor(), RelicType.RED);
         BaseMod.addRelic(new PointBlank(), RelicType.SHARED);
         BaseMod.addRelic(new Nightcore(), RelicType.SHARED);
         BaseMod.addRelic(new PaperKangaroo(), RelicType.SHARED);
@@ -168,7 +167,6 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new HighNoonTea(), RelicType.SHARED);
         BaseMod.addRelic(new HistoryBook(), RelicType.SHARED);
         BaseMod.addRelic(new ForceGauntlet(), RelicType.SHARED);
-        //BaseMod.addRelic(new WitherSkull(), RelicType.GREEN);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -186,6 +184,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new BloodClot());
         BaseMod.addCard(new TitanForm());
         BaseMod.addCard(new Recharge());
+        BaseMod.addCard(new ReptileScales());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);
