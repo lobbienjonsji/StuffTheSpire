@@ -9,14 +9,18 @@
         },
         "StuffTheSpire:BloodClotPower": {
                 "NAME": "Blood Clot",
-                "DESCRIPTIONS": ["The next time you loose health from a card gain", "temporary max. HP"]
+                "DESCRIPTIONS": ["The next time you loose health from a card gain ", " temporary max. HP"]
         },
         "StuffTheSpire:Titan": {
                 "NAME": "Titan Form",
-                "DESCRIPTIONS": ["At the end of your turn loose", "Strength"]
+                "DESCRIPTIONS": ["At the end of your turn loose ", " Strength"]
         },
         "StuffTheSpire:ForceGauntletPower": {
                 "NAME": "Force Gauntlet",
-                "DESCRIPTIONS": ["Your attack damage is increased by 20%"]
+                "DESCRIPTIONS": ["Your attack damage is increased by #b20%"]
+        },
+        "StuffTheSpire:GravityPower": {
+                "NAME": "Gravity",
+                "DESCRIPTIONS": ["Upon loosing Flight, deal ", " damage to the target."]
         }
 }

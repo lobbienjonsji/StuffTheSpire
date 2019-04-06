@@ -185,6 +185,8 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new TitanForm());
         BaseMod.addCard(new Recharge());
         BaseMod.addCard(new ReptileScales());
+        BaseMod.addCard(new Shiver());
+        BaseMod.addCard(new LaunchingStrike());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);

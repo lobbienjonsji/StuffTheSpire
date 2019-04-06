@@ -22,7 +22,7 @@ public class Shiver extends CustomCard {
     public static final String IMG = StuffTheSpireMod.makeCardPath("Skill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.GREEN;
@@ -42,13 +42,13 @@ public class Shiver extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p,p,new StrengthPower(p,1),1));
-        AbstractDungeon.actionManager.addToTop(new DiscardAction(p,p,1 ,true));
+        AbstractDungeon.actionManager.addToTop(new DiscardAction(p,p,1 ,false));
         AbstractDungeon.actionManager.addToTop(new MakeTempCardInHandAction(new Shiv(), this.magicNumber));
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p,p,new WeakPower(p,1,false),1));
         for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
             if ((!monster.isDead) && (!monster.isDying))
             {
-                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p,monster,new WeakPower(monster,1,false),1));
+                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(monster, p,new WeakPower(monster,1,false),1));
             }
             
         }

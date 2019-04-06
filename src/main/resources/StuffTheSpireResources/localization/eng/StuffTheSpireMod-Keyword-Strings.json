@@ -40,5 +40,13 @@
       "recharge"
     ],
     "DESCRIPTION": "Increase the value of all decreasing cards in your hand."
+  },
+  {
+    "PROPER_NAME": "Flight",
+    "NAMES": [
+      "flight"
+    ],
+    "DESCRIPTION": "All attack damage taken is reduced by 50%. NL If the owner takes attack damage three times in one turn, Flight is removed."
   }
+
 ]
