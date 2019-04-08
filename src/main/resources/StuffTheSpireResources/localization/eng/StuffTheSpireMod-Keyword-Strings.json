@@ -4,7 +4,7 @@
     "NAMES": [
       "decreasing"
     ],
-    "DESCRIPTION": "Decreases the orange Value by 1 for the rest of this Combat."
+    "DESCRIPTION": "Decrease the orange Value for the rest of this Combat when playing this card."
   },
   {
     "PROPER_NAME": "Unique",

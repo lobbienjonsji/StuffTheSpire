@@ -22,5 +22,9 @@
         "StuffTheSpire:GravityPower": {
                 "NAME": "Gravity",
                 "DESCRIPTIONS": ["Upon loosing Flight, deal ", " damage to the target."]
+        },
+        "StuffTheSpire:SynthwavePower": {
+                "NAME": "Synthwave",
+                "DESCRIPTIONS": ["All Lightning orbs trigger their passive ", " additonal time.", " additional times"]
         }
 }

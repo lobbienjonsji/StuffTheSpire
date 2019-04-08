@@ -34,5 +34,17 @@
   "StuffTheSpire:LaunchingStrike": {
     "NAME": "Launching Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply stuffthespire:Flight. NL When the target looses stuffthespire:Flight, deal !D! damage again."
+  },
+  "StuffTheSpire:Synthwave": {
+    "NAME": "Synthwave",
+    "DESCRIPTION": "Lightning triggers it's passive an additional time."
+  },
+  "StuffTheSpire:ForEach": {
+    "NAME": "foreach(){}",
+    "DESCRIPTION": "Trigger the passive ability of all of your orbs",
+    "EXTENDED_DESCRIPTION": [
+      " once. NL stuffthespire:Decreasing 1.",
+      " !StuffTheSpire:Diminishing! times. NL stuffthespire:Decreasing 1."
+    ]
   }
 }
