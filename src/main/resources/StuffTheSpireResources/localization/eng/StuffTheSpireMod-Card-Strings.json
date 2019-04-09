@@ -46,5 +46,21 @@
       " once. NL stuffthespire:Decreasing 1.",
       " !StuffTheSpire:Diminishing! times. NL stuffthespire:Decreasing 1."
     ]
+  },
+  "StuffTheSpire:Pyroclast": {
+    "NAME": "Pyroclast",
+    "DESCRIPTION": "Deal !D! damage to all enemies",
+    "EXTENDED_DESCRIPTION": [
+      " once. NL Add a Burn into your hand. NL stuffthespire:Decreasing 1.",
+      " !StuffTheSpire:Diminishing! times. NL Add a Burn into your hand. NL stuffthespire:Decreasing 1."
+    ]
+  },
+  "StuffTheSpire:LoadUp": {
+    "NAME": "Load Up",
+    "DESCRIPTION": "Loose 1 Fokus. NL Channel !M! Lightning. Next turn add a copy of stuffthespire:Discharge to your hand."
+  },
+  "StuffTheSpire:Discharge": {
+    "NAME": "Discharge",
+    "DESCRIPTION": "Gain !M! Fokus. NL Evoke all of your orbs twice. NL Exhaust"
   }
 }

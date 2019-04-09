@@ -123,5 +123,10 @@
     "NAME": "Force Gauntlet",
     "FLAVOR": "Be gone!",
     "DESCRIPTIONS": ["Your attack damage is increased by #b20%"]
+  },
+  "StuffTheSpire:RunicConfusion": {
+    "NAME": "Runic Confusion",
+    "FLAVOR": "Wat?",
+    "DESCRIPTIONS": ["Gain [E] at the start of each turn. You can no longer see Card descriptions and Costs."]
   }
 }

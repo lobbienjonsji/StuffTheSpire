@@ -47,6 +47,13 @@
       "flight"
     ],
     "DESCRIPTION": "All attack damage taken is reduced by 50%. NL If the owner takes attack damage three times in one turn, Flight is removed."
+  },
+  {
+    "PROPER_NAME": "Discharge",
+    "NAMES": [
+      "discharge"
+    ],
+    "DESCRIPTION": "A Card that costs [E] and evokes all orbs twice and gives you one focus."
   }
 
 ]

@@ -5,6 +5,7 @@ import StuffTheSpire.relics.Expresso;
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -28,6 +29,10 @@ public class ApplyPowersPatch {
         {
             __instance.damage = MathUtils.floor((float) (__instance.damage * 1.5));
             __instance.isDamageModified = true;
+        }
+        if (AbstractDungeon.player.hasRelic("StuffTheSpire:RunicConfusion")) {
+            __instance.rawDescription = "???";
+            __instance.initializeDescription();
         }
     }
 }
