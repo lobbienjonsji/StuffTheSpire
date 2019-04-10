@@ -18,18 +18,6 @@ public class ApplyPowersPatch {
     private static int enemynumber = 0;
     @SpirePostfixPatch
     public static void Patch(AbstractCard __instance){
-        enemynumber = 0;
-        for (AbstractMonster m: AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if(!m.isDying || !m.isDead)
-            {
-                enemynumber++;
-            }
-        }
-        if(AbstractDungeon.player.hasPower(StuffTheSpireMod.makeID("PointBlankPower"))&& __instance.target == AbstractCard.CardTarget.ALL_ENEMY && enemynumber <= 1)
-        {
-            __instance.damage = MathUtils.floor((float) (__instance.damage * 1.5));
-            __instance.isDamageModified = true;
-        }
         if (AbstractDungeon.player.hasRelic("StuffTheSpire:RunicConfusion")) {
             __instance.rawDescription = "???";
             __instance.initializeDescription();

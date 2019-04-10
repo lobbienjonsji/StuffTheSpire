@@ -25,7 +25,7 @@
     "NAME": "Coconut",
     "FLAVOR": "If you eat to much you'll get very fat.",
     "DESCRIPTIONS": [
-      "Upon Pickup gain #b5 max HP. At the start of each combat gain #b3 Juggernaut."
+      "Upon Pickup gain #b5 max HP. At the start of each combat gain #b3 stuffthespire:Juggernaut."
     ]
   },
   "StuffTheSpire:Expresso": {

@@ -61,6 +61,19 @@
   },
   "StuffTheSpire:Discharge": {
     "NAME": "Discharge",
-    "DESCRIPTION": "Gain !M! Fokus. NL Evoke all of your orbs twice. NL Exhaust"
+    "DESCRIPTION": "Evoke all of your orbs twice. NL Gain !M! Fokus. NL Exhaust."
+  },
+  "StuffTheSpire:Python": {
+    "NAME": "Python",
+    "DESCRIPTION": "Apply !StuffTheSpire:Diminishing! stuffthespire:Constricted. NL stuffthespire:Decreasing 1"
+  },
+  "StuffTheSpire:Slingshot": {
+    "NAME": "Slingshot",
+    "DESCRIPTION": "Exhaust a card. Deal !D! damage. Apply !M! Vulnerable."
+  },
+  "StuffTheSpire:RockToss": {
+    "NAME": "Rock Toss",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL If this card is exhausted add a copy of this card to your hand next turn. It costs 0 for the rest of combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL If this card is exhausted add !M! copies of this card to your hand next turn. They cost 0 for the rest of combat."
   }
 }
