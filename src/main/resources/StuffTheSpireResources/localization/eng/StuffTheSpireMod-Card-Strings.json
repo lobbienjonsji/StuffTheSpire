@@ -73,7 +73,23 @@
   },
   "StuffTheSpire:RockToss": {
     "NAME": "Rock Toss",
-    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL If this card is exhausted add a copy of this card to your hand next turn. It costs 0 for the rest of combat.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL If this card is exhausted add !M! copies of this card to your hand next turn. They cost 0 for the rest of combat."
+    "DESCRIPTION": "Deal !D! damage. Draw 1 card. NL If this card is exhausted add a copy of this card to your hand next turn. It costs 0 for the rest of combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Draw 1 card. NL If this card is exhausted add !M! copies of this card to your hand next turn. They cost 0 for the rest of combat."
+  },
+  "StuffTheSpire:Injection": {
+    "NAME": "Injection",
+    "DESCRIPTION": "Deal !D! damage. NL If the target isn't poisoned, apply !M! Poison. NL Exhaust."
+  },
+  "StuffTheSpire:FlameBurst": {
+    "NAME": "Flame Burst",
+    "DESCRIPTION": "Ethereal. NL Deal !M! damage to all enemies when this card exhausts."
+  },
+  "StuffTheSpire:Incineration": {
+    "NAME": "Incineration",
+    "DESCRIPTION": "Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      " add !StuffTheSpire:Diminishing! stuffthespire:Flame_burst into you hand. NL stuffthespire:Decreasing 1.",
+      " !StuffTheSpire:Diminishing! stuffthespire:Flame_bursts into you hand. NL stuffthespire:Decreasing 1."
+    ]
   }
 }

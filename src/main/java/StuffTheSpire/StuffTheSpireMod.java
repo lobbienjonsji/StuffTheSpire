@@ -195,6 +195,9 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new LoadUp());
         BaseMod.addCard(new Python());
         BaseMod.addCard(new RockToss());
+        BaseMod.addCard(new Injection());
+        BaseMod.addCard(new FlameBurst());
+        BaseMod.addCard(new Incineration());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);

@@ -54,6 +54,14 @@
       "discharge"
     ],
     "DESCRIPTION": "A Card that costs [E] and evokes all orbs twice and gives you one focus."
+  },
+  {
+    "PROPER_NAME": "Flame Burst",
+    "NAMES": [
+      "flame_burst",
+      "flame_bursts"
+    ],
+    "DESCRIPTION": "An ethereal Status that deals 1 damage to all enemies when exhausted."
   }
 
 ]
