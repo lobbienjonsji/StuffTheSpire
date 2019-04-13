@@ -198,6 +198,8 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new Injection());
         BaseMod.addCard(new FlameBurst());
         BaseMod.addCard(new Incineration());
+        BaseMod.addCard(new BumpUp());
+        BaseMod.addCard(new RagingBull());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);

@@ -26,5 +26,9 @@
         "StuffTheSpire:SynthwavePower": {
                 "NAME": "Synthwave",
                 "DESCRIPTIONS": ["All Lightning orbs trigger their passive ", " additonal time.", " additional times"]
+        },
+        "StuffTheSpire:RagingBullPower": {
+                "NAME": "Raging Bull",
+                "DESCRIPTIONS": ["After you play "," more cards, loose 2 Dexterity"]
         }
 }

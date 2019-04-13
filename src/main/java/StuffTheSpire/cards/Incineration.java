@@ -36,6 +36,16 @@ public class Incineration extends AbstractDecreasingCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        if(this.magicNumber == 1)
+        {
+            this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
+            initializeDescription();
+        }
+        else
+        {
+            this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[1];
+            initializeDescription();
+        }
     }
 
     @Override
@@ -68,6 +78,8 @@ public class Incineration extends AbstractDecreasingCard {
 
     @Override
     public void recharge(int amount) {
+        baseMagicNumber += amount;
+        magicNumber = baseMagicNumber;
         if(this.magicNumber == 1)
         {
             this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];

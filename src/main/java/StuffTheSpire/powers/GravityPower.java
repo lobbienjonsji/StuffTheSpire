@@ -55,14 +55,6 @@ public class GravityPower extends AbstractPower implements CloneablePowerInterfa
         return damageAmount;
     }
 
-    private float calculateDamageTakenAmount(float damage, DamageInfo.DamageType type)
-    {
-        if ((type != DamageInfo.DamageType.HP_LOSS) && (type != DamageInfo.DamageType.THORNS)) {
-            return damage / 2.0F;
-        }
-        return damage;
-    }
-
     @Override
     public void stackPower(int stackAmount)
     {

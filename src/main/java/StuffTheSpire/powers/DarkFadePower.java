@@ -14,6 +14,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.orbs.Lightning;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import java.util.HashMap;
 
@@ -41,11 +43,7 @@ public class DarkFadePower extends AbstractPower implements CloneablePowerInterf
     }
     public void atEndOfRound()
     {
-        if (this.amount == 0) {
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "DarkFadePower"));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "DarkFadePower", 1));
-        }
+
     }
     @Override
     public void updateDescription() {
@@ -66,6 +64,11 @@ public class DarkFadePower extends AbstractPower implements CloneablePowerInterf
             }
         }
         Damage.clear();
+        if (this.amount == 0) {
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "StuffTheSpire:DarkFadePower"));
+        } else {
+            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "StuffTheSpire:DarkFadePower", 1));
+        }
     }
 
     @Override
@@ -93,5 +96,11 @@ public class DarkFadePower extends AbstractPower implements CloneablePowerInterf
     @Override
     public AbstractPower makeCopy() {
         return new PointBlankPower(owner, source, amount);
+    }
+    @Override
+    public void atEndOfTurn(boolean isPlayer)
+    {
+        if(isPlayer) {
+        }
     }
 }

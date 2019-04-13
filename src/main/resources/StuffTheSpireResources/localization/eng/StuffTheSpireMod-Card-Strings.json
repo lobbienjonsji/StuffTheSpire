@@ -91,5 +91,13 @@
       " add !StuffTheSpire:Diminishing! stuffthespire:Flame_burst into you hand. NL stuffthespire:Decreasing 1.",
       " !StuffTheSpire:Diminishing! stuffthespire:Flame_bursts into you hand. NL stuffthespire:Decreasing 1."
     ]
+  },
+  "StuffTheSpire:BumpUp": {
+    "NAME": "Bump Up",
+    "DESCRIPTION": "Deal !D! damage. Increase the damage of all of your 2 cost cards by !M!%."
+  },
+  "StuffTheSpire:RagingBull": {
+    "NAME": "Raging Bull",
+    "DESCRIPTION": "Deal !D! damage. Gain 2 Dexterity. After you play !M! more cards loose 2 Dexterity."
   }
 }
