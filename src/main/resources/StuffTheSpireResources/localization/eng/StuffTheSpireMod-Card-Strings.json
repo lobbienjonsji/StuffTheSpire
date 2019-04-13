@@ -29,7 +29,8 @@
   },
   "StuffTheSpire:Shiver": {
     "NAME": "Shiver",
-    "DESCRIPTION": "Gain 1 Strength. NL Discard a card. NL Add !M! Shivs to your hand. NL Apply 1 Weak to yourself and all enemies."
+    "DESCRIPTION": "Gain 1 Strength. NL Discard a card. NL Add !M! Shiv to your hand. NL Apply 1 Weak to yourself and all enemies.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Strength. NL Discard a card. NL Add !M! Shivs to your hand. NL Apply 1 Weak to yourself and all enemies."
   },
   "StuffTheSpire:LaunchingStrike": {
     "NAME": "Launching Strike",
@@ -99,5 +100,15 @@
   "StuffTheSpire:RagingBull": {
     "NAME": "Raging Bull",
     "DESCRIPTION": "Deal !D! damage. Gain 2 Dexterity. After you play !M! more cards loose 2 Dexterity."
+  },
+  "StuffTheSpire:SnapShoot": {
+    "NAME": "Snap Shoot",
+    "DESCRIPTION": "If you have at least 3 orbs channeled, permanently add a stuffthespire:Snapshot that channels your 3 front most orbs to your deck. NL Fleeting.",
+    "UPGRADE_DESCRIPTION": "If you have at least 3 orbs channeled, permanently add an upgraded stuffthespire:Snapshot that channels your 3 front most orbs to your deck. NL Fleeting."
+
+  },
+  "StuffTheSpire:Snapshot": {
+    "NAME": "Snapshot",
+    "DESCRIPTION": "Channel "
   }
 }

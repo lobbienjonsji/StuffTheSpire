@@ -62,6 +62,14 @@
       "flame_bursts"
     ],
     "DESCRIPTION": "An ethereal Status that deals 1 damage to all enemies when exhausted."
+  },
+  {
+    "PROPER_NAME": "Snapshot",
+    "NAMES": [
+      "snapshot"
+    ],
+    "DESCRIPTION": "A 3 cost card that channels 3 orbs. Upgrades to become 2 cost."
   }
+
 
 ]
