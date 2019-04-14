@@ -168,6 +168,9 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new HistoryBook(), RelicType.SHARED);
         BaseMod.addRelic(new ForceGauntlet(), RelicType.SHARED);
         BaseMod.addRelic(new RunicConfusion(), RelicType.SHARED);
+        BaseMod.addRelic(new EmeraldSignet(), RelicType.SHARED);
+        BaseMod.addRelic(new RubySignet(), RelicType.SHARED);
+        BaseMod.addRelic(new SapphireSignet(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }

@@ -128,5 +128,20 @@
     "NAME": "Runic Confusion",
     "FLAVOR": "Wat?",
     "DESCRIPTIONS": ["Gain [E] at the start of each turn. You can no longer see Card descriptions and Costs."]
+  },
+  "StuffTheSpire:RubySignet": {
+    "NAME": "Ruby Signet",
+    "FLAVOR": "The Ruby comes alive when you are burning to heal your wounds.",
+    "DESCRIPTIONS": ["Heal #b2 Hp whenever Vulnerable is applied to you"]
+  },
+  "StuffTheSpire:SapphireSignet": {
+    "NAME": "Sapphire Signet",
+    "FLAVOR": "The Sapphire comes alive when you are frozen to heal your wounds.",
+    "DESCRIPTIONS": ["Heal #b2 Hp whenever Frail is applied to you."]
+  },
+  "StuffTheSpire:EmeraldSignet": {
+    "NAME": "Emerald Signet",
+    "FLAVOR": "The Emerald comes alive when you are poisoned to heal your wounds.",
+    "DESCRIPTIONS": ["Heal #b2 Hp whenever Weak is applied to you."]
   }
 }
