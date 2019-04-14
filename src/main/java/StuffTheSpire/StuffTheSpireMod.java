@@ -171,6 +171,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new EmeraldSignet(), RelicType.SHARED);
         BaseMod.addRelic(new RubySignet(), RelicType.SHARED);
         BaseMod.addRelic(new SapphireSignet(), RelicType.SHARED);
+        BaseMod.addRelic(new MayFlowers(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }

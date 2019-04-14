@@ -143,5 +143,10 @@
     "NAME": "Emerald Signet",
     "FLAVOR": "The Emerald comes alive when you are poisoned to heal your wounds.",
     "DESCRIPTIONS": ["Heal #b2 Hp whenever Weak is applied to you."]
+  },
+  "StuffTheSpire:MayFlowers": {
+    "NAME": "Mayflowers",
+    "FLAVOR": "March winds and April showers...",
+    "DESCRIPTIONS": ["Gain #b3 Regeneration on turn #b5"]
   }
 }
