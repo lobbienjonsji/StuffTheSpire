@@ -17,7 +17,7 @@
   },
   "StuffTheSpire:TitanForm": {
     "NAME": "Titan Form",
-    "DESCRIPTION": "Gain !M! stuffthespire:Dark_fade. At the end of each turn loose 1 Strength."
+    "DESCRIPTION": "Gain !M! stuffthespire:Dark_Fade. At the end of each turn loose 1 Strength."
   },
   "StuffTheSpire:Recharge": {
     "NAME": "Recharge",
@@ -89,8 +89,8 @@
     "NAME": "Incineration",
     "DESCRIPTION": "Deal !D! Damage.",
     "EXTENDED_DESCRIPTION": [
-      " add !StuffTheSpire:Diminishing! stuffthespire:Flame_burst into you hand. NL stuffthespire:Decreasing 1.",
-      " !StuffTheSpire:Diminishing! stuffthespire:Flame_bursts into you hand. NL stuffthespire:Decreasing 1."
+      " add !StuffTheSpire:Diminishing! stuffthespire:Flame_Burst into you hand. NL stuffthespire:Decreasing 1.",
+      " add !StuffTheSpire:Diminishing! stuffthespire:Flame_Bursts into you hand. NL stuffthespire:Decreasing 1."
     ]
   },
   "StuffTheSpire:BumpUp": {
@@ -113,6 +113,11 @@
   },
   "StuffTheSpire:Deluminance": {
     "NAME": "Deluminance",
-    "DESCRIPTION": "Gain !M! stuffthespire:Dark_fade. NL Exhaust."
+    "DESCRIPTION": "Gain !M! stuffthespire:Dark_Fade. NL Exhaust."
+  },
+  "StuffTheSpire:Incursion": {
+    "NAME": "Incursion",
+    "DESCRIPTION": "Gain 2 stuffthespire:Dark_Fade. When you loose Hp, loose twice as much for !M! turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain 2 stuffthespire:Dark_Fade. When you loose Hp during this turn, loose twice as much. NL Exhaust."
   }
 }

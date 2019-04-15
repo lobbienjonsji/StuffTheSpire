@@ -84,6 +84,7 @@ public class Pyroclast extends AbstractDecreasingCard {
         if (!upgraded) {
             upgradeName();
             initializeDescription();
+            upgradeMagicNumber(1);
         }
     }
 

@@ -215,6 +215,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new SnapShoot());
         BaseMod.addCard(new Snapshot());
         BaseMod.addCard(new Deluminance());
+        BaseMod.addCard(new Incursion());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);

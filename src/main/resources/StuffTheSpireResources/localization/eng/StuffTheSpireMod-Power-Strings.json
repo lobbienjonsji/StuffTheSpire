@@ -34,5 +34,9 @@
         "StuffTheSpire:BlackoutPower": {
                 "NAME": "Blackout",
                 "DESCRIPTIONS": ["Your damage is reduced by #b50%"]
+        },
+        "StuffTheSpire:IncursionPower": {
+                "NAME": "Incursion",
+                "DESCRIPTIONS": ["Whenever you loose Hp, loose #btwice as much."]
         }
 }
