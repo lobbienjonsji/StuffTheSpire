@@ -13,7 +13,7 @@ public class RenderEnergyPatch {
     public static class Patch {
         @SpirePrefixPatch
         public static SpireReturn Patch(AbstractCard __instance, SpriteBatch b) {
-                if (AbstractDungeon.player.hasRelic("StuffTheSpire:RunicConfusion")) {
+                if (AbstractDungeon.player!= null && AbstractDungeon.player.hasRelic("StuffTheSpire:RunicConfusion")) {
                    return SpireReturn.Return(null);
                 }
                 return  SpireReturn.Continue();

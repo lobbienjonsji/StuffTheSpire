@@ -30,5 +30,9 @@
         "StuffTheSpire:RagingBullPower": {
                 "NAME": "Raging Bull",
                 "DESCRIPTIONS": ["After you play "," more cards, loose 2 Dexterity"]
+        },
+        "StuffTheSpire:BlackoutPower": {
+                "NAME": "Blackout",
+                "DESCRIPTIONS": ["Your damage is reduced by #b50%"]
         }
 }

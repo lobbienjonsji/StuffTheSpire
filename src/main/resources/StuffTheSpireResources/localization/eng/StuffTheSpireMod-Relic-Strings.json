@@ -148,5 +148,10 @@
     "NAME": "Mayflowers",
     "FLAVOR": "March winds and April showers...",
     "DESCRIPTIONS": ["Gain #b3 Regeneration on turn #b5"]
+  },
+  "StuffTheSpire:BlackoutCurse": {
+    "NAME": "Blackout Curse",
+    "FLAVOR": "Hello Darkness",
+    "DESCRIPTIONS": ["Deal 50% less attack damage."]
   }
 }

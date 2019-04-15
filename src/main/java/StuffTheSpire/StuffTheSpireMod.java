@@ -2,6 +2,7 @@ package StuffTheSpire;
 
 import GifTheSpire.util.GifAnimation;
 import StuffTheSpire.cards.*;
+import StuffTheSpire.events.TheShadows;
 import StuffTheSpire.relics.*;
 import StuffTheSpire.util.IDCheckDontTouchPls;
 import StuffTheSpire.util.TextureLoader;
@@ -17,6 +18,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -39,6 +41,7 @@ public class StuffTheSpireMod implements
     private static String modID;
     private static GifAnimation Plasmapunch = new GifAnimation("StuffTheSpireResources/images/animations/plasmapunchsheet.png", 11, 1, 0,0,0,0,false);
     private static GifAnimation Plasmapulse = new GifAnimation("StuffTheSpireResources/images/animations/plasmapulsesheet.png", 11, 1, 0,0,0,0,false);
+    public static GifAnimation Dark_Fade = new GifAnimation("StuffTheSpireResources/images/animations/DarkFadeBg.png", 7, 7,0,0,0,0, true);
     private static final String MODNAME = "Stuff the Spire";
     private static final String AUTHOR = "Lobbienjonsji"; // And pretty soon - You!
     private static final String DESCRIPTION = "Adds new cards, relics, events and other stuff with full GifTheSpireLib support";
@@ -142,6 +145,10 @@ public class StuffTheSpireMod implements
         Plasmapulse.create();
         Plasmapulse.addAsCardAnimation("StuffTheSpire:PlasmaPulse");
         Plasmapulse.setAnimationspeed(0.05F);
+        Dark_Fade.create();
+        Dark_Fade.setAnimationspeed(0.05F);
+        Dark_Fade.addAsBackgroundAnimation();
+        BaseMod.addEvent(TheShadows.ID, TheShadows.class, TheCity.ID);
     }
     public void receiveEditPotions() {
         logger.info("Beginning to edit potions");
@@ -172,6 +179,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new RubySignet(), RelicType.SHARED);
         BaseMod.addRelic(new SapphireSignet(), RelicType.SHARED);
         BaseMod.addRelic(new MayFlowers(), RelicType.SHARED);
+        BaseMod.addRelic(new BlackoutCurse(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -206,6 +214,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new RagingBull());
         BaseMod.addCard(new SnapShoot());
         BaseMod.addCard(new Snapshot());
+        BaseMod.addCard(new Deluminance());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);
@@ -224,8 +233,6 @@ public class StuffTheSpireMod implements
                 getModID() + "Resources/localization/eng/StuffTheSpireMod-Event-Strings.json");
         BaseMod.loadCustomStringsFile(PotionStrings.class,
                 getModID() + "Resources/localization/eng/StuffTheSpireMod-Potion-Strings.json");
-        BaseMod.loadCustomStringsFile(CharacterStrings.class,
-                getModID() + "Resources/localization/eng/StuffTheSpireMod-Character-Strings.json");
         BaseMod.loadCustomStringsFile(OrbStrings.class,
                 getModID() + "Resources/localization/eng/StuffTheSpireMod-Orb-Strings.json");
         logger.info("Done edittting strings");

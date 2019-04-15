@@ -1,11 +1,11 @@
 {
   "StuffTheSpire:PlasmaPunch": {
     "NAME": "Plasma Punch",
-    "DESCRIPTION": "Deal !D! damage !StuffTheSpire:Diminishing! times. Draw 1 card. NL stuffthespire:Decreasing 1."
+    "DESCRIPTION": "Deal !D! Damage !StuffTheSpire:Diminishing! times. Draw 1 card. NL stuffthespire:Decreasing 1."
   },
   "StuffTheSpire:PlasmaPulse": {
     "NAME": "Plasma Pulse",
-    "DESCRIPTION": "Gain !B! block !StuffTheSpire:Diminishing! times. Draw 1 card. NL stuffthespire:Decreasing 1."
+    "DESCRIPTION": "Gain !B! Block !StuffTheSpire:Diminishing! times. Draw 1 card. NL stuffthespire:Decreasing 1."
   },
   "StuffTheSpire:FreeRealEstate": {
     "NAME": "Free Real Estate",
@@ -34,7 +34,7 @@
   },
   "StuffTheSpire:LaunchingStrike": {
     "NAME": "Launching Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply stuffthespire:Flight. NL When the target looses stuffthespire:Flight, deal !D! damage again."
+    "DESCRIPTION": "Deal !D! Damage. NL Apply stuffthespire:Flight. NL When the target looses stuffthespire:Flight, deal !D! Damage again."
   },
   "StuffTheSpire:Synthwave": {
     "NAME": "Synthwave",
@@ -50,14 +50,14 @@
   },
   "StuffTheSpire:Pyroclast": {
     "NAME": "Pyroclast",
-    "DESCRIPTION": "Deal !D! damage to all enemies",
+    "DESCRIPTION": "Deal !D! Damage to all enemies",
     "EXTENDED_DESCRIPTION": [
       " once. NL Add a Burn into your hand. NL stuffthespire:Decreasing 1.",
       " !StuffTheSpire:Diminishing! times. NL Add a Burn into your hand. NL stuffthespire:Decreasing 1."
     ]
   },
   "StuffTheSpire:LoadUp": {
-    "NAME": "Load Up",
+    "NAME": "Overload",
     "DESCRIPTION": "Loose 1 Fokus. NL Channel !M! Lightning. Next turn add a copy of stuffthespire:Discharge to your hand."
   },
   "StuffTheSpire:Discharge": {
@@ -70,24 +70,24 @@
   },
   "StuffTheSpire:Slingshot": {
     "NAME": "Slingshot",
-    "DESCRIPTION": "Exhaust a card. Deal !D! damage. Apply !M! Vulnerable."
+    "DESCRIPTION": "Exhaust a card. Deal !D! Damage. Apply !M! Vulnerable."
   },
   "StuffTheSpire:RockToss": {
     "NAME": "Rock Toss",
-    "DESCRIPTION": "Deal !D! damage. Draw 1 card. NL If this card is exhausted add a copy of this card to your hand next turn. It costs 0 for the rest of combat.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Draw 1 card. NL If this card is exhausted add !M! copies of this card to your hand next turn. They cost 0 for the rest of combat."
+    "DESCRIPTION": "Deal !D! Damage. Draw 1 card. NL If this card is exhausted add a copy of this card to your hand next turn. It costs 0 for the rest of combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. Draw 1 card. NL If this card is exhausted add !M! copies of this card to your hand next turn. They cost 0 for the rest of combat."
   },
   "StuffTheSpire:Injection": {
     "NAME": "Injection",
-    "DESCRIPTION": "Deal !D! damage. NL If the target isn't poisoned, apply !M! Poison. NL Exhaust."
+    "DESCRIPTION": "Deal !D! Damage. NL If the target isn't poisoned, apply !M! Poison. NL Exhaust."
   },
   "StuffTheSpire:FlameBurst": {
     "NAME": "Flame Burst",
-    "DESCRIPTION": "Ethereal. NL Deal !M! damage to all enemies when this card exhausts."
+    "DESCRIPTION": "Ethereal. NL Deal !M! Damage to all enemies when this card exhausts."
   },
   "StuffTheSpire:Incineration": {
     "NAME": "Incineration",
-    "DESCRIPTION": "Deal !D! damage.",
+    "DESCRIPTION": "Deal !D! Damage.",
     "EXTENDED_DESCRIPTION": [
       " add !StuffTheSpire:Diminishing! stuffthespire:Flame_burst into you hand. NL stuffthespire:Decreasing 1.",
       " !StuffTheSpire:Diminishing! stuffthespire:Flame_bursts into you hand. NL stuffthespire:Decreasing 1."
@@ -95,11 +95,11 @@
   },
   "StuffTheSpire:BumpUp": {
     "NAME": "Bump Up",
-    "DESCRIPTION": "Deal !D! damage. Increase the damage of all of your 2 cost cards by !M!%."
+    "DESCRIPTION": "Deal !D! Damage. Increase the Damage of all of your 2 cost cards by !M!%."
   },
   "StuffTheSpire:RagingBull": {
     "NAME": "Raging Bull",
-    "DESCRIPTION": "Deal !D! damage. Gain 2 Dexterity. After you play !M! more cards loose 2 Dexterity."
+    "DESCRIPTION": "Deal !D! Damage. Gain 2 Dexterity. After you play !M! more cards loose 2 Dexterity."
   },
   "StuffTheSpire:SnapShoot": {
     "NAME": "Snap Shoot",
@@ -110,5 +110,9 @@
   "StuffTheSpire:Snapshot": {
     "NAME": "Snapshot",
     "DESCRIPTION": "Channel "
+  },
+  "StuffTheSpire:Deluminance": {
+    "NAME": "Deluminance",
+    "DESCRIPTION": "Gain !M! stuffthespire:Dark_fade. NL Exhaust."
   }
 }

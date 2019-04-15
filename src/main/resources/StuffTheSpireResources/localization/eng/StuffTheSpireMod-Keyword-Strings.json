@@ -23,6 +23,7 @@
   {
     "PROPER_NAME": "Dark Fade",
     "NAMES": [
+      "Dark Fade",
       "dark_fade"
     ],
     "DESCRIPTION": "While active, #b75% of all damage taken by enemies, including damage from this power is dealt to the enemy at the start of the next turn."
@@ -58,7 +59,15 @@
   {
     "PROPER_NAME": "Flame Burst",
     "NAMES": [
-      "flame_burst",
+      "Flame Burst",
+      "flame_burst"
+    ],
+    "DESCRIPTION": "An ethereal Status that deals 1 damage to all enemies when exhausted."
+  },
+  {
+    "PROPER_NAME": "Flame Bursts",
+    "NAMES": [
+      "Flame Bursts",
       "flame_bursts"
     ],
     "DESCRIPTION": "An ethereal Status that deals 1 damage to all enemies when exhausted."

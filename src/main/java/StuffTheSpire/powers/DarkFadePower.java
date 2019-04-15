@@ -14,10 +14,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.Lightning;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import java.util.HashMap;
+
+import static StuffTheSpire.StuffTheSpireMod.Dark_Fade;
 
 public class DarkFadePower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
@@ -41,6 +41,10 @@ public class DarkFadePower extends AbstractPower implements CloneablePowerInterf
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
         updateDescription();
     }
+    public void onInitialApplication()
+    {
+        Dark_Fade.ishidden = false;
+    }
     public void atEndOfRound()
     {
 
@@ -53,6 +57,7 @@ public class DarkFadePower extends AbstractPower implements CloneablePowerInterf
     public void onVictory()
     {
         Damage.clear();
+        Dark_Fade.ishidden = true;
     }
     @Override
     public void atStartOfTurn()
@@ -102,5 +107,10 @@ public class DarkFadePower extends AbstractPower implements CloneablePowerInterf
     {
         if(isPlayer) {
         }
+    }
+    @Override
+    public void onRemove()
+    {
+        Dark_Fade.ishidden = true;
     }
 }

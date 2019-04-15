@@ -1,2 +1,15 @@
 {
+  "StuffTheSpire:TheShadows": {
+    "NAME": "The Shadows",
+    "DESCRIPTIONS": [
+      "Suddenly you hear a voice whispering to you. NL \"Real Power comes over time and not in one Burst. NL Do you agree?\"",
+      "I thought so.",
+      "You will agree with me at some point!"
+    ],
+    "OPTIONS": [
+      "[Agree] #rDeal #r50% #rless #rattack #rdamage. #gObtain #g5 #gDeluminance.",
+      "[Disagree]",
+      "[Leave]"
+    ]
+  }
 }
