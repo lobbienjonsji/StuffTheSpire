@@ -1,4 +1,4 @@
-package StuffTheSpire.cards;
+package StuffTheSpire.cards.blue;
 
 import StuffTheSpire.StuffTheSpireMod;
 import StuffTheSpire.powers.GravityPower;

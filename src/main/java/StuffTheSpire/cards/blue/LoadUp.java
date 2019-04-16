@@ -1,6 +1,7 @@
-package StuffTheSpire.cards;
+package StuffTheSpire.cards.blue;
 
 import StuffTheSpire.StuffTheSpireMod;
+import StuffTheSpire.cards.colorless.Discharge;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;

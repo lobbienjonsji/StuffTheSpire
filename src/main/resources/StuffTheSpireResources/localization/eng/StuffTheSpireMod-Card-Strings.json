@@ -21,7 +21,7 @@
   },
   "StuffTheSpire:Recharge": {
     "NAME": "Recharge",
-    "DESCRIPTION": "stuffthespire:Unique. NL stuffthespire:Recharge !M!. Draw 1 card. NL Exhaust."
+    "DESCRIPTION": "stuffthespire:Unique. NL stuffthespire:Recharge !M!. Draw 1 card. NL Purge."
   },
   "StuffTheSpire:ReptileScales": {
     "NAME": "ReptileScales",
@@ -95,7 +95,7 @@
   },
   "StuffTheSpire:BumpUp": {
     "NAME": "Bump Up",
-    "DESCRIPTION": "Deal !D! Damage. Increase the Damage of all of your 2 cost cards by !M!%."
+    "DESCRIPTION": "Deal !D! Damage. Increase the Damage of all of your 2 cost cards by !M! %."
   },
   "StuffTheSpire:RagingBull": {
     "NAME": "Raging Bull",
@@ -119,5 +119,17 @@
     "NAME": "Incursion",
     "DESCRIPTION": "Gain 2 stuffthespire:Dark_Fade. When you loose Hp, loose twice as much for !M! turns. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain 2 stuffthespire:Dark_Fade. When you loose Hp during this turn, loose twice as much. NL Exhaust."
+  },
+  "StuffTheSpire:FinalStruggle": {
+    "NAME": "Final Struggle",
+    "DESCRIPTION": "Deal !D! damage and loose !M! Hp until the target has died. Heal all Hp lost from this card at the end of combat."
+  },
+  "StuffTheSpire:Coldhearted": {
+    "NAME": "Cold Hearted",
+    "DESCRIPTION": "Channel 1 Frost. Gain !M! temporary max. Hp."
+  },
+  "StuffTheSpire:EventHorizon": {
+    "NAME": "Event Horizon",
+    "DESCRIPTION": "Can only be played when you have at least 3 Dark channelled. NL Gain !M! stuffthespire:Dark_Fade"
   }
 }

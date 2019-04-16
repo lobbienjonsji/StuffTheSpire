@@ -1,48 +1,42 @@
-package StuffTheSpire.cards;
+package StuffTheSpire.cards.red;
 
 import StuffTheSpire.StuffTheSpireMod;
+import StuffTheSpire.powers.DarkFadePower;
+import StuffTheSpire.powers.TitanFormPower;
+import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class FreeRealEstate extends AbstractDecreasingCard {
+public class TitanForm extends CustomCard {
 
 
-    public static final String ID = StuffTheSpireMod.makeID("FreeRealEstate");
+    public static final String ID = StuffTheSpireMod.makeID("TitanForm");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Skill.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Power.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = CardColor.COLORLESS;
-    private static final int COST = 0;
-    private static final int MAGICNUMBER = 5;
+    private static final CardType TYPE = CardType.POWER;
+    public static final CardColor COLOR = CardColor.RED;
+    private static final int COST = 3;
+    private static final int MAGICNUMBER = 4;
     private static final int MAGICNUMBER_UPGR = 2;
 
-    public FreeRealEstate() {
+    public TitanForm() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
-        tags.add(StuffTheSpire.patches.cards.CardTags.DECREASING);
-        tags.add(StuffTheSpire.patches.cards.CardTags.UNIQUE);
     }
-    @Override
-    public void recharge(int amount)
-    {
-        baseMagicNumber += amount;
-        magicNumber = baseMagicNumber;
-    }
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.player.gainGold(this.magicNumber);
-        if(this.magicNumber > 0) {
-            baseMagicNumber--;
-            magicNumber = baseMagicNumber;
-        }
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DarkFadePower(p, p, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new TitanFormPower(p, p, -1), -1));
     }
 
     @Override

@@ -1,7 +1,11 @@
 package StuffTheSpire;
 
 import GifTheSpire.util.GifAnimation;
-import StuffTheSpire.cards.*;
+import StuffTheSpire.cards.blue.*;
+import StuffTheSpire.cards.colorless.*;
+import StuffTheSpire.cards.green.*;
+import StuffTheSpire.cards.red.*;
+import StuffTheSpire.cards.status.FlameBurst;
 import StuffTheSpire.events.TheShadows;
 import StuffTheSpire.relics.*;
 import StuffTheSpire.util.IDCheckDontTouchPls;
@@ -216,6 +220,9 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new Snapshot());
         BaseMod.addCard(new Deluminance());
         BaseMod.addCard(new Incursion());
+        BaseMod.addCard(new FinalStruggle());
+        BaseMod.addCard(new Coldhearted());
+        BaseMod.addCard(new EventHorizon());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);

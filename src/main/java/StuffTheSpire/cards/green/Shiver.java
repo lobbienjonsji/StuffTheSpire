@@ -1,4 +1,4 @@
-package StuffTheSpire.cards;
+package StuffTheSpire.cards.green;
 
 import StuffTheSpire.StuffTheSpireMod;
 import basemod.abstracts.CustomCard;

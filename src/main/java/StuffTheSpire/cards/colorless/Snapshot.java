@@ -1,4 +1,4 @@
-package StuffTheSpire.cards;
+package StuffTheSpire.cards.colorless;
 
 import StuffTheSpire.StuffTheSpireMod;
 import basemod.abstracts.CustomCard;
@@ -11,7 +11,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.*;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
+
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
@@ -28,7 +29,7 @@ public class Snapshot extends CustomCard implements CustomSavable<ArrayList<Stri
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = CardColor.BLUE;
+    public static final CardColor COLOR = CardColor.COLORLESS;
     private static final int COST = 3;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 0;

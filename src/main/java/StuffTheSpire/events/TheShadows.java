@@ -1,7 +1,7 @@
 package StuffTheSpire.events;
 
 import StuffTheSpire.StuffTheSpireMod;
-import StuffTheSpire.cards.Deluminance;
+import StuffTheSpire.cards.colorless.Deluminance;
 import StuffTheSpire.relics.BlackoutCurse;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
