@@ -117,8 +117,8 @@
   },
   "StuffTheSpire:Incursion": {
     "NAME": "Incursion",
-    "DESCRIPTION": "Gain 2 stuffthespire:Dark_Fade. When you loose Hp, loose twice as much for !M! turns. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain 2 stuffthespire:Dark_Fade. When you loose Hp during this turn, loose twice as much. NL Exhaust."
+    "DESCRIPTION": "Gain 2 stuffthespire:Dark_Fade. When you loose HP, loose twice as much for !M! turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain 2 stuffthespire:Dark_Fade. When you loose HP, loose twice as much for !M! turn. NL Exhaust."
   },
   "StuffTheSpire:FinalStruggle": {
     "NAME": "Final Struggle",
@@ -126,10 +126,20 @@
   },
   "StuffTheSpire:Coldhearted": {
     "NAME": "Cold Hearted",
-    "DESCRIPTION": "Channel 1 Frost. Gain !M! temporary max. Hp."
+    "DESCRIPTION": "Channel 1 Frost. Gain !M! temporary max. HP."
   },
   "StuffTheSpire:EventHorizon": {
     "NAME": "Event Horizon",
     "DESCRIPTION": "Can only be played when you have at least 3 Dark channelled. NL Gain !M! stuffthespire:Dark_Fade"
+  },
+  "StuffTheSpire:DoubleShiv": {
+    "NAME": "Double Shiv",
+    "DESCRIPTION": "Add !M! Shivs into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add !M! upgraded Shivs into your hand. NL Exhaust."
+  },
+  "StuffTheSpire:Resist": {
+    "NAME": "Resist",
+    "DESCRIPTION": "Whenever you exhaust a status, gain !M! temporary max. HP.",
+    "UPGRADE_DESCRIPTION": "Whenever you exhaust a status, gain !M! temporary max. HP. NL Add 2 stuffthespire:Flame_Bursts into your hand."
   }
 }

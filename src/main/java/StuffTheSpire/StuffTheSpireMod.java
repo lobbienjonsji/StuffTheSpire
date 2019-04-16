@@ -223,6 +223,8 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new FinalStruggle());
         BaseMod.addCard(new Coldhearted());
         BaseMod.addCard(new EventHorizon());
+        BaseMod.addCard(new DoubleShiv());
+        BaseMod.addCard(new Resist());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);
