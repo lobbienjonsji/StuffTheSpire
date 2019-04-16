@@ -1,6 +1,7 @@
-package StuffTheSpire.cards;
+package StuffTheSpire.cards.colorless;
 
 import StuffTheSpire.StuffTheSpireMod;
+import StuffTheSpire.cards.AbstractDecreasingCard;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -32,8 +33,8 @@ public class Recharge extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
-        this.exhaust = true;
         tags.add(StuffTheSpire.patches.cards.CardTags.UNIQUE);
+        this.purgeOnUse = true;
     }
 
     @Override

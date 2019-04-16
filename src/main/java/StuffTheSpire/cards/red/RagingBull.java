@@ -1,4 +1,4 @@
-package StuffTheSpire.cards;
+package StuffTheSpire.cards.red;
 
 import StuffTheSpire.StuffTheSpireMod;
 import StuffTheSpire.powers.RagingBullPower;
