@@ -78,7 +78,33 @@
       "snapshot"
     ],
     "DESCRIPTION": "A 3 cost card that channels 3 orbs. Upgrades to become 2 cost."
+  },
+  {
+    "PROPER_NAME": "Fragile",
+    "NAMES": [
+      "fragile"
+    ],
+    "DESCRIPTION": "When you play another card while this is in your hand, this card exhausts."
+  },
+  {
+    "PROPER_NAME": "Linked",
+    "NAMES": [
+      "linked"
+    ],
+    "DESCRIPTION": "Can only be played by a Chain card."
+  },
+  {
+    "PROPER_NAME": "Linked",
+    "NAMES": [
+      "linked"
+    ],
+    "DESCRIPTION": "Can only be played by a Chain card."
+  },
+  {
+    "PROPER_NAME": "Chain",
+    "NAMES": [
+      "chain"
+    ],
+    "DESCRIPTION": "Play a linked card."
   }
-
-
 ]

@@ -58,7 +58,7 @@
   },
   "StuffTheSpire:LoadUp": {
     "NAME": "Overload",
-    "DESCRIPTION": "Loose 1 Fokus. NL Channel !M! Lightning. Next turn add a copy of stuffthespire:Discharge to your hand."
+    "DESCRIPTION": "Loose 1 Focus. NL Channel !M! Lightning. Next turn add a copy of stuffthespire:Discharge to your hand."
   },
   "StuffTheSpire:Discharge": {
     "NAME": "Discharge",
@@ -141,5 +141,28 @@
     "NAME": "Resist",
     "DESCRIPTION": "Whenever you exhaust a status, gain !M! temporary max. HP.",
     "UPGRADE_DESCRIPTION": "Whenever you exhaust a status, gain !M! temporary max. HP. NL Add 2 stuffthespire:Flame_Bursts into your hand."
+  },
+  "StuffTheSpire:NuclearReactor": {
+    "NAME": "Nuclear Reactor",
+    "DESCRIPTION": "Costs [E] less for every Frost you evoked this turn. NL Channel 2 Plasma. NL Apply !M! Poison to all enemies."
+  },
+  "StuffTheSpire:GlassShard": {
+    "NAME": "Glass Shard",
+    "DESCRIPTION": "stuffthespire:Fragile. NL Deal !D! Damage. NL Apply !M! Frail to yourself."
+  },
+  "StuffTheSpire:Incantation": {
+    "NAME": "Incantation",
+    "DESCRIPTION": "stuffthespire:Fragile. NL When drawn gain !M! Strength. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "When drawn gain !M! Strength. NL Ethereal."
+  },
+  "StuffTheSpire:Unleash": {
+    "NAME": "Unleash",
+    "DESCRIPTION": "stuffthespire:Linked.  NL  Gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Retain. NL stuffthespire:Linked.  NL  Gain !M! Strength."
+  },
+  "StuffTheSpire:ChainStrike": {
+    "NAME": "Chain Strike",
+    "DESCRIPTION": "Deal !D! Damage. NL stuffthespire:Chain !M! random stuffthespire:linked card in your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL stuffthespire:Chain !M! random stuffthespire:linked cards in your hand."
   }
 }
