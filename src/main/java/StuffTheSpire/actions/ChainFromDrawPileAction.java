@@ -10,11 +10,11 @@ import java.util.ArrayList;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.cardRng;
 
-public class ChainAction extends AbstractGameAction {
+public class ChainFromDrawPileAction extends AbstractGameAction {
     private int amount;
     private ArrayList<AbstractLinkedCard> LinkedCards = new ArrayList<>();
 
-    public ChainAction(int amount) {
+    public ChainFromDrawPileAction(int amount) {
         this.duration = Settings.ACTION_DUR_LONG;
         this.actionType = ActionType.CARD_MANIPULATION;
         this.isDone = false;
@@ -23,7 +23,7 @@ public class ChainAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        for (AbstractCard l : AbstractDungeon.player.hand.group) {
+        for (AbstractCard l : AbstractDungeon.player.drawPile.group) {
             if (l instanceof AbstractLinkedCard) {
                 this.LinkedCards.add((AbstractLinkedCard) l);
             }

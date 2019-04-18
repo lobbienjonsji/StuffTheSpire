@@ -157,12 +157,15 @@
   },
   "StuffTheSpire:Unleash": {
     "NAME": "Unleash",
-    "DESCRIPTION": "stuffthespire:Linked.  NL  Gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "Retain. NL stuffthespire:Linked.  NL  Gain !M! Strength."
+    "DESCRIPTION": "stuffthespire:Linked.  NL  Gain !M! Strength."
   },
   "StuffTheSpire:ChainStrike": {
     "NAME": "Chain Strike",
     "DESCRIPTION": "Deal !D! Damage. NL stuffthespire:Chain !M! random stuffthespire:linked card in your hand.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL stuffthespire:Chain !M! random stuffthespire:linked cards in your hand."
+  },
+  "StuffTheSpire:Razor": {
+    "NAME": "Razor Storm",
+    "DESCRIPTION": "stuffthespire:Linked. NL Deal !D! Damage !M! times. NL stuffthespire:Chain 1 random stuffthespire:linked card in your draw pile."
   }
 }

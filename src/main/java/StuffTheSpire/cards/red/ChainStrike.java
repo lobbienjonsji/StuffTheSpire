@@ -1,7 +1,7 @@
 package StuffTheSpire.cards.red;
 
 import StuffTheSpire.StuffTheSpireMod;
-import StuffTheSpire.actions.ChainAction;
+import StuffTheSpire.actions.ChainInHandAction;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -41,7 +41,7 @@ public class ChainStrike extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        AbstractDungeon.actionManager.addToBottom(new ChainAction(this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ChainInHandAction(this.magicNumber));
     }
 
     @Override
