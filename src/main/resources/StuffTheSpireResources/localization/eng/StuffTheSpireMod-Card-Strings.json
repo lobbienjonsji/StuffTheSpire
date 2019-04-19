@@ -167,5 +167,9 @@
   "StuffTheSpire:Razor": {
     "NAME": "Razor Storm",
     "DESCRIPTION": "stuffthespire:Linked. NL Deal !D! Damage !M! times. NL stuffthespire:Chain 1 random stuffthespire:linked card in your draw pile."
+  },
+  "StuffTheSpire:Flurry": {
+    "NAME": "Flurry",
+    "DESCRIPTION": "stuffthespire:Chain and exhaust all stuffthespire:linked cards in hand, draw- and discard pile. NL Exhaust."
   }
 }

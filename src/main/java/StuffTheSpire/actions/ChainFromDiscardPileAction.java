@@ -10,11 +10,11 @@ import java.util.ArrayList;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.cardRng;
 
-public class ChainFromDrawPileAction extends AbstractGameAction {
+public class ChainFromDiscardPileAction extends AbstractGameAction {
     private int amount;
     private ArrayList<AbstractLinkedCard> LinkedCards = new ArrayList<>();
 
-    public ChainFromDrawPileAction(int amount) {
+    public ChainFromDiscardPileAction(int amount) {
         this.duration = Settings.ACTION_DUR_LONG;
         this.actionType = ActionType.CARD_MANIPULATION;
         this.isDone = false;
@@ -23,7 +23,7 @@ public class ChainFromDrawPileAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        for (AbstractCard l : AbstractDungeon.player.drawPile.group) {
+        for (AbstractCard l : AbstractDungeon.player.discardPile.group) {
             if (l instanceof AbstractLinkedCard) {
                 this.LinkedCards.add((AbstractLinkedCard) l);
             }
@@ -31,7 +31,7 @@ public class ChainFromDrawPileAction extends AbstractGameAction {
         if (amount >= this.LinkedCards.size()) {
             for (AbstractLinkedCard l : this.LinkedCards) {
                 l.chain();
-                AbstractDungeon.player.drawPile.removeCard(l);
+                AbstractDungeon.player.discardPile.removeCard(l);
             }
             this.LinkedCards.clear();
             this.isDone = true;
@@ -45,7 +45,7 @@ public class ChainFromDrawPileAction extends AbstractGameAction {
             }
             for (AbstractLinkedCard l : playme) {
                 l.chain();
-                AbstractDungeon.player.drawPile.removeCard(l);
+                AbstractDungeon.player.discardPile.removeCard(l);
             }
             this.LinkedCards.clear();
             playme.clear();

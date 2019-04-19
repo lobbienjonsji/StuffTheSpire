@@ -164,6 +164,7 @@ public class StuffTheSpireMod implements
         logger.info("Adding relics");
         RelicLibrary.addGreen(new WitherSkull());
         RelicLibrary.addRed(new DullRazor());
+        RelicLibrary.addBlue(new ColdMirror());
         BaseMod.addRelic(new RunicHypercube(), RelicType.SHARED);
         BaseMod.addRelic(new NeowsTribute(), RelicType.SHARED);
         BaseMod.addRelic(new Mouthbags(), RelicType.SHARED);
@@ -230,6 +231,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new Unleash());
         BaseMod.addCard(new ChainStrike());
         BaseMod.addCard(new Razor());
+        BaseMod.addCard(new Flurry());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);

@@ -153,5 +153,12 @@
     "NAME": "Blackout Curse",
     "FLAVOR": "Hello Darkness",
     "DESCRIPTIONS": ["Deal 50% less attack damage."]
+  },
+  "StuffTheSpire:ColdMirror": {
+    "NAME": "Cold Mirror",
+    "FLAVOR": "You need at least seven brains to understand this.",
+    "DESCRIPTIONS": [
+      "The first time you evoke an Orb each combat, channel #b1 Frost."
+    ]
   }
 }
