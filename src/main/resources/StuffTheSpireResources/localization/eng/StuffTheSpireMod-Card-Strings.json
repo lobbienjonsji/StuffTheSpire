@@ -184,5 +184,14 @@
   "StuffTheSpire:AbyssLink": {
     "NAME": "Abyss Link",
     "DESCRIPTION": "At the start of your turn stuffthespire:chain !M! random stuffthespire:linked card from your discard pile."
+  },
+  "StuffTheSpire:ShieldGenerator": {
+    "NAME": "Shield Generator",
+    "DESCRIPTION": "Unplayable. NL Can be upgraded any number of times. NL Startup: Gain !M! temporary max. HP"
+  },
+  "StuffTheSpire:Fury": {
+    "NAME": "Fury",
+    "DESCRIPTION": "Draw !M! cards. NL Discard all non-Attack cards.",
+    "UPGRADE_DESCRIPTION": " Discard all non-Attack cards. NL Draw !M! cards."
   }
 }
