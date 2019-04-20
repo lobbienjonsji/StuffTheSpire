@@ -165,6 +165,7 @@ public class StuffTheSpireMod implements
         RelicLibrary.addGreen(new WitherSkull());
         RelicLibrary.addRed(new DullRazor());
         RelicLibrary.addBlue(new ColdMirror());
+        RelicLibrary.addRed(new BottledHeartBeat());
         BaseMod.addRelic(new RunicHypercube(), RelicType.SHARED);
         BaseMod.addRelic(new NeowsTribute(), RelicType.SHARED);
         BaseMod.addRelic(new Mouthbags(), RelicType.SHARED);
