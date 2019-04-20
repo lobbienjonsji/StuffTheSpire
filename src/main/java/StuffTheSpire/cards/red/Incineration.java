@@ -73,6 +73,7 @@ public class Incineration extends AbstractDecreasingCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

@@ -38,5 +38,13 @@
         "StuffTheSpire:IncursionPower": {
                 "NAME": "Incursion",
                 "DESCRIPTIONS": ["Whenever you loose Hp, loose #btwice as much."]
+        },
+        "StuffTheSpire:AbyssLinkPower": {
+                "NAME": "Abyss Link",
+                "DESCRIPTIONS": [
+                        "At the start of each turn, chain ",
+                        " linked card from your discard pile.",
+                        " linked cards from your discard piel."
+                ]
         }
 }

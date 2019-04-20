@@ -5,7 +5,7 @@
   },
   "StuffTheSpire:PlasmaPulse": {
     "NAME": "Plasma Pulse",
-    "DESCRIPTION": "Gain !B! Block !StuffTheSpire:Diminishing! times. Draw 1 card. NL stuffthespire:Decreasing 1."
+    "DESCRIPTION": "Gain !B! block !StuffTheSpire:Diminishing! times. Draw 1 card. NL stuffthespire:Decreasing 1."
   },
   "StuffTheSpire:FreeRealEstate": {
     "NAME": "Free Real Estate",
@@ -25,7 +25,7 @@
   },
   "StuffTheSpire:ReptileScales": {
     "NAME": "ReptileScales",
-    "DESCRIPTION": "Gain !StuffTheSpire:Diminishing! Plated Armor. NL Gain !B! Block. NL stuffthespire:Decreasing 1."
+    "DESCRIPTION": "Gain !StuffTheSpire:Diminishing! Plated Armor. NL Gain !B! block. NL stuffthespire:Decreasing 1."
   },
   "StuffTheSpire:Shiver": {
     "NAME": "Shiver",
@@ -166,10 +166,23 @@
   },
   "StuffTheSpire:Razor": {
     "NAME": "Razor Storm",
-    "DESCRIPTION": "stuffthespire:Linked. NL Deal !D! Damage !M! times. NL stuffthespire:Chain 1 random stuffthespire:linked card in your draw pile."
+    "DESCRIPTION": "stuffthespire:Linked. NL Deal !D! damage !M! times. NL stuffthespire:Chain 1 random stuffthespire:linked card in your draw pile."
   },
   "StuffTheSpire:Flurry": {
     "NAME": "Flurry",
     "DESCRIPTION": "stuffthespire:Chain and exhaust all stuffthespire:linked cards in hand, draw- and discard pile. NL Exhaust."
+  },
+  "StuffTheSpire:Surge": {
+    "NAME": "Surge",
+    "DESCRIPTION": "stuffthespire:Linked. NL Gain [E] [E]. NL Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "stuffthespire:Linked. NL Gain [E] [E] [E]. NL Draw !M! cards. NL Exhaust."
+  },
+  "StuffTheSpire:Flow": {
+    "NAME": "Flow",
+    "DESCRIPTION": "stuffthespire:Linked. NL heal 2 HP. NL stuffthespire:Chain 1 random stuffthespire:linked card in your draw pile. NL Exhaust."
+  },
+  "StuffTheSpire:AbyssLink": {
+    "NAME": "Abyss Link",
+    "DESCRIPTION": "At the start of your turn stuffthespire:chain !M! random stuffthespire:linked card from your discard pile."
   }
 }
