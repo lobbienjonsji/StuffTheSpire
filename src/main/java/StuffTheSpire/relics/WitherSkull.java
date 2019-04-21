@@ -18,12 +18,12 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class WitherSkull extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("WitherSkull");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("skull.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("skull.png"));
     private boolean isActive;
 
     public WitherSkull() {
-        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
     }
     public void atBattleStart() {
         this.isActive = false;

@@ -12,8 +12,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class RunicConfusion extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("RunicConfusion");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("confusion.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("confusion.png"));
     private static final RelicTier TIER = RelicTier.BOSS;
 
     public RunicConfusion() {

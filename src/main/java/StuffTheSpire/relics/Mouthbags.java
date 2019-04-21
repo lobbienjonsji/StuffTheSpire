@@ -17,8 +17,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 
 public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
     public static final String ID = StuffTheSpireMod.makeID("Mouthbags");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("mouthbags.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("mouthbags.png"));
     private boolean cardsSelected = true;
     AbstractCard selectedcard = null;
     public Mouthbags() {
@@ -83,7 +83,7 @@ public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
             Iterator<AbstractCard> i = AbstractDungeon.gridSelectScreen.selectedCards.iterator();
             while (i.hasNext())
             {
-                AbstractCard card = (AbstractCard)i.next();
+                AbstractCard card = i.next();
                 card.untip();
                 card.unhover();
                 AbstractDungeon.player.masterDeck.removeCard(card);
