@@ -15,8 +15,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class ForceGauntlet extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("ForceGauntlet");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("gauntlet.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("gauntlet.png"));
     private static final RelicTier TIER = RelicTier.UNCOMMON;
 
     public ForceGauntlet() {

@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import static StuffTheSpire.StuffTheSpireMod.makeRelicOutlinePath;
@@ -18,8 +17,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class Gunfinga extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("Gunfinga");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("gunfinga.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("gunfinga.png"));
     private boolean StrengthRemoved = false;
     public Gunfinga() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
