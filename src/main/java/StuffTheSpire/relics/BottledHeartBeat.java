@@ -22,8 +22,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class BottledHeartBeat extends CustomRelic implements CustomBottleRelic, CustomSavable<Integer> {
     public static final String ID = StuffTheSpireMod.makeID("BottledHeartBeat");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("heartbeat.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("heartbeat.png"));
     private static final RelicTier TIER = RelicTier.RARE;
     private static AbstractCard card;
     private boolean cardSelected = true;

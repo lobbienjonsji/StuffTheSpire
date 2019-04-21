@@ -2,7 +2,6 @@ package StuffTheSpire.relics;
 
 import StuffTheSpire.StuffTheSpireMod;
 import StuffTheSpire.powers.BlackoutPower;
-import StuffTheSpire.powers.ForceGauntletPower;
 import StuffTheSpire.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
@@ -15,8 +14,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class BlackoutCurse extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("BlackoutCurse");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("blackoutcurse.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("blackoutcurse.png"));
     private static final RelicTier TIER = RelicTier.SPECIAL;
 
     public BlackoutCurse() {

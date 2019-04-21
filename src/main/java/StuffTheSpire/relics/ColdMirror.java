@@ -15,8 +15,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class ColdMirror extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("ColdMirror");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("ColdMirror.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("ColdMirror.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("coldmirror.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("coldmirror.png"));
     private static final RelicTier TIER = RelicTier.UNCOMMON;
 
     public ColdMirror() {

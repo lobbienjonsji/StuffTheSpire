@@ -238,6 +238,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new AbyssLink());
         BaseMod.addCard(new ShieldGenerator());
         BaseMod.addCard(new Fury());
+        BaseMod.addCard(new BrimstoneBlast());
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);

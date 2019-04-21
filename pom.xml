@@ -3,7 +3,7 @@
     <groupId>StuufTheSpire</groupId>
     <artifactId>StuffTheSpire</artifactId>
     <!--<version>1.4.0</version>-->
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>StuffTheSpire</name>
 
     <properties>

@@ -193,5 +193,9 @@
     "NAME": "Fury",
     "DESCRIPTION": "Draw !M! cards. NL Discard all non-Attack cards.",
     "UPGRADE_DESCRIPTION": " Discard all non-Attack cards. NL Draw !M! cards."
+  },
+  "StuffTheSpire:BrimstoneBlast": {
+    "NAME": "Brimstone Blast",
+    "DESCRIPTION": "Deal !D! damage and apply !M! poison to all enemies. NL Add a Burn to your hand. NL Exhaust."
   }
 }
