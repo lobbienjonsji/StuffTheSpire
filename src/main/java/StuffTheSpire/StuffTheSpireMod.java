@@ -186,6 +186,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new SapphireSignet(), RelicType.SHARED);
         BaseMod.addRelic(new MayFlowers(), RelicType.SHARED);
         BaseMod.addRelic(new BlackoutCurse(), RelicType.SHARED);
+        BaseMod.addRelic(new Gunfinga(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -239,6 +240,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new ShieldGenerator());
         BaseMod.addCard(new Fury());
         BaseMod.addCard(new BrimstoneBlast());
+
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);

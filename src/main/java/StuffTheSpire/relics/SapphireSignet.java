@@ -15,8 +15,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class SapphireSignet extends CustomRelic implements OnReceivePowerRelic {
     public static final String ID = StuffTheSpireMod.makeID("SapphireSignet");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("saphsignet.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("basesignet.png"));
     private static final RelicTier TIER = RelicTier.UNCOMMON;
 
     public SapphireSignet() {

@@ -15,8 +15,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class RubySignet extends CustomRelic implements OnReceivePowerRelic {
     public static final String ID = StuffTheSpireMod.makeID("RubySignet");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("rubysignet.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("basesignet.png"));
     private static final RelicTier TIER = RelicTier.UNCOMMON;
 
     public RubySignet() {
