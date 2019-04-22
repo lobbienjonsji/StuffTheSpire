@@ -16,14 +16,14 @@ public class EventHorizon extends CustomCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("EventHorizon");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Power.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("silentnight.png");
     public static final CardColor COLOR = CardColor.BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.POWER;
+    private static final CardType TYPE = CardType.SKILL;
     private static final int COST = 1;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 3;
@@ -35,6 +35,7 @@ public class EventHorizon extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        this.exhaust = true;
     }
 
     @Override

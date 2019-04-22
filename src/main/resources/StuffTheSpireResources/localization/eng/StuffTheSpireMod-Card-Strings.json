@@ -130,7 +130,7 @@
   },
   "StuffTheSpire:EventHorizon": {
     "NAME": "Event Horizon",
-    "DESCRIPTION": "Can only be played when you have at least 3 Dark channelled. NL Gain !M! stuffthespire:Dark_Fade"
+    "DESCRIPTION": "Can only be played when you have at least 3 Dark channelled. NL Gain !M! stuffthespire:Dark_Fade. NL Exhaust."
   },
   "StuffTheSpire:DoubleShiv": {
     "NAME": "Double Shiv",
