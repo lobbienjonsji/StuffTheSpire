@@ -16,8 +16,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class PointBlank extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("PointBlank");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("pointblank.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("pointblank.png"));
 
     public PointBlank() {
         super(ID, IMG, OUTLINE, AbstractRelic.RelicTier.UNCOMMON, AbstractRelic.LandingSound.MAGICAL);

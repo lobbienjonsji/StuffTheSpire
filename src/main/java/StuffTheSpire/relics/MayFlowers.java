@@ -14,8 +14,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class MayFlowers extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("MayFlowers");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("flowers.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("flowers.png"));
     private static final RelicTier TIER = RelicTier.RARE;
 
     public MayFlowers() {

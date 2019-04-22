@@ -16,8 +16,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class PaperKangaroo extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("Kangaroo");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("kangaroo.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("kangaroo.png"));
 
     public PaperKangaroo() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, AbstractRelic.LandingSound.MAGICAL);

@@ -9,15 +9,14 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-
 import static StuffTheSpire.StuffTheSpireMod.makeRelicOutlinePath;
 import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 
 public class HighNoonTea extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("Tea");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("tea.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("tea.png"));
 
     public HighNoonTea() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);

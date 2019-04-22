@@ -15,8 +15,8 @@ import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 public class Nightcore extends CustomRelic {
     public static final String ID = StuffTheSpireMod.makeID("Nightcore");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("nightcore.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("basecore.png"));
 
     public Nightcore() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.MAGICAL);

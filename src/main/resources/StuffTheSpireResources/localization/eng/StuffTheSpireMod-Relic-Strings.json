@@ -1,7 +1,7 @@
 {
   "StuffTheSpire:NeowsTribute": {
     "NAME": "Neows Tribute",
-    "FLAVOR": "It is said, that Neow rewards those who have archieved great things.",
+    "FLAVOR": "It is said, that Neow rewards those who have achieved great things.",
     "DESCRIPTIONS": [
       "Right Click during Combat: Consume 1 Charge to gain 1 Intangible. Defeat Elites to gain Charges."
     ]
@@ -46,7 +46,7 @@
     "NAME": "Point Blank",
     "FLAVOR": "Not the evil one.",
     "DESCRIPTIONS": [
-      "Attacks that target multiple enemies deal #p50% more damage if only one enemy is in the room."
+      "Attacks that target multiple enemies deal #b50% more damage if only one enemy is in the room."
     ]
   },
   "StuffTheSpire:Nightcore": {
