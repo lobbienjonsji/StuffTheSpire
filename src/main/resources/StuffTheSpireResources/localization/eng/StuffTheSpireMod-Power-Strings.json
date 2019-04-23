@@ -46,5 +46,12 @@
                         " linked card from your discard pile.",
                         " linked cards from your discard piel."
                 ]
+        },
+        "StuffTheSpire:ResistPower": {
+                "NAME": "Resistance",
+                "DESCRIPTIONS": [
+                        "Whenever you exhaust a status card, gain ",
+                        " temporary max. HP."
+                ]
         }
 }

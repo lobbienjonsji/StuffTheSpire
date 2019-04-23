@@ -1,7 +1,10 @@
 {
   "modid": "StuffTheSpire",
   "name": "Stuff the Spire",
-  "author_list": ["Lobbienjonsji"],
+  "author_list": [
+    "Lobbienjonsji (Code & Art)",
+    "McMake (Art)"
+  ],
   "description": "Adds new cards, relics, events and other stuff with partial GifTheSpireLib integration.",
   "version": "${project.version}",
   "sts_version": "${SlayTheSpire.version}",
