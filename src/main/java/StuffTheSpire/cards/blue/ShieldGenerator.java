@@ -15,7 +15,7 @@ public class ShieldGenerator extends CustomCard implements StartupCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("ShieldGenerator");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Skill.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("ShieldGenerator.png");
     public static final CardColor COLOR = CardColor.BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

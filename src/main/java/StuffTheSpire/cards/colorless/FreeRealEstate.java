@@ -2,6 +2,7 @@ package StuffTheSpire.cards.colorless;
 
 import StuffTheSpire.StuffTheSpireMod;
 import StuffTheSpire.cards.AbstractDecreasingCard;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -40,6 +41,7 @@ public class FreeRealEstate extends AbstractDecreasingCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.player.gainGold(this.magicNumber);
+        AbstractDungeon.actionManager.addToTop(new DrawCardAction(AbstractDungeon.player, 1));
         if(this.magicNumber > 0) {
             baseMagicNumber--;
             magicNumber = baseMagicNumber;

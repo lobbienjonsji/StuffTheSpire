@@ -2,6 +2,7 @@ package StuffTheSpire.cards.colorless;
 
 import StuffTheSpire.StuffTheSpireMod;
 import StuffTheSpire.cards.AbstractDecreasingCard;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -44,6 +45,7 @@ public class PlasmaPulse extends AbstractDecreasingCard {
         for (int i = 0; i < this.magicNumber; i++) {
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
         }
+        AbstractDungeon.actionManager.addToTop(new DrawCardAction(AbstractDungeon.player, 1));
         if(this.magicNumber > 0) {
             baseMagicNumber--;
             magicNumber = baseMagicNumber;

@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.powers.PoisonPower;
 
 public class NuclearReactor extends CustomCard {
     public static final String ID = StuffTheSpireMod.makeID("NuclearReactor");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Skill.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("reactor.png");
     public static final CardColor COLOR = CardColor.BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
