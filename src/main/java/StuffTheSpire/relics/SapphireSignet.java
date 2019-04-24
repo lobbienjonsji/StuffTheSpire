@@ -30,7 +30,7 @@ public class SapphireSignet extends CustomRelic implements OnReceivePowerRelic {
 
     @Override
     public boolean onReceivePower(AbstractPower abstractPower, AbstractCreature abstractCreature) {
-        if(abstractPower.ID == "Frail" && abstractCreature.isPlayer)
+        if (abstractPower.ID == "Frail")
         {
             AbstractDungeon.player.heal(2);
         }

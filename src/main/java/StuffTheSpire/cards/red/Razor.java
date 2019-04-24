@@ -16,7 +16,7 @@ public class Razor extends AbstractLinkedCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("Razor");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Attack.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Razor.png");
     public static final CardColor COLOR = CardColor.RED;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

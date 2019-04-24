@@ -46,6 +46,7 @@ public class StuffTheSpireMod implements
     private static GifAnimation Plasmapunch = new GifAnimation("StuffTheSpireResources/images/animations/plasmapunchsheet.png", 11, 1, 0,0,0,0,false);
     private static GifAnimation Plasmapulse = new GifAnimation("StuffTheSpireResources/images/animations/plasmapulsesheet.png", 11, 1, 0,0,0,0,false);
     public static GifAnimation Dark_Fade = new GifAnimation("StuffTheSpireResources/images/animations/DarkFadeBg.png", 7, 7,0,0,0,0, true);
+    public static GifAnimation Unleash = new GifAnimation("StuffTheSpireResources/images/animations/unleashsheet.png", 4, 1, 0, 0, 0, 0, false);
     private static final String MODNAME = "Stuff the Spire";
     private static final String AUTHOR = "Lobbienjonsji"; // And pretty soon - You!
     private static final String DESCRIPTION = "Adds new cards, relics, events and other stuff with full GifTheSpireLib support";
@@ -152,6 +153,9 @@ public class StuffTheSpireMod implements
         Dark_Fade.create();
         Dark_Fade.setAnimationspeed(0.05F);
         Dark_Fade.addAsBackgroundAnimation();
+        Unleash.create();
+        Unleash.addAsCardAnimation("StuffTheSpire:Unleash");
+        Unleash.setAnimationspeed(0.25F);
         BaseMod.addEvent(TheShadows.ID, TheShadows.class, TheCity.ID);
     }
     public void receiveEditPotions() {
@@ -241,6 +245,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new Fury());
         BaseMod.addCard(new BrimstoneBlast());
         BaseMod.addCard(new GlassShard());
+        BaseMod.addCard(new Slingshot());
 
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);

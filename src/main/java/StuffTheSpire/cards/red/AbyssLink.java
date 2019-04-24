@@ -14,7 +14,7 @@ public class AbyssLink extends CustomCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("AbyssLink");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Power.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("AbyssLink.png");
     public static final CardColor COLOR = CardColor.RED;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

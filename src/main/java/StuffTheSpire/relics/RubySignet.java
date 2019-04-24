@@ -30,7 +30,7 @@ public class RubySignet extends CustomRelic implements OnReceivePowerRelic {
 
     @Override
     public boolean onReceivePower(AbstractPower abstractPower, AbstractCreature abstractCreature) {
-        if(abstractPower.ID == "Vulnerable" && abstractCreature.isPlayer)
+        if (abstractPower.ID == "Vulnerable")
         {
             AbstractDungeon.player.heal(2);
         }

@@ -14,7 +14,7 @@ public class Unleash extends AbstractLinkedCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("Unleash");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Skill.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("unleasha.png");
     public static final CardColor COLOR = CardColor.RED;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

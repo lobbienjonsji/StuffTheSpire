@@ -4,6 +4,7 @@ import StuffTheSpire.StuffTheSpireMod;
 import StuffTheSpire.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.InvisiblePower;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -31,12 +32,14 @@ public class PaperKangaroo extends CustomRelic {
 
     public void atTurnStartPostDraw() {
         for (AbstractPower p : AbstractDungeon.player.powers) {
-            if (p.amount > 1) {
-                AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p.owner, p.owner, p.ID, 1));
-            }else if (p.amount <= 1 && p.amount >= -1) {
-                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(p.owner, p.owner, p.ID));
-            }else if (p.amount < -1) {
-                AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p.owner, p.owner, p.ID, -1));
+            if (!(p instanceof InvisiblePower)) {
+                if (p.amount > 1) {
+                    AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p.owner, p.owner, p.ID, 1));
+                } else if (p.amount <= 1 && p.amount >= -1) {
+                    AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(p.owner, p.owner, p.ID));
+                } else if (p.amount < -1) {
+                    AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p.owner, p.owner, p.ID, -1));
+                }
             }
         }
     }

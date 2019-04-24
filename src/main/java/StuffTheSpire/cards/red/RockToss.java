@@ -20,7 +20,7 @@ public class RockToss extends CustomCard {
 
     public static final String ID = StuffTheSpireMod.makeID("RockToss");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Attack.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Rocktoss.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.COMMON;

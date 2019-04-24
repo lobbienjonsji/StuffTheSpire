@@ -30,7 +30,7 @@ public class EmeraldSignet extends CustomRelic implements OnReceivePowerRelic {
 
     @Override
     public boolean onReceivePower(AbstractPower abstractPower, AbstractCreature abstractCreature) {
-        if(abstractPower.ID == "Weakened" && abstractCreature.isPlayer)
+        if (abstractPower.ID == "Weakened")
         {
             AbstractDungeon.player.heal(2);
         }

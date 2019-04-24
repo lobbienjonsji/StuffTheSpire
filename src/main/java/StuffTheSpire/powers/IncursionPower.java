@@ -45,9 +45,9 @@ public class IncursionPower extends AbstractPower implements CloneablePowerInter
     public void atStartOfTurn()
     {
         if (this.amount == 0) {
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "IncursionPower"));
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "StuffTheSpire:IncursionPower"));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "IncursionPower", 1));
+            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "StuffTheSpire:IncursionPower", 1));
         }
     }
     @Override
@@ -67,3 +67,4 @@ public class IncursionPower extends AbstractPower implements CloneablePowerInter
         this.amount += stackAmount;
     }
 }
+
