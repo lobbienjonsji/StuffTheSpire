@@ -53,9 +53,8 @@ public class ShieldGenerator extends CustomCard implements StartupCard {
 
     @Override
     public void upgrade() {
-        upgradeName();
-        upgradeMagicNumber(timesUpgraded + 1);
-        initializeDescription();
+        upgradeMagicNumber(this.timesUpgraded + 1);
+        this.timesUpgraded += 1;
         this.upgraded = true;
         this.name = (NAME + "+" + this.timesUpgraded);
         initializeTitle();
@@ -72,7 +71,7 @@ public class ShieldGenerator extends CustomCard implements StartupCard {
         return true;
     }
 
-    public AbstractCard makeCopy() {
-        return new ShieldGenerator(this.timesUpgraded);
-    }
+    //public AbstractCard makeCopy() {
+      //  return new ShieldGenerator(this.timesUpgraded); WHY DOES THIS EVEN EXIST!?!?!?!?!?
+    //}
 }

@@ -25,7 +25,7 @@
     "NAME": "Coconut",
     "FLAVOR": "If you eat to much you'll get very fat.",
     "DESCRIPTIONS": [
-      "Upon Pickup gain #b5 max HP. At the start of each combat gain #b3 stuffthespire:Juggernaut."
+      "Upon Pickup gain #b5 max HP. At the start of each combat gain #b3 #ystuffthespire:Juggernaut."
     ]
   },
   "StuffTheSpire:Expresso": {
@@ -168,6 +168,14 @@
       "Upon pickup choose a card that does not exhaust on it's own. Whenever the card is exhausted, gain #b2 max. HP",
       "Whenever you exhaust ",
       ", gain #b2 max. HP"
+    ]
+  },
+  "StuffTheSpire:ChainArchetype": {
+    "NAME": "Chain Archetype",
+    "FLAVOR": "Only the cool kids could draw those back in the day.",
+    "DESCRIPTIONS": [
+      "Additional card rewards for the Chain Archetype may now appear with a 33% chance.",
+      "Chain Archetype card"
     ]
   }
 }

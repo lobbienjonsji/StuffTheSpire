@@ -22,6 +22,9 @@ import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.*;
@@ -43,6 +46,9 @@ public class StuffTheSpireMod implements
         PostInitializeSubscriber {
     public static final Logger logger = LogManager.getLogger(StuffTheSpireMod.class.getName());
     private static String modID;
+    public static CardGroup CommonChainArchetype;
+    public static CardGroup UncommonChainArchetype;
+    public static CardGroup RareChainArchetype;
     private static GifAnimation Plasmapunch = new GifAnimation("StuffTheSpireResources/images/animations/plasmapunchsheet.png", 11, 1, 0,0,0,0,false);
     private static GifAnimation Plasmapulse = new GifAnimation("StuffTheSpireResources/images/animations/plasmapulsesheet.png", 11, 1, 0,0,0,0,false);
     public static GifAnimation Dark_Fade = new GifAnimation("StuffTheSpireResources/images/animations/DarkFadeBg.png", 7, 7,0,0,0,0, true);
@@ -157,11 +163,38 @@ public class StuffTheSpireMod implements
         Unleash.addAsCardAnimation("StuffTheSpire:Unleash");
         Unleash.setAnimationspeed(0.25F);
         BaseMod.addEvent(TheShadows.ID, TheShadows.class, TheCity.ID);
+        CommonChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        UncommonChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        RareChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        CommonChainArchetype.addToTop(new ChainStrike());
+        CommonChainArchetype.addToTop(new Razor());
+        UncommonChainArchetype.addToTop(new Flow());
+        UncommonChainArchetype.addToTop(new Unleash());
+        UncommonChainArchetype.addToTop(new AbyssLink());
+        RareChainArchetype.addToTop(new Surge());
+        RareChainArchetype.addToTop(new Flurry());
     }
     public void receiveEditPotions() {
         logger.info("Beginning to edit potions");
         logger.info("Done editing potions");
     }
+
+    public static AbstractCard GetRandomChainArchetype()
+    {
+        AbstractCard.CardRarity rarity = AbstractDungeon.rollRarity();
+        switch (rarity)
+        {
+            case RARE:
+                return RareChainArchetype.getRandomCard(true);
+            case UNCOMMON:
+                return UncommonChainArchetype.getRandomCard(true);
+            case COMMON:
+                return CommonChainArchetype.getRandomCard(true);
+            default:
+                return  CommonChainArchetype.getRandomCard(true);
+        }
+    }
+
 
     @Override
     public void receiveEditRelics() {
@@ -191,6 +224,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new MayFlowers(), RelicType.SHARED);
         BaseMod.addRelic(new BlackoutCurse(), RelicType.SHARED);
         BaseMod.addRelic(new Gunfinga(), RelicType.SHARED);
+        BaseMod.addRelic(new ChainArchetype(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }

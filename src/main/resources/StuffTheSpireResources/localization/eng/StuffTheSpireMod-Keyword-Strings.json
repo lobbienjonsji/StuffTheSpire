@@ -106,5 +106,13 @@
       "chain"
     ],
     "DESCRIPTION": "Play a linked card."
+  },
+  {
+    "PROPER_NAME": "Archetype",
+    "NAMES": [
+      "archetype",
+      "archetype:"
+    ],
+    "DESCRIPTION": "When picked up, future reward screens may have an additional card reward for a specific archetype."
   }
 ]

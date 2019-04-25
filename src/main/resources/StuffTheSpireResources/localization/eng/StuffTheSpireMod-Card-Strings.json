@@ -161,8 +161,8 @@
   },
   "StuffTheSpire:ChainStrike": {
     "NAME": "Chain Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL stuffthespire:Chain !M! random stuffthespire:linked card in your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL stuffthespire:Chain !M! random stuffthespire:linked cards in your hand."
+    "DESCRIPTION": "Deal !D! Damage. NL stuffthespire:Chain !M! random stuffthespire:linked card in your hand. NL stuffthespire:Archetype: Chain.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL stuffthespire:Chain !M! random stuffthespire:linked cards in your hand. NL stuffthespire:Archetype: Chain."
   },
   "StuffTheSpire:Razor": {
     "NAME": "Razor Storm",

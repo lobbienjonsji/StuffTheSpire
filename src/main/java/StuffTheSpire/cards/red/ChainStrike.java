@@ -2,6 +2,7 @@ package StuffTheSpire.cards.red;
 
 import StuffTheSpire.StuffTheSpireMod;
 import StuffTheSpire.actions.ChainInHandAction;
+import StuffTheSpire.patches.cards.CardTags;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -21,6 +22,7 @@ public class ChainStrike extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
@@ -36,6 +38,7 @@ public class ChainStrike extends CustomCard {
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
         tags.add(CardTags.STRIKE);
+        tags.add(StuffTheSpire.patches.cards.CardTags.CHAINARCHETYPE);
     }
 
     @Override
@@ -48,6 +51,7 @@ public class ChainStrike extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
             upgradeMagicNumber(1);
         }
