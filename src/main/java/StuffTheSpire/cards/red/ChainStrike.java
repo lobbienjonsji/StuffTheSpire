@@ -2,7 +2,6 @@ package StuffTheSpire.cards.red;
 
 import StuffTheSpire.StuffTheSpireMod;
 import StuffTheSpire.actions.ChainInHandAction;
-import StuffTheSpire.patches.cards.CardTags;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -17,7 +16,7 @@ public class ChainStrike extends CustomCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("ChainStrike");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Attack.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Chainstrike.png");
     public static final CardColor COLOR = CardColor.RED;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
