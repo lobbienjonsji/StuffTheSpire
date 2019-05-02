@@ -225,6 +225,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new BlackoutCurse(), RelicType.SHARED);
         BaseMod.addRelic(new Gunfinga(), RelicType.SHARED);
         BaseMod.addRelic(new ChainArchetype(), RelicType.SHARED);
+        BaseMod.addRelic(new DarkSteelAnvil(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }

@@ -20,7 +20,7 @@ public class PointBlank extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("pointblank.png"));
 
     public PointBlank() {
-        super(ID, IMG, OUTLINE, AbstractRelic.RelicTier.UNCOMMON, AbstractRelic.LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, AbstractRelic.RelicTier.UNCOMMON, LandingSound.SOLID);
     }
     @Override
     public void atBattleStartPreDraw() {

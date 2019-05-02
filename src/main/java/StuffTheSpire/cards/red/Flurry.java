@@ -13,7 +13,7 @@ public class Flurry extends CustomCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("Flurry");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Skill.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Flurry.png");
     public static final CardColor COLOR = CardColor.RED;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

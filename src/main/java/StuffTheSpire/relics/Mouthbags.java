@@ -22,7 +22,7 @@ public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
     private boolean cardsSelected = true;
     AbstractCard selectedcard = null;
     public Mouthbags() {
-        super(ID, IMG, RelicTier.COMMON, LandingSound.CLINK);
+        super(ID, IMG, RelicTier.COMMON, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription()

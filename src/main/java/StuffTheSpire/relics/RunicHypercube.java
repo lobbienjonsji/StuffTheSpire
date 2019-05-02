@@ -18,7 +18,7 @@ public class RunicHypercube extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("hypercube.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("hypercube.png"));
     public RunicHypercube() {
-        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.HEAVY);
     }
     @Override
     public void atTurnStart()

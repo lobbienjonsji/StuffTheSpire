@@ -177,5 +177,12 @@
       "Additional card rewards for the Chain Archetype may now appear with a 33% chance.",
       "Chain Archetype card"
     ]
+  },
+  "StuffTheSpire:DarkSteelAnvil": {
+    "NAME": "Dark Steel Anvil",
+    "FLAVOR": "Made from steel infused with obsidian.",
+    "DESCRIPTIONS": [
+      "Upgrades are more effective."
+    ]
   }
 }

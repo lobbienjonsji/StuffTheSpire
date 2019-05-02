@@ -18,7 +18,7 @@ public class ChainArchetype extends CustomRelic {
     private static final RelicTier TIER = RelicTier.SPECIAL;
 
     public ChainArchetype() {
-        super(ID, IMG, OUTLINE, TIER, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, TIER, LandingSound.CLINK);
     }
 
     @Override

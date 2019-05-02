@@ -20,7 +20,7 @@ public class ForceGauntlet extends CustomRelic {
     private static final RelicTier TIER = RelicTier.UNCOMMON;
 
     public ForceGauntlet() {
-        super(ID, IMG, OUTLINE, TIER, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, TIER, LandingSound.FLAT);
     }
 
     @Override

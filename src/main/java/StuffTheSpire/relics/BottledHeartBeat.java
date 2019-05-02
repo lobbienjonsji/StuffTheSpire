@@ -29,7 +29,7 @@ public class BottledHeartBeat extends CustomRelic implements CustomBottleRelic, 
     private boolean cardSelected = true;
 
     public BottledHeartBeat() {
-        super(ID, IMG, OUTLINE, TIER, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, TIER, LandingSound.CLINK);
     }
 
     @Override
@@ -47,12 +47,13 @@ public class BottledHeartBeat extends CustomRelic implements CustomBottleRelic, 
         }
         AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
         CardGroup group = CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck);
+        CardGroup groupwoex = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for (AbstractCard c : group.group) {
-            if (c.exhaust || c.isEthereal) {
-                group.removeCard(c);
+            if (!c.exhaust && !c.isEthereal) {
+                groupwoex.addToBottom(c);
             }
         }
-        AbstractDungeon.gridSelectScreen.open(group, 1, name, false, false, false, false);
+        AbstractDungeon.gridSelectScreen.open(groupwoex, 1, name, false, false, false, false);
     }
 
     @Override

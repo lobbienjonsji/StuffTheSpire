@@ -20,7 +20,7 @@ public class ColdMirror extends CustomRelic {
     private static final RelicTier TIER = RelicTier.UNCOMMON;
 
     public ColdMirror() {
-        super(ID, IMG, OUTLINE, TIER, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, TIER, LandingSound.CLINK);
     }
 
     @Override

@@ -16,7 +16,7 @@ public class ChainStrike extends CustomCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("ChainStrike");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Chainstrike.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("ChainStrike.png");
     public static final CardColor COLOR = CardColor.RED;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

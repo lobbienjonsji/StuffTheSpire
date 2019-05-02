@@ -16,7 +16,7 @@ public class ReptileScales extends AbstractDecreasingCard {
 
     public static final String ID = StuffTheSpireMod.makeID("ReptileScales");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Skill.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Scales.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;

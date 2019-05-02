@@ -21,7 +21,7 @@ public class HeavyRock extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("heavyrock.png"));
     private boolean Dexremoved = false;
     public HeavyRock() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.HEAVY);
     }
     @Override
     public void atBattleStartPreDraw() {

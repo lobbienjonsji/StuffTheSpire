@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ConstrictedPower;
 
-
 import static StuffTheSpire.StuffTheSpireMod.makeRelicOutlinePath;
 import static StuffTheSpire.StuffTheSpireMod.makeRelicPath;
 
@@ -24,7 +23,7 @@ public class GrapeVine extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("grapevine.png"));
     private boolean trigger = false;
     public GrapeVine() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.SOLID);
     }
 
     @Override

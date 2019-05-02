@@ -21,7 +21,7 @@ public class Gunfinga extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("gunfinga.png"));
     private boolean StrengthRemoved = false;
     public Gunfinga() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
     }
     @Override
     public void atBattleStartPreDraw() {
