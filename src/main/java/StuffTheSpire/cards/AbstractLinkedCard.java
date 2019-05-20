@@ -16,7 +16,7 @@ public abstract class AbstractLinkedCard extends CustomCard {
 
     public void chain() {
         chainplayed = true;
-        AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(this, AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true, AbstractDungeon.cardRandomRng), 0));
+        AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(this, AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true, AbstractDungeon.miscRng), 0));
     }
 
     @Override

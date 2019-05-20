@@ -19,7 +19,7 @@ public class EvokeIcePatch {
         }
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c instanceof NuclearReactor) {
-                c.applyPowers();
+                c.setCostForTurn(c.costForTurn - 1);
             }
         }
         for (AbstractCard c : AbstractDungeon.player.discardPile.group) {

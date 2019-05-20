@@ -21,7 +21,7 @@ public class Pyroclast extends AbstractDecreasingCard {
 
     public static final String ID = StuffTheSpireMod.makeID("Pyroclast");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Attack.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Pyroclast.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;

@@ -44,7 +44,7 @@ public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
             this.cardsSelected = true;
             return;
         }
-        if (tmp.group.size() <= 3)
+        if (tmp.group.size() <= 1)
         {
             AbstractDungeon.player.masterDeck.group.clear();
             for (AbstractCard card : tmp.group)
@@ -56,7 +56,7 @@ public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
                 card.baseDamage += 4;
                 card.damage = card.baseDamage;
                 card.isDamageModified = true;
-                AbstractDungeon.player.masterDeck.addToBottom(card);
+                AbstractDungeon.player.masterDeck.addToTop(card);
                 selectedcard = card;
             }
             this.cardsSelected = true;
@@ -93,7 +93,7 @@ public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
                 card.baseDamage += 4;
                 card.damage = card.baseDamage;
                 card.isDamageModified = true;
-                AbstractDungeon.player.masterDeck.addToBottom(card);
+                AbstractDungeon.player.masterDeck.addToTop(card);
                 selectedcard = card;
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
@@ -121,6 +121,7 @@ public class Mouthbags extends CustomRelic implements CustomSavable<Integer> {
         card.baseDamage += 4;
         card.damage = card.baseDamage;
         card.isDamageModified = true;
-        AbstractDungeon.player.masterDeck.addToBottom(card);
+        AbstractDungeon.player.masterDeck.addToTop(card);
+        selectedcard = card;
     }
 }

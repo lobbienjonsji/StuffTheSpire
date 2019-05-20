@@ -184,5 +184,12 @@
     "DESCRIPTIONS": [
       "Upgrades are more effective."
     ]
+  },
+  "StuffTheSpire:OldFever": {
+    "NAME": "The old fever",
+    "FLAVOR": "And again and again, it's the same old songs.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if your discard pile is larger than your draw pile, discard a card and add a card from your discard pile to your hand."
+    ]
   }
 }

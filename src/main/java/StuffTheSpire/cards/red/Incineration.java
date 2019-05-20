@@ -18,7 +18,7 @@ public class Incineration extends AbstractDecreasingCard {
 
     public static final String ID = StuffTheSpireMod.makeID("Incineration");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Attack.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Incineration.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.COMMON;

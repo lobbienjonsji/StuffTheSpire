@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Plasma;
+import com.megacrit.cardcrawl.powers.ConfusionPower;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 
 public class NuclearReactor extends CustomCard {
@@ -57,10 +58,13 @@ public class NuclearReactor extends CustomCard {
     }
 
     public void applyPowers() {
-        if (COST - FrostEvokedThisturn >= 0) {
-            setCostForTurn(COST - FrostEvokedThisturn);
-        } else {
-            setCostForTurn(0);
+        if (!AbstractDungeon.player.hasPower(ConfusionPower.POWER_ID)) {
+            if (COST - FrostEvokedThisturn >= 0) {
+                setCostForTurn(COST - FrostEvokedThisturn);
+            } else {
+                setCostForTurn(0);
+            }
+
         }
     }
 

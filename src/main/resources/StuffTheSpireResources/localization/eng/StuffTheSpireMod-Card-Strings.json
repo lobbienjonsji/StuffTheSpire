@@ -5,7 +5,7 @@
   },
   "StuffTheSpire:PlasmaPulse": {
     "NAME": "Plasma Pulse",
-    "DESCRIPTION": "Gain !B! block !StuffTheSpire:Diminishing! times. Draw 1 card. NL stuffthespire:Decreasing 1."
+    "DESCRIPTION": "Gain !B! Block !StuffTheSpire:Diminishing! times. Draw 1 card. NL stuffthespire:Decreasing 1."
   },
   "StuffTheSpire:FreeRealEstate": {
     "NAME": "Free Real Estate",
@@ -21,11 +21,11 @@
   },
   "StuffTheSpire:Recharge": {
     "NAME": "Recharge",
-    "DESCRIPTION": "stuffthespire:Unique. NL stuffthespire:Recharge !M!. Draw 1 card. NL Purge."
+    "DESCRIPTION": "stuffthespire:Unique. NL stuffthespire:Recharge !M!. NL Purge."
   },
   "StuffTheSpire:ReptileScales": {
     "NAME": "ReptileScales",
-    "DESCRIPTION": "Gain !StuffTheSpire:Diminishing! Plated Armor. NL Gain !B! block. NL stuffthespire:Decreasing 1."
+    "DESCRIPTION": "Gain !StuffTheSpire:Diminishing! Plated Armor. NL Gain !B! Block. NL stuffthespire:Decreasing 1."
   },
   "StuffTheSpire:Shiver": {
     "NAME": "Shiver",
@@ -34,7 +34,7 @@
   },
   "StuffTheSpire:LaunchingStrike": {
     "NAME": "Launching Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Apply stuffthespire:Flight. NL When the target looses stuffthespire:Flight, deal !D! Damage again."
+    "DESCRIPTION": "Deal !D! Damage. NL Apply stuffthespire:Flight. NL When the target loses stuffthespire:Flight, deal !D! Damage again."
   },
   "StuffTheSpire:Synthwave": {
     "NAME": "Synthwave",
@@ -89,8 +89,8 @@
     "NAME": "Incineration",
     "DESCRIPTION": "Deal !D! Damage.",
     "EXTENDED_DESCRIPTION": [
-      " add !StuffTheSpire:Diminishing! stuffthespire:Flame_Burst into you hand. NL stuffthespire:Decreasing 1.",
-      " add !StuffTheSpire:Diminishing! stuffthespire:Flame_Bursts into you hand. NL stuffthespire:Decreasing 1."
+      " Add !StuffTheSpire:Diminishing! stuffthespire:Flame_Burst into you hand. NL stuffthespire:Decreasing 1.",
+      " Add !StuffTheSpire:Diminishing! stuffthespire:Flame_Bursts into you hand. NL stuffthespire:Decreasing 1."
     ]
   },
   "StuffTheSpire:BumpUp": {
