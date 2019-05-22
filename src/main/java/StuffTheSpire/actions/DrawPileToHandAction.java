@@ -8,11 +8,11 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 
 public class DrawPileToHandAction extends AbstractGameAction {
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("DiscardPileToTopOfDeckAction");
-    public static final String[] TEXT = uiStrings.TEXT;
+    private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings("StuffTheSpire:OldFever");
+    public static final String[] TEXT = relicStrings.DESCRIPTIONS;
     private AbstractPlayer p;
 
     public DrawPileToHandAction(AbstractCreature source) {
@@ -39,7 +39,7 @@ public class DrawPileToHandAction extends AbstractGameAction {
                 this.p.hand.addToTop(tmp);
             }
             if (this.p.discardPile.group.size() > this.amount) {
-                AbstractDungeon.gridSelectScreen.open(this.p.discardPile, 1, TEXT[0], false, false, false, false);
+                AbstractDungeon.gridSelectScreen.open(this.p.discardPile, 1, TEXT[1], false, false, false, false);
                 tickDuration();
                 return;
             }

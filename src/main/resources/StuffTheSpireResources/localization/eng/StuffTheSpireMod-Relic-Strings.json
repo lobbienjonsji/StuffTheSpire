@@ -189,7 +189,16 @@
     "NAME": "The old fever",
     "FLAVOR": "And again and again, it's the same old songs.",
     "DESCRIPTIONS": [
-      "At the start of your turn, if your discard pile is larger than your draw pile, discard a card and add a card from your discard pile to your hand."
+      "At the start of your turn, if your discard pile is larger than your draw pile, discard a card and add a card from your discard pile to your hand.",
+      "Choose a card to add into your hand."
+    ]
+  },
+  "StuffTheSpire:Rhapsscallions": {
+    "NAME": "Rhap's Scallions",
+    "FLAVOR": "Get it? Because, like, scallions are a vegetable?",
+    "DESCRIPTIONS": [
+      "Upon pickup remove a card from your deck, then gain max. HP equal to 60 divided by your deck size.",
+      "Choose a card to remove from your deck."
     ]
   }
 }
