@@ -1,6 +1,7 @@
 package StuffTheSpire.patches.relics;
 
 import StuffTheSpire.relics.ChainArchetype;
+import StuffTheSpire.relics.ShivArchetype;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -16,9 +17,14 @@ public class AbstractRoomUpdatePatch {
             locator = Locator.class
     )
     public static void Insert(AbstractRoom __instance) {
-        AbstractRelic archetype = AbstractDungeon.player.getRelic(ChainArchetype.ID);
-        if (archetype != null) {
-            archetype.onTrigger();
+        AbstractRelic ChainArcheType = AbstractDungeon.player.getRelic(ChainArchetype.ID);
+        if (ChainArcheType != null) {
+            ChainArcheType.onTrigger();
+            AbstractDungeon.combatRewardScreen.setupItemReward();
+        }
+        AbstractRelic ShivArcheType = AbstractDungeon.player.getRelic(ShivArchetype.ID);
+        if (ShivArcheType != null) {
+            ShivArcheType.onTrigger();
             AbstractDungeon.combatRewardScreen.setupItemReward();
         }
     }
