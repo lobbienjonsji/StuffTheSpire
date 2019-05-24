@@ -14,7 +14,7 @@ public class FinalStruggle extends CustomCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("FinalStruggle");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Attack.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("FStruggle.png");
     public static final CardColor COLOR = CardColor.GREEN;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

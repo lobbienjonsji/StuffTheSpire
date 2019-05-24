@@ -11,6 +11,8 @@ import StuffTheSpire.relics.*;
 import StuffTheSpire.util.IDCheckDontTouchPls;
 import StuffTheSpire.util.TextureLoader;
 import StuffTheSpire.variables.DiminishingVariable;
+import archetypeAPI.archetypes.AbstractArchetype;
+import archetypeAPI.cards.ArchetypeSelectCard;
 import basemod.BaseMod;
 import basemod.ModLabel;
 import basemod.ModPanel;
@@ -20,10 +22,12 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
+import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
@@ -43,12 +47,16 @@ public class StuffTheSpireMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        PreStartGameSubscriber {
     public static final Logger logger = LogManager.getLogger(StuffTheSpireMod.class.getName());
     private static String modID;
+    public static boolean HasArchetypeAPI;
+    public static boolean HasArchetypeRelic = false;
     public static CardGroup CommonChainArchetype;
     public static CardGroup UncommonChainArchetype;
     public static CardGroup RareChainArchetype;
+    public static CardGroup ShivArchetype;
     private static GifAnimation Plasmapunch = new GifAnimation("StuffTheSpireResources/images/animations/plasmapunchsheet.png", 11, 1, 0,0,0,0,false);
     private static GifAnimation Plasmapulse = new GifAnimation("StuffTheSpireResources/images/animations/plasmapulsesheet.png", 11, 1, 0,0,0,0,false);
     public static GifAnimation Dark_Fade = new GifAnimation("StuffTheSpireResources/images/animations/DarkFadeBg.png", 7, 7,0,0,0,0, true);
@@ -137,6 +145,38 @@ public class StuffTheSpireMod implements
         logger.info("Wer das ließt ist doof");
     }
 
+    public static AbstractCard GetRandomShivArchetype() {
+        AbstractCard.CardRarity rarity = AbstractDungeon.rollRarity();
+        switch (rarity) {
+            case RARE:
+                return ShivArchetype.getRandomCard(true, AbstractCard.CardRarity.RARE);
+            case UNCOMMON:
+                return ShivArchetype.getRandomCard(true, AbstractCard.CardRarity.UNCOMMON);
+            case COMMON:
+                return ShivArchetype.getRandomCard(true, AbstractCard.CardRarity.COMMON);
+            default:
+                return ShivArchetype.getRandomCard(true, AbstractCard.CardRarity.COMMON);
+        }
+    }
+
+    public void receiveEditPotions() {
+        logger.info("Beginning to edit potions");
+        logger.info("Done editing potions");
+    }
+
+    public static AbstractCard GetRandomChainArchetype() {
+        AbstractCard.CardRarity rarity = AbstractDungeon.rollRarity();
+        switch (rarity) {
+            case RARE:
+                return RareChainArchetype.getRandomCard(true);
+            case UNCOMMON:
+                return UncommonChainArchetype.getRandomCard(true);
+            case COMMON:
+                return CommonChainArchetype.getRandomCard(true);
+            default:
+                return CommonChainArchetype.getRandomCard(true);
+        }
+    }
 
     @Override
     public void receivePostInitialize() {
@@ -173,28 +213,8 @@ public class StuffTheSpireMod implements
         UncommonChainArchetype.addToTop(new AbyssLink());
         RareChainArchetype.addToTop(new Surge());
         RareChainArchetype.addToTop(new Flurry());
+        ShivArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
     }
-    public void receiveEditPotions() {
-        logger.info("Beginning to edit potions");
-        logger.info("Done editing potions");
-    }
-
-    public static AbstractCard GetRandomChainArchetype()
-    {
-        AbstractCard.CardRarity rarity = AbstractDungeon.rollRarity();
-        switch (rarity)
-        {
-            case RARE:
-                return RareChainArchetype.getRandomCard(true);
-            case UNCOMMON:
-                return UncommonChainArchetype.getRandomCard(true);
-            case COMMON:
-                return CommonChainArchetype.getRandomCard(true);
-            default:
-                return  CommonChainArchetype.getRandomCard(true);
-        }
-    }
-
 
     @Override
     public void receiveEditRelics() {
@@ -228,6 +248,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new DarkSteelAnvil(), RelicType.SHARED);
         BaseMod.addRelic(new OldFever(), RelicType.SHARED);
         BaseMod.addRelic(new Rhapsscallions(), RelicType.SHARED);
+        BaseMod.addRelic(new ShivArchetype(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -283,7 +304,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new BrimstoneBlast());
         BaseMod.addCard(new GlassShard());
         BaseMod.addCard(new Slingshot());
-
+        HasArchetypeAPI = Loader.isModLoaded("archetypeapi");
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
         UnlockTracker.unlockCard(PlasmaPulse.ID);
@@ -322,4 +343,21 @@ public class StuffTheSpireMod implements
         return getModID() + ":" + idText;
     }
 
+    @Override
+    public void receivePreStartGame() {
+        if (Loader.isModLoaded("archetypeapi")) {
+            CardGroup SilentCards = AbstractArchetype.getArchetypeSelectCards(AbstractPlayer.PlayerClass.THE_SILENT);
+            SilentCards.clear();
+            for (int i = 0; i < SilentCards.size(); i++) {
+                ArchetypeSelectCard B = (ArchetypeSelectCard) SilentCards.getNCardFromTop(i);
+                if (B.getArchetypeName().equals("Shiv")) {
+                    B.archetypeEffect(ShivArchetype);
+                    for (AbstractCard C : ShivArchetype.group) {
+                        logger.info(C.name);
+                    }
+                }
+            }
+        }
+        HasArchetypeRelic = false;
+    }
 }

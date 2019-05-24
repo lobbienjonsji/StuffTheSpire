@@ -197,5 +197,13 @@
   "StuffTheSpire:BrimstoneBlast": {
     "NAME": "Brimstone Blast",
     "DESCRIPTION": "Deal !D! damage and apply !M! poison to all enemies. NL Add a Burn to your hand. NL Exhaust."
+  },
+  "ShivArchetype": {
+    "NAME": "ShivArche",
+    "DESCRIPTION": "NL Archetype: Shivs"
+  },
+  "OrbArchetype": {
+    "NAME": "",
+    "DESCRIPTION": "NL Archetype: Orbs"
   }
 }

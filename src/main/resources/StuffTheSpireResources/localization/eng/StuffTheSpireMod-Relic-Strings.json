@@ -200,5 +200,13 @@
       "Upon pickup remove a card from your deck, then gain max. HP equal to 60 divided by your deck size.",
       "Choose a card to remove from your deck."
     ]
+  },
+  "StuffTheSpire:ShivArchetype": {
+    "NAME": "Shiv Archetype",
+    "FLAVOR": "Stabby stab!",
+    "DESCRIPTIONS": [
+      "Additional card rewards for the Shiv Archetype may now appear with a 33% chance.",
+      "Shiv Archetype card"
+    ]
   }
 }

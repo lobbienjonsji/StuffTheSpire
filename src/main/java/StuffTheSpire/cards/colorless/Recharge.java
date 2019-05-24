@@ -15,7 +15,7 @@ public class Recharge extends CustomCard {
 
     public static final String ID = StuffTheSpireMod.makeID("Recharge");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Skill.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Recharge.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.RARE;

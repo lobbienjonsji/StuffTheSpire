@@ -10,13 +10,13 @@ import com.megacrit.cardcrawl.rewards.RewardItem;
 
 import static StuffTheSpire.StuffTheSpireMod.*;
 
-public class ChainArchetype extends CustomRelic {
-    public static final String ID = StuffTheSpireMod.makeID("ChainArchetype");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("ChainArchetype.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("ChainArchetype.png"));
+public class ShivArchetype extends CustomRelic {
+    public static final String ID = StuffTheSpireMod.makeID("ShivArchetype");
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("ShivArchetype.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("ShivArchetype.png"));
     private static final RelicTier TIER = RelicTier.SPECIAL;
 
-    public ChainArchetype() {
+    public ShivArchetype() {
         super(ID, IMG, OUTLINE, TIER, LandingSound.CLINK);
         HasArchetypeRelic = true;
     }
@@ -27,17 +27,17 @@ public class ChainArchetype extends CustomRelic {
     }
 
     @Override
-    public void onTrigger()
-    {
-        int random = AbstractDungeon.cardRng.random(0,2);
-        if(random == 2) {
+    public void onTrigger() {
+        int random = AbstractDungeon.cardRng.random(0, 2);
+        if (random == 2) {
             RewardItem SpecialReward = new RewardItem();
             SpecialReward.type = RewardItem.RewardType.CARD;
             SpecialReward.text = DESCRIPTIONS[1];
             SpecialReward.cards.clear();
-            AbstractCard c = StuffTheSpireMod.GetRandomChainArchetype();
+            AbstractCard c = GetRandomShivArchetype();
             SpecialReward.cards.add(c.makeCopy());
             AbstractDungeon.getCurrRoom().rewards.add(0, SpecialReward);
         }
     }
 }
+

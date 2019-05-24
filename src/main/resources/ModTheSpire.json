@@ -10,6 +10,9 @@
   "sts_version": "${SlayTheSpire.version}",
   "mts_version": "${ModTheSpire.version}",
   "dependencies": ["basemod", "stslib", "GifTheSpireLib"],
+  "optional_dependencies": [
+    "archetypeapi"
+  ],
   "update_json": ""
 }
 
