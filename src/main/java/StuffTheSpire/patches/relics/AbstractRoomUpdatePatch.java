@@ -1,7 +1,9 @@
 package StuffTheSpire.patches.relics;
 
 import StuffTheSpire.relics.ChainArchetype;
+import StuffTheSpire.relics.LightningArchetype;
 import StuffTheSpire.relics.ShivArchetype;
+import StuffTheSpire.relics.StrikeArchetype;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -27,13 +29,21 @@ public class AbstractRoomUpdatePatch {
             ShivArcheType.onTrigger();
             AbstractDungeon.combatRewardScreen.setupItemReward();
         }
+        AbstractRelic LightningArcheType = AbstractDungeon.player.getRelic(LightningArchetype.ID);
+        if (LightningArcheType != null) {
+            LightningArcheType.onTrigger();
+            AbstractDungeon.combatRewardScreen.setupItemReward();
+        }
+        AbstractRelic StrikeArcheType = AbstractDungeon.player.getRelic(StrikeArchetype.ID);
+        if (StrikeArcheType != null) {
+            StrikeArcheType.onTrigger();
+            AbstractDungeon.combatRewardScreen.setupItemReward();
+        }
     }
 
     private static class Locator extends SpireInsertLocator {
         @Override
         public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
-            // Insert here to be after the game is saved
-            // Avoids weird save/load issues
             Matcher finalMatcher = new Matcher.FieldAccessMatcher(AbstractDungeon.class, "loading_post_combat");
             int[] found = LineFinder.findAllInOrder(ctMethodToPatch, finalMatcher);
             return new int[]{found[found.length - 1]};

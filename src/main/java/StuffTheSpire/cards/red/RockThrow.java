@@ -15,12 +15,12 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.NightmarePower;
 
-public class RockToss extends CustomCard {
+public class RockThrow extends CustomCard {
 
 
-    public static final String ID = StuffTheSpireMod.makeID("RockToss");
+    public static final String ID = StuffTheSpireMod.makeID("RockThrow");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Rocktoss.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("RockThrow.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -33,7 +33,7 @@ public class RockToss extends CustomCard {
     private static final int BLOCK = 0;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-    public RockToss() {
+    public RockThrow() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;

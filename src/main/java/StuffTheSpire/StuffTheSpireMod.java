@@ -57,6 +57,8 @@ public class StuffTheSpireMod implements
     public static CardGroup UncommonChainArchetype;
     public static CardGroup RareChainArchetype;
     public static CardGroup ShivArchetype;
+    public static CardGroup LightningArchetype;
+    public static CardGroup StrikeArchetype;
     private static GifAnimation Plasmapunch = new GifAnimation("StuffTheSpireResources/images/animations/plasmapunchsheet.png", 11, 1, 0,0,0,0,false);
     private static GifAnimation Plasmapulse = new GifAnimation("StuffTheSpireResources/images/animations/plasmapulsesheet.png", 11, 1, 0,0,0,0,false);
     public static GifAnimation Dark_Fade = new GifAnimation("StuffTheSpireResources/images/animations/DarkFadeBg.png", 7, 7,0,0,0,0, true);
@@ -145,17 +147,17 @@ public class StuffTheSpireMod implements
         logger.info("Wer das ließt ist doof");
     }
 
-    public static AbstractCard GetRandomShivArchetype() {
+    public static AbstractCard GetRandomArchetype(CardGroup c) {
         AbstractCard.CardRarity rarity = AbstractDungeon.rollRarity();
         switch (rarity) {
             case RARE:
-                return ShivArchetype.getRandomCard(true, AbstractCard.CardRarity.RARE);
+                return c.getRandomCard(true, AbstractCard.CardRarity.RARE);
             case UNCOMMON:
-                return ShivArchetype.getRandomCard(true, AbstractCard.CardRarity.UNCOMMON);
+                return c.getRandomCard(true, AbstractCard.CardRarity.UNCOMMON);
             case COMMON:
-                return ShivArchetype.getRandomCard(true, AbstractCard.CardRarity.COMMON);
+                return c.getRandomCard(true, AbstractCard.CardRarity.COMMON);
             default:
-                return ShivArchetype.getRandomCard(true, AbstractCard.CardRarity.COMMON);
+                return c.getRandomCard(true, AbstractCard.CardRarity.COMMON);
         }
     }
 
@@ -214,6 +216,8 @@ public class StuffTheSpireMod implements
         RareChainArchetype.addToTop(new Surge());
         RareChainArchetype.addToTop(new Flurry());
         ShivArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        LightningArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        StrikeArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
     }
 
     @Override
@@ -249,6 +253,8 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new OldFever(), RelicType.SHARED);
         BaseMod.addRelic(new Rhapsscallions(), RelicType.SHARED);
         BaseMod.addRelic(new ShivArchetype(), RelicType.SHARED);
+        BaseMod.addRelic(new LightningArchetype(), RelicType.SHARED);
+        BaseMod.addRelic(new StrikeArchetype(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -275,7 +281,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new Discharge());
         BaseMod.addCard(new LoadUp());
         BaseMod.addCard(new Python());
-        BaseMod.addCard(new RockToss());
+        BaseMod.addCard(new RockThrow());
         BaseMod.addCard(new Injection());
         BaseMod.addCard(new FlameBurst());
         BaseMod.addCard(new Incineration());
@@ -343,16 +349,36 @@ public class StuffTheSpireMod implements
         return getModID() + ":" + idText;
     }
 
+
     @Override
     public void receivePreStartGame() {
         if (Loader.isModLoaded("archetypeapi")) {
             CardGroup SilentCards = AbstractArchetype.getArchetypeSelectCards(AbstractPlayer.PlayerClass.THE_SILENT);
-            SilentCards.clear();
+            CardGroup DefectCards = AbstractArchetype.getArchetypeSelectCards(AbstractPlayer.PlayerClass.DEFECT);
+            CardGroup IronCladCards = AbstractArchetype.getArchetypeSelectCards(AbstractPlayer.PlayerClass.IRONCLAD);
             for (int i = 0; i < SilentCards.size(); i++) {
                 ArchetypeSelectCard B = (ArchetypeSelectCard) SilentCards.getNCardFromTop(i);
                 if (B.getArchetypeName().equals("Shiv")) {
                     B.archetypeEffect(ShivArchetype);
                     for (AbstractCard C : ShivArchetype.group) {
+                        logger.info(C.name);
+                    }
+                }
+            }
+            for (int i = 0; i < DefectCards.size(); i++) {
+                ArchetypeSelectCard B = (ArchetypeSelectCard) DefectCards.getNCardFromTop(i);
+                if (B.getArchetypeName().equals("Lightning")) {
+                    B.archetypeEffect(LightningArchetype);
+                    for (AbstractCard C : LightningArchetype.group) {
+                        logger.info(C.name);
+                    }
+                }
+            }
+            for (int i = 0; i < IronCladCards.size(); i++) {
+                ArchetypeSelectCard B = (ArchetypeSelectCard) IronCladCards.getNCardFromTop(i);
+                if (B.getArchetypeName().equals("Strike")) {
+                    B.archetypeEffect(StrikeArchetype);
+                    for (AbstractCard C : StrikeArchetype.group) {
                         logger.info(C.name);
                     }
                 }

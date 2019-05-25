@@ -72,8 +72,8 @@
     "NAME": "Slingshot",
     "DESCRIPTION": "Exhaust a card. Deal !D! Damage. Apply !M! Vulnerable."
   },
-  "StuffTheSpire:RockToss": {
-    "NAME": "Rock Toss",
+  "StuffTheSpire:RockThrow": {
+    "NAME": "Rock Throw",
     "DESCRIPTION": "Deal !D! Damage. Draw 1 card. NL If this card is exhausted add a copy of this card to your hand next turn. It costs 0 for the rest of combat.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. Draw 1 card. NL If this card is exhausted add !M! copies of this card to your hand next turn. They cost 0 for the rest of combat."
   },
@@ -200,10 +200,14 @@
   },
   "ShivArchetype": {
     "NAME": "ShivArche",
-    "DESCRIPTION": "NL Archetype: Shivs"
+    "DESCRIPTION": " NL stuffthespire:Archetype: Shivs."
   },
-  "OrbArchetype": {
+  "LightningArchetype": {
     "NAME": "",
-    "DESCRIPTION": "NL Archetype: Orbs"
+    "DESCRIPTION": " NL stuffthespire:Archetype: Lightning"
+  },
+  "StrikeArchetype": {
+    "NAME": "",
+    "DESCRIPTION": " NL stuffthespire:Archetype: Strikes"
   }
 }

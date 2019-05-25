@@ -208,5 +208,21 @@
       "Additional card rewards for the Shiv Archetype may now appear with a 33% chance.",
       "Shiv Archetype card"
     ]
+  },
+  "StuffTheSpire:LightningArchetype": {
+    "NAME": "Lightning Archetype",
+    "FLAVOR": "THUNDER oaoaoaoAAAAAOA!",
+    "DESCRIPTIONS": [
+      "Additional card rewards for the Lightning Archetype may now appear with a 33% chance.",
+      "Lightning Archetype card"
+    ]
+  },
+  "StuffTheSpire:StrikeArchetype": {
+    "NAME": "Strike Archetype",
+    "FLAVOR": "Im struck.",
+    "DESCRIPTIONS": [
+      "Additional card rewards for the Strike Archetype may now appear with a 33% chance.",
+      "Strike Archetype card"
+    ]
   }
 }

@@ -113,6 +113,6 @@
       "archetype",
       "archetype:"
     ],
-    "DESCRIPTION": "When picked up, future reward screens may have an additional card reward for a specific archetype."
+    "DESCRIPTION": "When picked up, future reward screens may have an additional card reward for a specific archetype. NL You can only have one Archetype active at once."
   }
 ]
