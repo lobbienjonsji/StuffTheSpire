@@ -204,10 +204,14 @@
   },
   "LightningArchetype": {
     "NAME": "",
-    "DESCRIPTION": " NL stuffthespire:Archetype: Lightning"
+    "DESCRIPTION": " NL stuffthespire:Archetype: Lightning."
   },
   "StrikeArchetype": {
     "NAME": "",
-    "DESCRIPTION": " NL stuffthespire:Archetype: Strikes"
+    "DESCRIPTION": " NL stuffthespire:Archetype: Strikes."
+  },
+  "DiscardArchetype": {
+    "NAME": "",
+    "DESCRIPTION": " NL stuffthespire:Archetype: Discard."
   }
 }

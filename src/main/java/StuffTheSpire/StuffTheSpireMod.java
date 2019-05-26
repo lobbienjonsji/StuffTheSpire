@@ -59,6 +59,7 @@ public class StuffTheSpireMod implements
     public static CardGroup ShivArchetype;
     public static CardGroup LightningArchetype;
     public static CardGroup StrikeArchetype;
+    public static CardGroup DiscardArchetype;
     private static GifAnimation Plasmapunch = new GifAnimation("StuffTheSpireResources/images/animations/plasmapunchsheet.png", 11, 1, 0,0,0,0,false);
     private static GifAnimation Plasmapulse = new GifAnimation("StuffTheSpireResources/images/animations/plasmapulsesheet.png", 11, 1, 0,0,0,0,false);
     public static GifAnimation Dark_Fade = new GifAnimation("StuffTheSpireResources/images/animations/DarkFadeBg.png", 7, 7,0,0,0,0, true);
@@ -218,6 +219,7 @@ public class StuffTheSpireMod implements
         ShivArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         LightningArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         StrikeArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        DiscardArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
     }
 
     @Override
@@ -361,6 +363,12 @@ public class StuffTheSpireMod implements
                 if (B.getArchetypeName().equals("Shiv")) {
                     B.archetypeEffect(ShivArchetype);
                     for (AbstractCard C : ShivArchetype.group) {
+                        logger.info(C.name);
+                    }
+                }
+                if (B.getArchetypeName().equals("Discard")) {
+                    B.archetypeEffect(DiscardArchetype);
+                    for (AbstractCard C : DiscardArchetype.group) {
                         logger.info(C.name);
                     }
                 }

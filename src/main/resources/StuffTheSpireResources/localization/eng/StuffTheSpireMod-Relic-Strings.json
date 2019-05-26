@@ -224,5 +224,13 @@
       "Additional card rewards for the Strike Archetype may now appear with a 33% chance.",
       "Strike Archetype card"
     ]
+  },
+  "StuffTheSpire:DiscardArchetype": {
+    "NAME": "Discard Archetype",
+    "FLAVOR": "Discarded and rejected. Not this time!",
+    "DESCRIPTIONS": [
+      "Additional card rewards for the Discard Archetype may now appear with a 33% chance.",
+      "Discard Archetype card"
+    ]
   }
 }

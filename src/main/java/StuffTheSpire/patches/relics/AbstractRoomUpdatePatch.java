@@ -1,9 +1,6 @@
 package StuffTheSpire.patches.relics;
 
-import StuffTheSpire.relics.ChainArchetype;
-import StuffTheSpire.relics.LightningArchetype;
-import StuffTheSpire.relics.ShivArchetype;
-import StuffTheSpire.relics.StrikeArchetype;
+import StuffTheSpire.relics.*;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -37,6 +34,11 @@ public class AbstractRoomUpdatePatch {
         AbstractRelic StrikeArcheType = AbstractDungeon.player.getRelic(StrikeArchetype.ID);
         if (StrikeArcheType != null) {
             StrikeArcheType.onTrigger();
+            AbstractDungeon.combatRewardScreen.setupItemReward();
+        }
+        AbstractRelic DiscardArcheType = AbstractDungeon.player.getRelic(DiscardArchetype.ID);
+        if (DiscardArcheType != null) {
+            DiscardArcheType.onTrigger();
             AbstractDungeon.combatRewardScreen.setupItemReward();
         }
     }
