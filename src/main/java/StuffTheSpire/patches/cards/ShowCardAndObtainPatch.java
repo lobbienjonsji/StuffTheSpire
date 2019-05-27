@@ -8,6 +8,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.SoulGroup;
 import com.megacrit.cardcrawl.cards.blue.BallLightning;
+import com.megacrit.cardcrawl.cards.blue.ColdSnap;
 import com.megacrit.cardcrawl.cards.green.BladeDance;
 import com.megacrit.cardcrawl.cards.green.Prepared;
 import com.megacrit.cardcrawl.cards.red.PerfectedStrike;
@@ -43,6 +44,11 @@ public class ShowCardAndObtainPatch {
             }
             if (card.cardID.equals(Prepared.ID) && Loader.isModLoaded("archetypeapi") && !StuffTheSpireMod.HasArchetypeRelic) {
                 DiscardArchetype relic = new DiscardArchetype();
+                relic.updateDescription(AbstractDungeon.player.chosenClass);
+                AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, relic);
+            }
+            if (card.cardID.equals(ColdSnap.ID) && Loader.isModLoaded("archetypeapi") && !StuffTheSpireMod.HasArchetypeRelic) {
+                FrostArchetype relic = new FrostArchetype();
                 relic.updateDescription(AbstractDungeon.player.chosenClass);
                 AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, relic);
             }

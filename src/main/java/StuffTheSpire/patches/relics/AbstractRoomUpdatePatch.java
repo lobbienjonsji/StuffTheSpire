@@ -41,6 +41,11 @@ public class AbstractRoomUpdatePatch {
             DiscardArcheType.onTrigger();
             AbstractDungeon.combatRewardScreen.setupItemReward();
         }
+        AbstractRelic FrostArcheType = AbstractDungeon.player.getRelic(FrostArchetype.ID);
+        if (FrostArcheType != null) {
+            FrostArcheType.onTrigger();
+            AbstractDungeon.combatRewardScreen.setupItemReward();
+        }
     }
 
     private static class Locator extends SpireInsertLocator {

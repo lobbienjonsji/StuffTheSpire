@@ -213,5 +213,9 @@
   "DiscardArchetype": {
     "NAME": "",
     "DESCRIPTION": " NL stuffthespire:Archetype: Discard."
+  },
+  "FrostArchetype": {
+    "NAME": "",
+    "DESCRIPTION": " NL stuffthespire:Archetype: Frost."
   }
 }

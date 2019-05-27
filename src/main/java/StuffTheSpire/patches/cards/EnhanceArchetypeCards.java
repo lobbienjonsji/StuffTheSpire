@@ -5,6 +5,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.blue.BallLightning;
+import com.megacrit.cardcrawl.cards.blue.ColdSnap;
 import com.megacrit.cardcrawl.cards.green.BladeDance;
 import com.megacrit.cardcrawl.cards.green.Prepared;
 import com.megacrit.cardcrawl.cards.red.PerfectedStrike;
@@ -18,6 +19,7 @@ public class EnhanceArchetypeCards {
         private static final CardStrings BLSTRINGS = CardCrawlGame.languagePack.getCardStrings("LightningArchetype");
         private static final CardStrings PSSTRINGS = CardCrawlGame.languagePack.getCardStrings("StrikeArchetype");
         private static final CardStrings PPSTRINGS = CardCrawlGame.languagePack.getCardStrings("DiscardArchetype");
+        private static final CardStrings CSSTRINGS = CardCrawlGame.languagePack.getCardStrings("FrostArchetype");
         @SpirePostfixPatch
         public static void Patch(AbstractCard __instance) {
             if (!(__instance == null) && __instance instanceof BladeDance) {
@@ -28,6 +30,11 @@ public class EnhanceArchetypeCards {
             if (!(__instance == null) && __instance instanceof BallLightning) {
                 if (Loader.isModLoaded("archetypeapi") && !__instance.upgraded) {
                     __instance.rawDescription = BallLightning.DESCRIPTION + BLSTRINGS.DESCRIPTION;
+                }
+            }
+            if (!(__instance == null) && __instance instanceof ColdSnap) {
+                if (Loader.isModLoaded("archetypeapi") && !__instance.upgraded) {
+                    __instance.rawDescription = ColdSnap.DESCRIPTION + CSSTRINGS.DESCRIPTION;
                 }
             }
             if (!(__instance == null) && __instance instanceof PerfectedStrike) {
@@ -51,6 +58,14 @@ public class EnhanceArchetypeCards {
     public static class bdconstrDesc {
         @SpirePostfixPatch
         public static void Patch(BladeDance __instance) {
+            __instance.initializeDescription();
+        }
+    }
+
+    @SpirePatch(clz = ColdSnap.class, method = SpirePatch.CONSTRUCTOR)
+    public static class csconstrDesc {
+        @SpirePostfixPatch
+        public static void Patch(ColdSnap __instance) {
             __instance.initializeDescription();
         }
     }

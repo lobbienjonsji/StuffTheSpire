@@ -60,6 +60,7 @@ public class StuffTheSpireMod implements
     public static CardGroup LightningArchetype;
     public static CardGroup StrikeArchetype;
     public static CardGroup DiscardArchetype;
+    public static CardGroup FrostArchetype;
     private static GifAnimation Plasmapunch = new GifAnimation("StuffTheSpireResources/images/animations/plasmapunchsheet.png", 11, 1, 0,0,0,0,false);
     private static GifAnimation Plasmapulse = new GifAnimation("StuffTheSpireResources/images/animations/plasmapulsesheet.png", 11, 1, 0,0,0,0,false);
     public static GifAnimation Dark_Fade = new GifAnimation("StuffTheSpireResources/images/animations/DarkFadeBg.png", 7, 7,0,0,0,0, true);
@@ -220,6 +221,7 @@ public class StuffTheSpireMod implements
         LightningArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         StrikeArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         DiscardArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        FrostArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
     }
 
     @Override
@@ -257,6 +259,8 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new ShivArchetype(), RelicType.SHARED);
         BaseMod.addRelic(new LightningArchetype(), RelicType.SHARED);
         BaseMod.addRelic(new StrikeArchetype(), RelicType.SHARED);
+        BaseMod.addRelic(new DiscardArchetype(), RelicType.SHARED);
+        BaseMod.addRelic(new FrostArchetype(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -375,10 +379,19 @@ public class StuffTheSpireMod implements
             }
             for (int i = 0; i < DefectCards.size(); i++) {
                 ArchetypeSelectCard B = (ArchetypeSelectCard) DefectCards.getNCardFromTop(i);
-                if (B.getArchetypeName().equals("Lightning")) {
-                    B.archetypeEffect(LightningArchetype);
-                    for (AbstractCard C : LightningArchetype.group) {
-                        logger.info(C.name);
+                logger.info(B.name);
+                if (!B.name.equals("Defect Orb Support Extension")) {
+                    if (B.getArchetypeName().equals("Lightning")) {
+                        B.archetypeEffect(LightningArchetype);
+                        for (AbstractCard C : LightningArchetype.group) {
+                            logger.info(C.name);
+                        }
+                    }
+                    if (B.getArchetypeName().equals("Frost")) {
+                        B.archetypeEffect(FrostArchetype);
+                        for (AbstractCard C : FrostArchetype.group) {
+                            logger.info(C.name);
+                        }
                     }
                 }
             }

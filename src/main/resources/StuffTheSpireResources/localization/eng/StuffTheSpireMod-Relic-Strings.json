@@ -232,5 +232,13 @@
       "Additional card rewards for the Discard Archetype may now appear with a 33% chance.",
       "Discard Archetype card"
     ]
+  },
+  "StuffTheSpire:FrostArchetype": {
+    "NAME": "Frost Archetype",
+    "FLAVOR": "You're as cold as ice!",
+    "DESCRIPTIONS": [
+      "Additional card rewards for the Frost Archetype may now appear with a 33% chance.",
+      "Frost Archetype card"
+    ]
   }
 }
