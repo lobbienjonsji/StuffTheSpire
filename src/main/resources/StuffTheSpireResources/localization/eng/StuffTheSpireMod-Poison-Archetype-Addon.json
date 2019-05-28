@@ -1,0 +1,16 @@
+{
+  "CHARACTER": "THE_SILENT",
+  "NAME": "Stuff tS. Poison Expansion",
+  "ARCHETYPE_NAME": "Poison",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/Injection.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:BrimstoneBlast",
+    "StuffTheSpire:Injection"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:BrimstoneBlast",
+    "StuffTheSpire:Injection"
+  ]
+}

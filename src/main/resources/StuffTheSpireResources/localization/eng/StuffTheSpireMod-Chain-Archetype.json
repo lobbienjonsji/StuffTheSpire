@@ -1,0 +1,22 @@
+{
+  "CHARACTER": "IRONCLAD",
+  "NAME": "Chain",
+  "ARCHETYPE_NAME": "Chain",
+  "CARD_TYPE": "ATTACK",
+  "IMG": "StuffTheSpireResources/images/cards/ChainStrike.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:ChainStrike",
+    "StuffTheSpire:AbyssLink",
+    "StuffTheSpire:Flurry"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:ChainStrike",
+    "StuffTheSpire:AbyssLink",
+    "StuffTheSpire:Flurry",
+    "StuffTheSpire:Flow",
+    "StuffTheSpire:Razor",
+    "StuffTheSpire:Surge",
+    "StuffTheSpire:Unleash"
+  ]
+}

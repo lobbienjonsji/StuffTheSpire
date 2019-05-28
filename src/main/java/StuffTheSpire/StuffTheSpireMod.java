@@ -40,6 +40,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
+import static archetypeAPI.ArchetypeAPI.loadArchetypes;
+
 
 @SpireInitializer
 public class StuffTheSpireMod implements
@@ -222,6 +224,12 @@ public class StuffTheSpireMod implements
         StrikeArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         DiscardArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         FrostArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        if (Loader.isModLoaded("archetypeapi")) {
+            loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Shiv-Archetype-Addon.json");
+            loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Chain-Archetype.json");
+            loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Discard-Archetype-Addon.json");
+            loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Poison-Archetype-Addon.json");
+        }
     }
 
     @Override

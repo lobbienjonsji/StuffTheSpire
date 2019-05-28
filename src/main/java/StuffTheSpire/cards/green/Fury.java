@@ -14,7 +14,7 @@ public class Fury extends CustomCard {
 
 
     public static final String ID = StuffTheSpireMod.makeID("Fury");
-    public static final String IMG = StuffTheSpireMod.makeCardPath("Skill.png");
+    public static final String IMG = StuffTheSpireMod.makeCardPath("Fury.png");
     public static final CardColor COLOR = CardColor.GREEN;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

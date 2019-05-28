@@ -1,0 +1,16 @@
+{
+  "CHARACTER": "THE_SILENT",
+  "NAME": "Stuff tS. Shiv Expansion",
+  "ARCHETYPE_NAME": "Shiv",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/DShiv.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:DoubleShiv",
+    "StuffTheSpire:Shiver"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:DoubleShiv",
+    "StuffTheSpire:Shiver"
+  ]
+}

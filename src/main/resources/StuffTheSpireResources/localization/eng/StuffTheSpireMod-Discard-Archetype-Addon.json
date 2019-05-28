@@ -1,0 +1,18 @@
+{
+  "CHARACTER": "THE_SILENT",
+  "NAME": "Stuff tS. Discard Expansion",
+  "ARCHETYPE_NAME": "Discard",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/Fury.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:Fury",
+    "StuffTheSpire:Shiver",
+    "StuffTheSpire:Incantation"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:Fury",
+    "StuffTheSpire:Shiver",
+    "StuffTheSpire:Incantation"
+  ]
+}
