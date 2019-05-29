@@ -1,0 +1,14 @@
+{
+  "CHARACTER": "IRONCLAD",
+  "NAME": "Stuff tS. IC Block Expansion",
+  "ARCHETYPE_NAME": "Block",
+  "CARD_TYPE": "ATTACK",
+  "IMG": "StuffTheSpireResources/images/cards/RagingBull.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:RagingBull"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:RagingBull"
+  ]
+}

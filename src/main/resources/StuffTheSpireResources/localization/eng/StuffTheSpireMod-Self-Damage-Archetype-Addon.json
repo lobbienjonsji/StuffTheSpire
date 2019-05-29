@@ -1,0 +1,14 @@
+{
+  "CHARACTER": "IRONCLAD",
+  "NAME": "Stuff tS. Self Damage Expansion",
+  "ARCHETYPE_NAME": "Self-Damage",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/Bloodclot.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:BloodClot"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:BloodClot"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "CHARACTER": "IRONCLAD",
+  "NAME": "Stuff tS. IC Basic Expansion",
+  "ARCHETYPE_NAME": "Basic",
+  "CARD_TYPE": "ATTACK",
+  "IMG": "StuffTheSpireResources/images/cards/Incineration.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:RagingBull",
+    "StuffTheSpire:Incineration",
+    "StuffTheSpire:Slingshot"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:RagingBull",
+    "StuffTheSpire:Incineration",
+    "StuffTheSpire:Slingshot"
+  ]
+}

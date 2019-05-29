@@ -1,0 +1,16 @@
+{
+  "CHARACTER": "DEFECT",
+  "NAME": "Stuff tS. Lightning Expansion",
+  "ARCHETYPE_NAME": "Lightning",
+  "CARD_TYPE": "POWER",
+  "IMG": "StuffTheSpireResources/images/cards/Synthwave.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:LoadUp",
+    "StuffTheSpire:Synthwave"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:LoadUp",
+    "StuffTheSpire:Synthwave"
+  ]
+}
