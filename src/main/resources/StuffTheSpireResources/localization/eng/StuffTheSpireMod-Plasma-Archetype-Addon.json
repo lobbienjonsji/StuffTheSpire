@@ -1,0 +1,14 @@
+{
+  "CHARACTER": "DEFECT",
+  "NAME": "Stuff tS. Plasma Expansion",
+  "ARCHETYPE_NAME": "Plasma",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/reactor.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:NuclearReactor"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:NuclearReactor"
+  ]
+}

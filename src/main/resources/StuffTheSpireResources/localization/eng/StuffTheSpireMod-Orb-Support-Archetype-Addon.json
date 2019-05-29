@@ -1,0 +1,16 @@
+{
+  "CHARACTER": "DEFECT",
+  "NAME": "Stuff tS. Orb Support Expansion",
+  "ARCHETYPE_NAME": "Orb Support",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/Snapshoot.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:SnapShoot",
+    "StuffTheSpire:ForEach"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:SnapShoot",
+    "StuffTheSpire:ForEach"
+  ]
+}

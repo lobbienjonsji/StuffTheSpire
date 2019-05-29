@@ -1,0 +1,14 @@
+{
+  "CHARACTER": "DEFECT",
+  "NAME": "Stuff tS. Frost Expansion",
+  "ARCHETYPE_NAME": "Frost",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/Coldhearted.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:Coldhearted"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:Coldhearted"
+  ]
+}

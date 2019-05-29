@@ -1,0 +1,14 @@
+{
+  "CHARACTER": "DEFECT",
+  "NAME": "Stuff tS. Dark Expansion",
+  "ARCHETYPE_NAME": "Dark",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/silentnight.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:EventHorizon"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:EventHorizon"
+  ]
+}
