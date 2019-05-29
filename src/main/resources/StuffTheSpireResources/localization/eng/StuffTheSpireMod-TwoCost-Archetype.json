@@ -1,0 +1,19 @@
+{
+  "CHARACTER": "THE_SILENT",
+  "NAME": "2 Cost Attacks",
+  "ARCHETYPE_NAME": "2 Cost Attacks",
+  "CARD_TYPE": "ATTACK",
+  "IMG": "green/attack/predator",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:BumpUp",
+    "Predator",
+    "Riddle With Holes"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:BumpUp",
+    "Predator",
+    "Riddle With Holes",
+    "Dash"
+  ]
+}

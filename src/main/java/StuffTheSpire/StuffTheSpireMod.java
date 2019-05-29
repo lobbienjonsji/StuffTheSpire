@@ -229,6 +229,10 @@ public class StuffTheSpireMod implements
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Chain-Archetype.json");
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Discard-Archetype-Addon.json");
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Poison-Archetype-Addon.json");
+            loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Silent-Block-Archetype-Addon.json");
+            loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Silent-Basic-Archetype-Addon.json");
+            loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-TwoCost-Archetype.json");
+            loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Exhaust-Archetype-Addon.json");
         }
     }
 

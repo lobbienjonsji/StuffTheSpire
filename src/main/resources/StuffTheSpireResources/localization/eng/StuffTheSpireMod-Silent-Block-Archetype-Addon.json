@@ -1,0 +1,14 @@
+{
+  "CHARACTER": "THE_SILENT",
+  "NAME": "Stuff tS. Block Expansion",
+  "ARCHETYPE_NAME": "Block",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/Scales.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:ReptileScales"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:ReptileScales"
+  ]
+}

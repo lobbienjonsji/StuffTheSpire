@@ -59,10 +59,6 @@ public class BumpUp extends CustomCard {
                 c.baseDamage += c.baseDamage*(float)this.magicNumber/100.0F;
             }
         }
-        if(this.magicNumber > 0) {
-            baseMagicNumber--;
-            magicNumber = baseMagicNumber;
-        }
     }
 
     @Override
@@ -70,7 +66,7 @@ public class BumpUp extends CustomCard {
         if (!upgraded) {
             upgradeName();
             initializeDescription();
-            upgradeMagicNumber(5);
+            upgradeMagicNumber(20);
         }
     }
 }

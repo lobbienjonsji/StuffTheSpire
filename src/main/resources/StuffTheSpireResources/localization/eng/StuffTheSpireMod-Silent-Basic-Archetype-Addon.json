@@ -1,0 +1,20 @@
+{
+  "CHARACTER": "THE_SILENT",
+  "NAME": "Stuff tS. Basic Expansion",
+  "ARCHETYPE_NAME": "Block",
+  "CARD_TYPE": "ATTACK",
+  "IMG": "StuffTheSpireResources/images/cards/FStruggle.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:FinalStruggle",
+    "StuffTheSpire:Python",
+    "StuffTheSpire:Incursion"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:FinalStruggle",
+    "StuffTheSpire:Python",
+    "StuffTheSpire:Incursion",
+    "StuffTheSpire:Fury",
+    "StuffTheSpire:Shiver"
+  ]
+}

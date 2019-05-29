@@ -1,0 +1,18 @@
+{
+  "CHARACTER": "IRONCLAD",
+  "NAME": "Stuff tS. Exhaust Expansion",
+  "ARCHETYPE_NAME": "Exhaust",
+  "CARD_TYPE": "ATTACK",
+  "IMG": "StuffTheSpireResources/images/cards/Sling.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:Incineration",
+    "StuffTheSpire:RockThrow",
+    "StuffTheSpire:Slingshot"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:Incineration",
+    "StuffTheSpire:RockThrow",
+    "StuffTheSpire:Slingshot"
+  ]
+}

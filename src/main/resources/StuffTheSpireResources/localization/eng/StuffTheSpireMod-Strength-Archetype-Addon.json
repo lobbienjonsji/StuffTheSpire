@@ -1,0 +1,16 @@
+{
+  "CHARACTER": "IRONCLAD",
+  "NAME": "Stuff tS. Strength Expansion",
+  "ARCHETYPE_NAME": "Strength",
+  "CARD_TYPE": "ATTACK",
+  "IMG": "StuffTheSpireResources/images/cards/Pyroclast.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:Pyroclast",
+    "StuffTheSpire:TitanForm"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:Pyroclast",
+    "StuffTheSpire:TitanForm"
+  ]
+}
