@@ -39,7 +39,7 @@
     "NAME": "Dull Razor",
     "FLAVOR": "It hurts a little bit.",
     "DESCRIPTIONS": [
-      "At the start of each turn trigger the effects of all cards, relics, powers that have an effect when taking damage."
+      "At the start of each turn trigger the effects of all cards, relics and powers that have an effect when taking damage."
     ]
   },
   "StuffTheSpire:PointBlank": {

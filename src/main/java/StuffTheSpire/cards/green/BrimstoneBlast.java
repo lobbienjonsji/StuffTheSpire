@@ -28,8 +28,8 @@ public class BrimstoneBlast extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 1;
-    private static final int DAMAGE = 6;
-    private static final int MAGICNUMBER = 5;
+    private static final int DAMAGE = 5;
+    private static final int MAGICNUMBER = 4;
     private static final int BLOCK = 0;
 
     public BrimstoneBlast() {
