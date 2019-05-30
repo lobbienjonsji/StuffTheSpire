@@ -338,6 +338,8 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new BrimstoneBlast());
         BaseMod.addCard(new GlassShard());
         BaseMod.addCard(new Slingshot());
+        BaseMod.addCard(new MirrorStance());
+        BaseMod.addCard(new Sprint());
         HasArchetypeAPI = Loader.isModLoaded("archetypeapi");
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);

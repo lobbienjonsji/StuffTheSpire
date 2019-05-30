@@ -6,9 +6,11 @@
   "IMG": "StuffTheSpireResources/images/cards/Scales.png",
   "TAGS": [],
   "FEATURES": [
-    "StuffTheSpire:ReptileScales"
+    "StuffTheSpire:ReptileScales",
+    "StuffTheSpire:Sprint"
   ],
   "CARD_IDS": [
-    "StuffTheSpire:ReptileScales"
+    "StuffTheSpire:ReptileScales",
+    "StuffTheSpire:Sprint"
   ]
 }

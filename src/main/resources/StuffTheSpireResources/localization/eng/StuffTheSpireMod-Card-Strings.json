@@ -194,9 +194,18 @@
     "DESCRIPTION": "Draw !M! cards. NL Discard all non-Attack cards.",
     "UPGRADE_DESCRIPTION": " Discard all non-Attack cards. NL Draw !M! cards."
   },
+  "StuffTheSpire:MirrorStance": {
+    "NAME": "Mirror Stance",
+    "DESCRIPTION": "The first card you play next turn is played twice. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "The first card you play next turn is played twice."
+  },
   "StuffTheSpire:BrimstoneBlast": {
     "NAME": "Brimstone Blast",
     "DESCRIPTION": "Deal !D! damage and apply !M! poison to all enemies. NL Add a Burn to your hand. NL Exhaust."
+  },
+  "StuffTheSpire:Sprint": {
+    "NAME": "Sprint",
+    "DESCRIPTION": "Gain !B! Block. Increase the Block of a random card in your hand by !M!."
   },
   "ShivArchetype": {
     "NAME": "ShivArche",

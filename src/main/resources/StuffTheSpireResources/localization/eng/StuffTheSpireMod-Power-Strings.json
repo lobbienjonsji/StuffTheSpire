@@ -21,7 +21,10 @@
         },
         "StuffTheSpire:GravityPower": {
                 "NAME": "Gravity",
-                "DESCRIPTIONS": ["Upon loosing Flight, deal ", " damage to the target."]
+          "DESCRIPTIONS": [
+            "Upon losing Flight, deal ",
+            " damage to the target."
+          ]
         },
         "StuffTheSpire:SynthwavePower": {
                 "NAME": "Synthwave",
@@ -44,7 +47,7 @@
                 "DESCRIPTIONS": [
                         "At the start of each turn, chain ",
                         " linked card from your discard pile.",
-                        " linked cards from your discard piel."
+                  " linked cards from your discard pile."
                 ]
         },
         "StuffTheSpire:ResistPower": {
@@ -53,5 +56,12 @@
                         "Whenever you exhaust a status card, gain ",
                         " temporary max. HP."
                 ]
+        },
+  "StuffTheSpire:MirrorStancePower": {
+    "NAME": "Mirror Stance",
+    "DESCRIPTIONS": [
+      "Next turn, the first card you play is played twice.",
+      "The first card you play this turn is played twice."
+    ]
         }
 }
