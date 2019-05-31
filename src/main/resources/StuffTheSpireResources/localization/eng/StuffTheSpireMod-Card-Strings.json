@@ -201,11 +201,19 @@
   },
   "StuffTheSpire:BrimstoneBlast": {
     "NAME": "Brimstone Blast",
-    "DESCRIPTION": "Deal !D! damage and apply !M! poison to all enemies. NL Add a Burn to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage and apply !M! Poison to all enemies. NL Add a Burn to your hand. NL Exhaust."
   },
   "StuffTheSpire:Sprint": {
     "NAME": "Sprint",
     "DESCRIPTION": "Gain !B! Block. Increase the Block of a random card in your hand by !M!."
+  },
+  "StuffTheSpire:GnomedCurse": {
+    "NAME": "You've been GNOMED!",
+    "DESCRIPTION": "When drawn lose !M! Strength. NL Ethereal."
+  },
+  "StuffTheSpire:ClusterCrunch": {
+    "NAME": "Cluster Crunch",
+    "DESCRIPTION": "Discard all Attacks. Deal damage equal to !M! times their total cost to all enemies."
   },
   "ShivArchetype": {
     "NAME": "ShivArche",

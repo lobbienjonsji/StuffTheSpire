@@ -14,11 +14,12 @@ import java.util.Comparator;
 
 import static com.evacipated.cardcrawl.mod.stslib.StSLib.getMasterDeckEquivalent;
 
-public class SortDrawPile extends AbstractGameAction {
+public class SortDrawPileAction extends AbstractGameAction {
     private int cardcost = 99;
     private ArrayList<AbstractCard> CheapestCards = new ArrayList();
     private static final Logger logger = LogManager.getLogger(Expresso.class.getName());
-    public SortDrawPile()
+
+    public SortDrawPileAction()
     {
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;

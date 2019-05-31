@@ -1,7 +1,7 @@
 package StuffTheSpire.relics;
 
 import StuffTheSpire.StuffTheSpireMod;
-import StuffTheSpire.actions.SortDrawPile;
+import StuffTheSpire.actions.SortDrawPileAction;
 import StuffTheSpire.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
@@ -30,13 +30,13 @@ public class HistoryBook extends CustomRelic {
     @Override
     public void atBattleStartPreDraw()
     {
-        AbstractDungeon.actionManager.addToBottom(new SortDrawPile());
+        AbstractDungeon.actionManager.addToBottom(new SortDrawPileAction());
     }
 
     @Override
     public void onShuffle()
     {
-        AbstractDungeon.actionManager.addToTop(new SortDrawPile());
+        AbstractDungeon.actionManager.addToTop(new SortDrawPileAction());
     }
 
 }

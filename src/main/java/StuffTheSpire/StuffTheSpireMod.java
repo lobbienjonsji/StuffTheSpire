@@ -3,6 +3,7 @@ package StuffTheSpire;
 import GifTheSpire.util.GifAnimation;
 import StuffTheSpire.cards.blue.*;
 import StuffTheSpire.cards.colorless.*;
+import StuffTheSpire.cards.curses.GnomedCurse;
 import StuffTheSpire.cards.green.*;
 import StuffTheSpire.cards.red.*;
 import StuffTheSpire.cards.status.FlameBurst;
@@ -340,6 +341,8 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new Slingshot());
         BaseMod.addCard(new MirrorStance());
         BaseMod.addCard(new Sprint());
+        BaseMod.addCard(new GnomedCurse());
+        BaseMod.addCard(new ClusterCrunch());
         HasArchetypeAPI = Loader.isModLoaded("archetypeapi");
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);

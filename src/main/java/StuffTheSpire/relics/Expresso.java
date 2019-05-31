@@ -1,12 +1,13 @@
 package StuffTheSpire.relics;
 
 import StuffTheSpire.StuffTheSpireMod;
-import StuffTheSpire.actions.DecreaseCardCost;
+import StuffTheSpire.actions.DecreaseCardCostAction;
 import StuffTheSpire.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+
 import java.util.ArrayList;
 
 import static StuffTheSpire.StuffTheSpireMod.makeRelicOutlinePath;
@@ -28,7 +29,7 @@ public class Expresso extends CustomRelic {
     @Override
     public void atTurnStartPostDraw()
     {
-        AbstractDungeon.actionManager.addToBottom(new DecreaseCardCost());
+        AbstractDungeon.actionManager.addToBottom(new DecreaseCardCostAction());
     }
 
 }

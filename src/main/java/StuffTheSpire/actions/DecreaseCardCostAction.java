@@ -10,11 +10,12 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 
-public class DecreaseCardCost extends AbstractGameAction {
+public class DecreaseCardCostAction extends AbstractGameAction {
     private int cardcost = 99;
     private ArrayList<AbstractCard> CheapestCards = new ArrayList();
     private static final Logger logger = LogManager.getLogger(Expresso.class.getName());
-    public DecreaseCardCost()
+
+    public DecreaseCardCostAction()
     {
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = ActionType.CARD_MANIPULATION;
