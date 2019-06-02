@@ -6,9 +6,11 @@
   "IMG": "StuffTheSpireResources/images/cards/silentnight.png",
   "TAGS": [],
   "FEATURES": [
-    "StuffTheSpire:EventHorizon"
+    "StuffTheSpire:EventHorizon",
+    "StuffTheSpire:Purify"
   ],
   "CARD_IDS": [
-    "StuffTheSpire:EventHorizon"
+    "StuffTheSpire:EventHorizon",
+    "StuffTheSpire:Purify"
   ]
 }

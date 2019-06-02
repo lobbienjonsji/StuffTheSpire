@@ -240,5 +240,12 @@
       "Additional card rewards for the Frost Archetype may now appear with a 33% chance.",
       "Frost Archetype card"
     ]
+  },
+  "StuffTheSpire:BottledEssence": {
+    "NAME": "Bottled Essence",
+    "FLAVOR": "For when a spoon is just not enough.",
+    "DESCRIPTIONS": [
+      "Cards that exhaust when played have exhaustive 2 instead."
+    ]
   }
 }

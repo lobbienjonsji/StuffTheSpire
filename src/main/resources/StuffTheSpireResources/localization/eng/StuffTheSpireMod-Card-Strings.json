@@ -211,9 +211,37 @@
     "NAME": "You've been GNOMED!",
     "DESCRIPTION": "When drawn lose !M! Strength. NL Ethereal."
   },
+  "StuffTheSpire:Purify": {
+    "NAME": "Purify",
+    "DESCRIPTION": "Replace all Dark with Plasma. Draw !M! card for every Dark replaced.",
+    "UPGRADE_DESCRIPTION": "Replace all Dark with Plasma. Draw !M! cards for every Dark replaced."
+  },
   "StuffTheSpire:ClusterCrunch": {
     "NAME": "Cluster Crunch",
-    "DESCRIPTION": "Discard all Attacks. Deal damage equal to !M! times their total cost to all enemies."
+    "DESCRIPTION": "Discard all Attacks. Deal damage equal to !M! times their total cost to all enemies.",
+    "UPGRADE_DESCRIPTION": "The first card you play next turn is played twice."
+  },
+  "StuffTheSpire:Plugnplay": {
+    "NAME": "Plug'n'play",
+    "DESCRIPTION": "Channel 1 Lightning. Add a random power from your draw pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Channel 1 Lightning. Add a power from your draw pile into your hand."
+  },
+  "StuffTheSpire:Repulse": {
+    "NAME": "Repulse",
+    "DESCRIPTION": "Gain !B! Block. Draw !M! card for every enemy that intends to attack.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Draw !M! cards for every enemy that intends to attack."
+  },
+  "StuffTheSpire:CleanHardDrive": {
+    "NAME": "Clean Hard Drive",
+    "DESCRIPTION": "Exhaust",
+    "EXTENDED_DESCRIPTION": [
+      " !StuffTheSpire:Diminishing! card from your draw pile. NL stuffthespire:Decreasing 1.",
+      " !StuffTheSpire:Diminishing! cards from your draw pile. NL stuffthespire:Decreasing 1."
+    ]
+  },
+  "StuffTheSpire:Rend": {
+    "NAME": "Rend",
+    "DESCRIPTION": "Claw cards apply 1 Vulnerable this turn. Draw 1 card."
   },
   "ShivArchetype": {
     "NAME": "ShivArche",

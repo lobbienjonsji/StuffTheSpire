@@ -57,11 +57,17 @@
                         " temporary max. HP."
                 ]
         },
+  "StuffTheSpire:RendPower": {
+    "NAME": "Rending",
+    "DESCRIPTIONS": [
+      "This turn Claw cards apply Vulnerable."
+    ]
+  },
   "StuffTheSpire:MirrorStancePower": {
     "NAME": "Mirror Stance",
     "DESCRIPTIONS": [
       "Next turn, the first card you play is played twice.",
       "The first card you play this turn is played twice."
     ]
-        }
+  }
 }

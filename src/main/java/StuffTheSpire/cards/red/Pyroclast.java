@@ -87,6 +87,7 @@ public class Pyroclast extends AbstractDecreasingCard {
 
     @Override
     public void recharge(int amount) {
+        this.baseMagicNumber += amount;
         magicNumber = baseMagicNumber;
         if(this.magicNumber == 1)
         {

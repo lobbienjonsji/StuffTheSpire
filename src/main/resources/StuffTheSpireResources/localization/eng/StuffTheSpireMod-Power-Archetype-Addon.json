@@ -1,0 +1,14 @@
+{
+  "CHARACTER": "DEFECT",
+  "NAME": "Stuff tS. Power Expansion",
+  "ARCHETYPE_NAME": "Power",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/Plugnplay.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:Plugnplay"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:Plugnplay"
+  ]
+}

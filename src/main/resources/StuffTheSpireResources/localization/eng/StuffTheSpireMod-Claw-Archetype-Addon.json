@@ -1,0 +1,14 @@
+{
+  "CHARACTER": "DEFECT",
+  "NAME": "Stuff tS. Claw Expansion",
+  "ARCHETYPE_NAME": "Claw",
+  "CARD_TYPE": "SKILL",
+  "IMG": "StuffTheSpireResources/images/cards/Rend.png",
+  "TAGS": [],
+  "FEATURES": [
+    "StuffTheSpire:Rend"
+  ],
+  "CARD_IDS": [
+    "StuffTheSpire:Rend"
+  ]
+}

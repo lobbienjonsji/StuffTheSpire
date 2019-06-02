@@ -10,6 +10,7 @@
   "sts_version": "${SlayTheSpire.version}",
   "mts_version": "${ModTheSpire.version}",
   "dependencies": ["basemod", "stslib", "GifTheSpireLib"],
+  "credits": "The Rapublic Discord for card ideas: LightningLord2.71828183 for the Rend and Clean hard drive card idea. Krasunir for the Purify card idea. WikkadGaming for too many ideas too name here.",
   "optional_dependencies": [
     "archetypeapi"
   ],

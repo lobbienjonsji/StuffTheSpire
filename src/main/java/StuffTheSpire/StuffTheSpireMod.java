@@ -244,6 +244,8 @@ public class StuffTheSpireMod implements
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Orb-Support-Archetype-Addon.json");
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Plasma-Archetype-Addon.json");
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Lightning-Archetype-Addon.json");
+            loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Claw-Archetype-Addon.json");
+            loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Power-Archetype-Addon.json");
         }
     }
 
@@ -284,6 +286,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new StrikeArchetype(), RelicType.SHARED);
         BaseMod.addRelic(new DiscardArchetype(), RelicType.SHARED);
         BaseMod.addRelic(new FrostArchetype(), RelicType.SHARED);
+        BaseMod.addRelic(new BottledEssence(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -343,6 +346,11 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new Sprint());
         BaseMod.addCard(new GnomedCurse());
         BaseMod.addCard(new ClusterCrunch());
+        BaseMod.addCard(new Repulse());
+        BaseMod.addCard(new Rend());
+        BaseMod.addCard(new CleanHardDrive());
+        BaseMod.addCard(new Purify());
+        BaseMod.addCard(new Plugnplay());
         HasArchetypeAPI = Loader.isModLoaded("archetypeapi");
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);
@@ -364,6 +372,8 @@ public class StuffTheSpireMod implements
                 getModID() + "Resources/localization/eng/StuffTheSpireMod-Potion-Strings.json");
         BaseMod.loadCustomStringsFile(OrbStrings.class,
                 getModID() + "Resources/localization/eng/StuffTheSpireMod-Orb-Strings.json");
+        BaseMod.loadCustomStringsFile(UIStrings.class,
+                getModID() + "Resources/localization/eng/StuffTheSpireMod-UI-Strings.json");
         logger.info("Done edittting strings");
     }
 
