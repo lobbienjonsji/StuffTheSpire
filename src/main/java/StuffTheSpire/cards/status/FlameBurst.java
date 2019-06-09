@@ -50,6 +50,11 @@ public class FlameBurst extends CustomCard {
     }
 
     @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return false;
+    }
+
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         if ((!this.dontTriggerOnUseCard) && (p.hasRelic("Medical Kit"))) {

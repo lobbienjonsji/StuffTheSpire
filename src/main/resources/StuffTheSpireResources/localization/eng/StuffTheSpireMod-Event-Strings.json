@@ -11,5 +11,28 @@
       "[Disagree]",
       "[Leave]"
     ]
+  },
+  "StuffTheSpire:NeowistPriest": {
+    "NAME": "Neowtonian Priest",
+    "DESCRIPTIONS": [
+      "Ascending the Spire, you find yourself in a building made of black marble. NL A hooded priest of the Neowtonian cult emerges from the dark and starts speaking: \"We have been waiting for your arrival. Shall we begin the offering?\"",
+      "\"Our almighty goddess is pleased for now. Your blood is now flowing in her veins.\".",
+      "\"Our almighty goddess is pleased by your generous donation.\" NL You notice the priest heading to a nearby tavern.",
+      "A purple bonfire starts spreading inside of you. You scream and shout in agony until the flames extinguish. But the pain won't stop.",
+      "\"SHAME! SHAME!\""
+    ],
+    "OPTIONS": [
+      "[Offer Gold] #y",
+      " #yGold: #gObtain #ga #grandom #gblessing.",
+      "[Offer Blood] #y",
+      " #yHP: #gObtain #ga #grandom #gblessing.",
+      "[Offer Humility] #rBecome #rcursed: #rPain. #gObtain #ga #grandom #gblessing.",
+      "[Offer Nothing] #rBecome #rcursed: #rShame.",
+      "[Locked] Requires: ",
+      " Gold.",
+      "[Locked] Requires: ",
+      " HP.",
+      "[Leave]"
+    ]
   }
 }

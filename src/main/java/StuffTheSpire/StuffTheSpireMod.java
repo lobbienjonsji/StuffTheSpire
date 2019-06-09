@@ -1,12 +1,14 @@
 package StuffTheSpire;
 
 import GifTheSpire.util.GifAnimation;
+import StuffTheSpire.cards.blessings.*;
 import StuffTheSpire.cards.blue.*;
 import StuffTheSpire.cards.colorless.*;
 import StuffTheSpire.cards.curses.GnomedCurse;
 import StuffTheSpire.cards.green.*;
 import StuffTheSpire.cards.red.*;
 import StuffTheSpire.cards.status.FlameBurst;
+import StuffTheSpire.events.NeowistPriest;
 import StuffTheSpire.events.TheShadows;
 import StuffTheSpire.relics.*;
 import StuffTheSpire.util.IDCheckDontTouchPls;
@@ -21,6 +23,7 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.Loader;
@@ -31,6 +34,7 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
+import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -64,6 +68,7 @@ public class StuffTheSpireMod implements
     public static CardGroup StrikeArchetype;
     public static CardGroup DiscardArchetype;
     public static CardGroup FrostArchetype;
+    public static final Color DEFAULT_GRAY = CardHelper.getColor(64.0f, 70.0f, 70.0f);
     private static GifAnimation Plasmapunch = new GifAnimation("StuffTheSpireResources/images/animations/plasmapunchsheet.png", 11, 1, 0,0,0,0,false);
     private static GifAnimation Plasmapulse = new GifAnimation("StuffTheSpireResources/images/animations/plasmapulsesheet.png", 11, 1, 0,0,0,0,false);
     public static GifAnimation Dark_Fade = new GifAnimation("StuffTheSpireResources/images/animations/DarkFadeBg.png", 7, 7,0,0,0,0, true);
@@ -72,6 +77,18 @@ public class StuffTheSpireMod implements
     private static final String AUTHOR = "Lobbienjonsji"; // And pretty soon - You!
     private static final String DESCRIPTION = "Adds new cards, relics, events and other stuff with full GifTheSpireLib support";
     public static final String BADGE_IMAGE = "StuffTheSpireResources/images/Badge.png";
+    private static final String ATTACK_DEFAULT_GRAY = "StuffTheSpireResources/images/512/bg_attack_default_gray.png";
+    private static final String SKILL_DEFAULT_GRAY = "StuffTheSpireResources/images/512/bg_skill_default_gray.png";
+    private static final String POWER_DEFAULT_GRAY = "StuffTheSpireResources/images/512/bg_power_default_gray.png";
+
+    private static final String ENERGY_ORB_DEFAULT_GRAY = "StuffTheSpireResources/images/512/card_default_gray_orb.png";
+    private static final String CARD_ENERGY_ORB = "StuffTheSpireResources/images/512/card_small_orb.png";
+    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/bg_attack_default_gray.png";
+    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/bg_skill_default_gray.png";
+    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/bg_power_default_gray.png";
+    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/card_default_gray_orb.png";
+    public static CardGroup Blessings;
+
     public static String makeCardPath(String resourcePath) {
         return getModID() + "Resources/images/cards/" + resourcePath;
     }
@@ -101,7 +118,12 @@ public class StuffTheSpireMod implements
 
         BaseMod.subscribe(this);
         setModID("StuffTheSpire");
-            }
+        BaseMod.addColor(StuffTheSpire.patches.cards.CardColors.BLESSING, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
+                DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
+                ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+                ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+                ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+    }
 
     // ====== NO EDIT AREA ======
     // DON'T TOUCH THIS STUFF. IT IS HERE FOR STANDARDIZATION BETWEEN MODS AND TO ENSURE GOOD CODE PRACTICES.
@@ -210,6 +232,7 @@ public class StuffTheSpireMod implements
         Unleash.addAsCardAnimation("StuffTheSpire:Unleash");
         Unleash.setAnimationspeed(0.25F);
         BaseMod.addEvent(TheShadows.ID, TheShadows.class, TheCity.ID);
+        BaseMod.addEvent(NeowistPriest.ID, NeowistPriest.class, TheCity.ID);
         CommonChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         UncommonChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         RareChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
@@ -225,6 +248,12 @@ public class StuffTheSpireMod implements
         StrikeArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         DiscardArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         FrostArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        Blessings = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        Blessings.addToTop(new BrainWave());
+        Blessings.addToTop(new CelestialWarden());
+        Blessings.addToTop(new Harmony());
+        Blessings.addToTop(new Rapture());
+        Blessings.addToTop(new Vigor());
         if (Loader.isModLoaded("archetypeapi")) {
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Shiv-Archetype-Addon.json");
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Chain-Archetype.json");
@@ -351,6 +380,11 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new CleanHardDrive());
         BaseMod.addCard(new Purify());
         BaseMod.addCard(new Plugnplay());
+        BaseMod.addCard(new Vigor());
+        BaseMod.addCard(new BrainWave());
+        BaseMod.addCard(new Rapture());
+        BaseMod.addCard(new CelestialWarden());
+        BaseMod.addCard(new Harmony());
         HasArchetypeAPI = Loader.isModLoaded("archetypeapi");
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);

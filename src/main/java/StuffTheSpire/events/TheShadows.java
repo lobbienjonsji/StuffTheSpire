@@ -17,10 +17,8 @@ import java.util.List;
 import static StuffTheSpire.StuffTheSpireMod.makeEventPath;
 
 public class TheShadows extends AbstractImageEvent {
-
     public static final String ID = StuffTheSpireMod.makeID("TheShadows");
     private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString(ID);
-
     private static final String NAME = eventStrings.NAME;
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;

@@ -114,5 +114,12 @@
       "archetype:"
     ],
     "DESCRIPTION": "When picked up, future reward screens may have an additional card reward for a specific archetype. NL You can only have one Archetype active at once."
+  },
+  {
+    "PROPER_NAME": "Warding",
+    "NAMES": [
+      "warding"
+    ],
+    "DESCRIPTION": "Take 25% less attack damage for 1 turn."
   }
 ]

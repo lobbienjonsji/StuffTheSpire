@@ -3,5 +3,10 @@
     "TEXT": [
       "Choose cards to exhaust."
     ]
+  },
+  "AbstractBlessing": {
+    "TEXT": [
+      "Blessing"
+    ]
   }
 }

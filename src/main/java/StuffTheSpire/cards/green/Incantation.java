@@ -50,6 +50,11 @@ public class Incantation extends CustomCard {
     }
 
     @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return false;
+    }
+
+    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();

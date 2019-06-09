@@ -152,8 +152,8 @@
   },
   "StuffTheSpire:Incantation": {
     "NAME": "Incantation",
-    "DESCRIPTION": "stuffthespire:Fragile. NL When drawn gain !M! Strength. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "When drawn gain !M! Strength. NL Ethereal."
+    "DESCRIPTION": "Unplayable. NL stuffthespire:Fragile. NL When drawn gain !M! Strength. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Unplayable. When drawn gain !M! Strength. NL Ethereal."
   },
   "StuffTheSpire:Unleash": {
     "NAME": "Unleash",
@@ -239,9 +239,29 @@
       " !StuffTheSpire:Diminishing! cards from your draw pile. NL stuffthespire:Decreasing 1."
     ]
   },
+  "StuffTheSpire:Vigor": {
+    "NAME": "Vigor",
+    "DESCRIPTION": "Unplayable. NL If you play a card while this is in your hand gain !M! temporary max. HP. NL Ethereal."
+  },
+  "StuffTheSpire:BrainWave": {
+    "NAME": "Brainwave",
+    "DESCRIPTION": "Unplayable. NL Startup: Reduce the cost of !M! cards in your draw pile to 0 this combat. NL Ethereal."
+  },
+  "StuffTheSpire:Rapture": {
+    "NAME": "Rapture",
+    "DESCRIPTION": "Unplayable. NL stuffthespire:Fragile. NL When drawn, draw !M! cards and gain [E] ."
+  },
+  "StuffTheSpire:CelestialWarden": {
+    "NAME": "Celestial Warden",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! stuffthespire:Warding. NL Gain !M! Plated Armor. NL Exhaust."
+  },
   "StuffTheSpire:Rend": {
     "NAME": "Rend",
     "DESCRIPTION": "Claw cards apply 1 Vulnerable this turn. Draw 1 card."
+  },
+  "StuffTheSpire:Harmony": {
+    "NAME": "Harmony",
+    "DESCRIPTION": "Unplayable. NL Startup: Gain 1 Regeneration for every !M! Skills in your draw pile."
   },
   "ShivArchetype": {
     "NAME": "ShivArche",

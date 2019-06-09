@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExportableFileTemplateSettings">
     <default_templates>
+      <template name="DefaultEmptyBlessing.java" reformat="false" live-template-enabled="false" />
       <template name="DefaultEmptyCard.java" reformat="true" live-template-enabled="true" />
       <template name="DefaultEmptyRelic.java" reformat="true" live-template-enabled="true" />
       <template name="DefaultMagicAttack.java" reformat="true" live-template-enabled="true" />

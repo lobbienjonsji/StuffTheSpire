@@ -57,6 +57,12 @@
                         " temporary max. HP."
                 ]
         },
+  "StuffTheSpire:WardingPower": {
+    "NAME": "Warding",
+    "DESCRIPTIONS": [
+      "Take 25% less attack damage."
+    ]
+  },
   "StuffTheSpire:RendPower": {
     "NAME": "Rending",
     "DESCRIPTIONS": [
