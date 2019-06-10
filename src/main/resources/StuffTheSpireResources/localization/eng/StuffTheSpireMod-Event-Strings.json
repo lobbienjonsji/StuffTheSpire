@@ -34,5 +34,22 @@
       " HP.",
       "[Leave]"
     ]
+  },
+  "StuffTheSpire:FlowerFields": {
+    "NAME": "Rose in the Fields",
+    "DESCRIPTIONS": [
+      "You arrive at a large patch of grass which has been conserved surprisingly well, despite the spireblight. In the middle of the field you spot something that sparks your interest: A wild #yRose, potentially the last of it's kind. You feel tempted to bring it with you.",
+      "Digging up the precious plant, you prick your finger on one of it's thorns, but eventually manage to pull out the entire rose and put it in a makeshift flower pot.",
+      "You give in to your romantic reflexes and rip the flower out of the ground, dooming an entire species. You monster.",
+      "Listening to the screeching byrds in the distance, smelling the fresh air and getting warmed by the small beams of sunlight coming through a window above, you decide it's not worth the hassle and take a nap instead."
+    ],
+    "OPTIONS": [
+      "[Dig it up] #rLoose #r",
+      " #rHP, #gbecome #gblessed: #gInnocence",
+      "[Break it] #rBecome #rcursed: #rRegret, #gobtain #ga #gspecial #grelic",
+      "[Rest] #gheal #g",
+      " #gHP",
+      "[Leave]"
+    ]
   }
 }

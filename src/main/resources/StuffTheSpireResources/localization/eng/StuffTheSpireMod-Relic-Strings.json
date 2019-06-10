@@ -245,7 +245,14 @@
     "NAME": "Bottled Essence",
     "FLAVOR": "For when a spoon is just not enough.",
     "DESCRIPTIONS": [
-      "Cards that exhaust when played have exhaustive 2 instead."
+      "Cards that exhaust when played have exhaustive #b2 instead."
+    ]
+  },
+  "StuffTheSpire:RedRose": {
+    "NAME": "Broken Rose",
+    "FLAVOR": "Sah ein Knab ein Röslein stehn.",
+    "DESCRIPTIONS": [
+      "At the start of each turn gain #b1 #ystuffthespire:thorns."
     ]
   }
 }

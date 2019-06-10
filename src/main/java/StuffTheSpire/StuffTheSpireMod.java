@@ -8,6 +8,7 @@ import StuffTheSpire.cards.curses.GnomedCurse;
 import StuffTheSpire.cards.green.*;
 import StuffTheSpire.cards.red.*;
 import StuffTheSpire.cards.status.FlameBurst;
+import StuffTheSpire.events.FlowerFields;
 import StuffTheSpire.events.NeowistPriest;
 import StuffTheSpire.events.TheShadows;
 import StuffTheSpire.relics.*;
@@ -33,6 +34,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
@@ -233,6 +235,7 @@ public class StuffTheSpireMod implements
         Unleash.setAnimationspeed(0.25F);
         BaseMod.addEvent(TheShadows.ID, TheShadows.class, TheCity.ID);
         BaseMod.addEvent(NeowistPriest.ID, NeowistPriest.class, TheCity.ID);
+        BaseMod.addEvent(FlowerFields.ID, FlowerFields.class, Exordium.ID);
         CommonChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         UncommonChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         RareChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
@@ -254,6 +257,8 @@ public class StuffTheSpireMod implements
         Blessings.addToTop(new Harmony());
         Blessings.addToTop(new Rapture());
         Blessings.addToTop(new Vigor());
+        Blessings.addToTop(new Ambrosia());
+        Blessings.addToTop(new Innocence());
         if (Loader.isModLoaded("archetypeapi")) {
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Shiv-Archetype-Addon.json");
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Chain-Archetype.json");
@@ -316,6 +321,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new DiscardArchetype(), RelicType.SHARED);
         BaseMod.addRelic(new FrostArchetype(), RelicType.SHARED);
         BaseMod.addRelic(new BottledEssence(), RelicType.SHARED);
+        BaseMod.addRelic(new RedRose(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -327,6 +333,7 @@ public class StuffTheSpireMod implements
         logger.info("Add variable");
         BaseMod.addDynamicVariable(new DiminishingVariable());
         logger.info("Adding cards");
+        BaseMod.addCard(new Ambrosia());
         BaseMod.addCard(new PlasmaPunch());
         BaseMod.addCard(new FreeRealEstate());
         BaseMod.addCard(new PlasmaPulse());
@@ -385,6 +392,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new Rapture());
         BaseMod.addCard(new CelestialWarden());
         BaseMod.addCard(new Harmony());
+        BaseMod.addCard(new Innocence());
         HasArchetypeAPI = Loader.isModLoaded("archetypeapi");
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);

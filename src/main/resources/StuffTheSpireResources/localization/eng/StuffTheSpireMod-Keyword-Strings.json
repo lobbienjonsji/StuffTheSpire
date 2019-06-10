@@ -36,6 +36,13 @@
     "DESCRIPTION": "At the end of each turn, the target takes damage equal to the amount of Constricted."
   },
   {
+    "PROPER_NAME": "Thorns",
+    "NAMES": [
+      "thorns"
+    ],
+    "DESCRIPTION": "Whenever you are attacked, the attacker takes damage equal to your thorns."
+  },
+  {
     "PROPER_NAME": "Recharge",
     "NAMES": [
       "recharge"

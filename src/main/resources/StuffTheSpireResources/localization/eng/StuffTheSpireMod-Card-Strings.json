@@ -13,7 +13,7 @@
   },
   "StuffTheSpire:BloodClot": {
     "NAME": "Blood Clot",
-    "DESCRIPTION": "Gain !StuffTheSpire:Diminishing! temporary max. Hp when you loose health from a card next time. NL stuffthespire:Decreasing 1."
+    "DESCRIPTION": "Gain !StuffTheSpire:Diminishing! temporary HP when you loose health from a card next time. NL stuffthespire:Decreasing 1."
   },
   "StuffTheSpire:TitanForm": {
     "NAME": "Titan Form",
@@ -126,7 +126,7 @@
   },
   "StuffTheSpire:Coldhearted": {
     "NAME": "Cold Hearted",
-    "DESCRIPTION": "Channel 1 Frost. Gain !M! temporary max. HP."
+    "DESCRIPTION": "Channel 1 Frost. Gain !M! temporary HP."
   },
   "StuffTheSpire:EventHorizon": {
     "NAME": "Event Horizon",
@@ -139,8 +139,8 @@
   },
   "StuffTheSpire:Resist": {
     "NAME": "Resist",
-    "DESCRIPTION": "Whenever you exhaust a status, gain !M! temporary max. HP.",
-    "UPGRADE_DESCRIPTION": "Whenever you exhaust a status, gain !M! temporary max. HP. NL Add 2 stuffthespire:Flame_Bursts into your hand."
+    "DESCRIPTION": "Whenever you exhaust a status, gain !M! temporary HP.",
+    "UPGRADE_DESCRIPTION": "Whenever you exhaust a status, gain !M! temporary HP. NL Add 2 stuffthespire:Flame_Bursts into your hand."
   },
   "StuffTheSpire:NuclearReactor": {
     "NAME": "Nuclear Reactor",
@@ -187,7 +187,7 @@
   },
   "StuffTheSpire:ShieldGenerator": {
     "NAME": "Shield Generator",
-    "DESCRIPTION": "Unplayable. NL Can be upgraded any number of times. NL Startup: Gain !M! temporary max. HP"
+    "DESCRIPTION": "Unplayable. NL Can be upgraded any number of times. NL Startup: Gain !M! temporary HP"
   },
   "StuffTheSpire:Fury": {
     "NAME": "Fury",
@@ -241,11 +241,21 @@
   },
   "StuffTheSpire:Vigor": {
     "NAME": "Vigor",
-    "DESCRIPTION": "Unplayable. NL If you play a card while this is in your hand gain !M! temporary max. HP. NL Ethereal."
+    "DESCRIPTION": "Unplayable. NL If you play a card while this is in your hand gain !M! temporary HP. NL Ethereal."
   },
   "StuffTheSpire:BrainWave": {
     "NAME": "Brainwave",
     "DESCRIPTION": "Unplayable. NL Startup: Reduce the cost of !M! cards in your draw pile to 0 this combat. NL Ethereal."
+  },
+  "StuffTheSpire:Ambrosia": {
+    "NAME": "Ambrosia",
+    "DESCRIPTION": "Unplayable. NL Startup: gain !M! max. HP.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Startup: gain !M! max. HP. NL Ethereal."
+  },
+  "StuffTheSpire:Innocence": {
+    "NAME": "Innocence",
+    "DESCRIPTION": "Unplayable. NL stuffthespire:Fragile. NL When drawn gain !M! Intangible.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL stuffthespire:Fragile. NL When drawn gain !M! Intangible and don't loose your Block at the start of your next turn."
   },
   "StuffTheSpire:Rapture": {
     "NAME": "Rapture",
