@@ -259,6 +259,7 @@ public class StuffTheSpireMod implements
         Blessings.addToTop(new Vigor());
         Blessings.addToTop(new Ambrosia());
         Blessings.addToTop(new Innocence());
+        Blessings.addToTop(new Brawn());
         if (Loader.isModLoaded("archetypeapi")) {
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Shiv-Archetype-Addon.json");
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Chain-Archetype.json");
@@ -393,6 +394,7 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new CelestialWarden());
         BaseMod.addCard(new Harmony());
         BaseMod.addCard(new Innocence());
+        BaseMod.addCard(new Brawn());
         HasArchetypeAPI = Loader.isModLoaded("archetypeapi");
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);

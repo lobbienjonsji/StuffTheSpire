@@ -257,6 +257,11 @@
     "DESCRIPTION": "Unplayable. NL stuffthespire:Fragile. NL When drawn gain !M! Intangible.",
     "UPGRADE_DESCRIPTION": "Unplayable. NL stuffthespire:Fragile. NL When drawn gain !M! Intangible and don't loose your Block at the start of your next turn."
   },
+  "StuffTheSpire:Brawn": {
+    "NAME": "Brawn",
+    "DESCRIPTION": "Unplayable. NL stuffthespire:Fragile. NL When drawn gain !M! Strength for one turn and add a random attack from your draw pile to your hand.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL stuffthespire:Fragile. NL When drawn gain !M! Strength for one turn and add an attack from your draw pile to your hand."
+  },
   "StuffTheSpire:Rapture": {
     "NAME": "Rapture",
     "DESCRIPTION": "Unplayable. NL stuffthespire:Fragile. NL When drawn, draw !M! cards and gain [E] ."

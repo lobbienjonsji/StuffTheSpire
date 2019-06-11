@@ -17,7 +17,7 @@
     "NAME": "Mouthbags",
     "FLAVOR": "The better alternative to Ravioli.",
     "DESCRIPTIONS": [
-      "Upon Pickup choose a card and increase it's damage and block by #b4.",
+      "Upon Pickup choose a card and increase it's damage and #yBlock by #b4.",
       "Choose a card to improve"
     ]
   },
@@ -109,14 +109,14 @@
     "NAME": "Withered Skull",
     "FLAVOR": "They are so rare",
     "DESCRIPTIONS": [
-      "While below 50% of your max. HP apply #b2 Poison to all enemies at the end of your turn."
+      "While below 50% of your max. HP apply #b2 #yPoison to all enemies at the end of your turn."
     ]
   },
   "StuffTheSpire:Gunfinga": {
     "NAME": "Gunfinga",
     "FLAVOR": "It's a bad man signal",
     "DESCRIPTIONS": [
-      "At the start of each turn gain 3 #yStrength until the end of the turn or until you play an attack."
+      "At the start of each turn gain 3 #yStrength until the end of the turn or until you play an #yAttack."
     ]
   },
   "StuffTheSpire:ForceGauntlet": {
@@ -132,17 +132,23 @@
   "StuffTheSpire:RubySignet": {
     "NAME": "Ruby Signet",
     "FLAVOR": "The Ruby comes alive when you are burning to heal your wounds.",
-    "DESCRIPTIONS": ["Heal #b2 Hp whenever Vulnerable is applied to you"]
+    "DESCRIPTIONS": [
+      "Heal #b2 Hp whenever #yVulnerable is applied to you"
+    ]
   },
   "StuffTheSpire:SapphireSignet": {
     "NAME": "Sapphire Signet",
     "FLAVOR": "The Sapphire comes alive when you are frozen to heal your wounds.",
-    "DESCRIPTIONS": ["Heal #b2 Hp whenever Frail is applied to you."]
+    "DESCRIPTIONS": [
+      "Heal #b2 Hp whenever #yFrail is applied to you."
+    ]
   },
   "StuffTheSpire:EmeraldSignet": {
     "NAME": "Emerald Signet",
     "FLAVOR": "The Emerald comes alive when you are poisoned to heal your wounds.",
-    "DESCRIPTIONS": ["Heal #b2 Hp whenever Weak is applied to you."]
+    "DESCRIPTIONS": [
+      "Heal #b2 Hp whenever #yWeak is applied to you."
+    ]
   },
   "StuffTheSpire:MayFlowers": {
     "NAME": "Mayflowers",
@@ -165,7 +171,7 @@
     "NAME": "Bottled HeartBeat",
     "FLAVOR": "I I just... over you... a e can't get...",
     "DESCRIPTIONS": [
-      "Upon pickup choose a card that does not exhaust on it's own. Whenever the card is exhausted, gain #b2 max. HP",
+      "Upon pickup choose a card that does not #yExhaust on it's own. Whenever the card is exhausted, gain #b2 max. HP",
       "Whenever you exhaust ",
       ", gain #b2 max. HP"
     ]
@@ -252,7 +258,7 @@
     "NAME": "Broken Rose",
     "FLAVOR": "Sah ein Knab ein Röslein stehn.",
     "DESCRIPTIONS": [
-      "At the start of each turn gain #b1 #ystuffthespire:thorns."
+      "At the start of each turn gain #b1 #ystuffthespire:Thorns."
     ]
   }
 }
