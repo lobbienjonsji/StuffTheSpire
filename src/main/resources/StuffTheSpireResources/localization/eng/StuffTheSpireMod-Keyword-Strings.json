@@ -128,5 +128,13 @@
       "warding"
     ],
     "DESCRIPTION": "Take 25% less attack damage for 1 turn."
+  },
+  {
+    "PROPER_NAME": "Curse of War",
+    "NAMES": [
+      "Curse of War",
+      "curse_of_war"
+    ],
+    "DESCRIPTION": "A 1 cost, fleeting curse that deals 8 damage to you at the end of your turn."
   }
 ]

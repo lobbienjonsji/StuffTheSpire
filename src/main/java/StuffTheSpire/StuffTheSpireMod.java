@@ -5,10 +5,12 @@ import StuffTheSpire.cards.blessings.*;
 import StuffTheSpire.cards.blue.*;
 import StuffTheSpire.cards.colorless.*;
 import StuffTheSpire.cards.curses.GnomedCurse;
+import StuffTheSpire.cards.curses.WarCurse;
 import StuffTheSpire.cards.green.*;
 import StuffTheSpire.cards.red.*;
 import StuffTheSpire.cards.status.FlameBurst;
 import StuffTheSpire.events.FlowerFields;
+import StuffTheSpire.events.Horseman;
 import StuffTheSpire.events.NeowistPriest;
 import StuffTheSpire.events.TheShadows;
 import StuffTheSpire.relics.*;
@@ -70,6 +72,7 @@ public class StuffTheSpireMod implements
     public static CardGroup StrikeArchetype;
     public static CardGroup DiscardArchetype;
     public static CardGroup FrostArchetype;
+    public static CardGroup HorsemanBlessings;
     public static final Color DEFAULT_GRAY = CardHelper.getColor(64.0f, 70.0f, 70.0f);
     private static GifAnimation Plasmapunch = new GifAnimation("StuffTheSpireResources/images/animations/plasmapunchsheet.png", 11, 1, 0,0,0,0,false);
     private static GifAnimation Plasmapulse = new GifAnimation("StuffTheSpireResources/images/animations/plasmapulsesheet.png", 11, 1, 0,0,0,0,false);
@@ -236,6 +239,7 @@ public class StuffTheSpireMod implements
         BaseMod.addEvent(TheShadows.ID, TheShadows.class, TheCity.ID);
         BaseMod.addEvent(NeowistPriest.ID, NeowistPriest.class, TheCity.ID);
         BaseMod.addEvent(FlowerFields.ID, FlowerFields.class, Exordium.ID);
+        BaseMod.addEvent(Horseman.ID, Horseman.class, TheCity.ID);
         CommonChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         UncommonChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         RareChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
@@ -252,6 +256,7 @@ public class StuffTheSpireMod implements
         DiscardArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         FrostArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         Blessings = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        HorsemanBlessings = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         Blessings.addToTop(new BrainWave());
         Blessings.addToTop(new CelestialWarden());
         Blessings.addToTop(new Harmony());
@@ -260,6 +265,10 @@ public class StuffTheSpireMod implements
         Blessings.addToTop(new Ambrosia());
         Blessings.addToTop(new Innocence());
         Blessings.addToTop(new Brawn());
+        HorsemanBlessings.addToTop(new WarGroove());
+        HorsemanBlessings.addToTop(new CopiaOfFamine());
+        HorsemanBlessings.addToTop(new DeathNote());
+        HorsemanBlessings.addToTop(new PestControl());
         if (Loader.isModLoaded("archetypeapi")) {
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Shiv-Archetype-Addon.json");
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Chain-Archetype.json");
@@ -323,6 +332,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new FrostArchetype(), RelicType.SHARED);
         BaseMod.addRelic(new BottledEssence(), RelicType.SHARED);
         BaseMod.addRelic(new RedRose(), RelicType.SHARED);
+        BaseMod.addRelic(new OccultApparatus(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -395,6 +405,11 @@ public class StuffTheSpireMod implements
         BaseMod.addCard(new Harmony());
         BaseMod.addCard(new Innocence());
         BaseMod.addCard(new Brawn());
+        BaseMod.addCard(new WarCurse());
+        BaseMod.addCard(new WarGroove());
+        BaseMod.addCard(new PestControl());
+        BaseMod.addCard(new DeathNote());
+        BaseMod.addCard(new CopiaOfFamine());
         HasArchetypeAPI = Loader.isModLoaded("archetypeapi");
         logger.info("Making sure the cards are unlocked.");
         UnlockTracker.unlockCard(PlasmaPunch.ID);

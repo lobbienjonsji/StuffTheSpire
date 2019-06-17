@@ -260,5 +260,12 @@
     "DESCRIPTIONS": [
       "At the start of each turn gain #b1 #ystuffthespire:Thorns."
     ]
+  },
+  "StuffTheSpire:OccultApparatus": {
+    "NAME": "Occult Apparatus",
+    "FLAVOR": "The intricate gearbox keeps the gears spinning indefinitely, providing an infinite source of power.",
+    "DESCRIPTIONS": [
+      "Whenever you play #b3 cards in one turn, the fourth card you play is exhausted and a copy of it is added to your hand next turn."
+    ]
   }
 }

@@ -278,6 +278,30 @@
     "NAME": "Harmony",
     "DESCRIPTION": "Unplayable. NL Startup: Gain 1 Regeneration for every !M! Skills in your draw pile."
   },
+  "StuffTheSpire:WarCurse": {
+    "NAME": "War",
+    "DESCRIPTION": "At the end of your turn take 8 damage. NL Fleeting."
+  },
+  "StuffTheSpire:WarGroove": {
+    "NAME": "War Groove",
+    "DESCRIPTION": "Gain 7 Strength. Lose 1 Strength at the end of the next 7 turns. Add a stuffthespire:Curse_of_War to your Deck. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain 7 Strength. Lose 1 Strength at the end of the next 7 turns. NL Exhaust."
+  },
+  "StuffTheSpire:PestControl": {
+    "NAME": "Pest Control",
+    "DESCRIPTION": "Unplayable. NL Startup: Apply !M! poison to a random enemy",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Startup: Apply !M! poison to all enemies"
+  },
+  "StuffTheSpire:DeathNote": {
+    "NAME": "Death Note",
+    "DESCRIPTION": "Unplayable. On turn 10 deal 200 damage to a random enemy. Current turn: !M!",
+    "UPGRADE_DESCRIPTION": "Unplayable. On turn 10 deal 200 damage to all enemies. Current turn: !M!"
+  },
+  "StuffTheSpire:CopiaOfFamine": {
+    "NAME": "Copia of Famine",
+    "DESCRIPTION": "Unplayable. NL Startup: A random enemy loses !M! Strength. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When this card is exhausted, a random enemy looses !M! Strength. NL Startup: A random enemy loses !M! Strength. NL Ethereal."
+  },
   "ShivArchetype": {
     "NAME": "ShivArche",
     "DESCRIPTION": " NL stuffthespire:Archetype: Shivs."

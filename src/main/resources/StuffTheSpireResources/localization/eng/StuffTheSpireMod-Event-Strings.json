@@ -44,11 +44,53 @@
       "Listening to the screeching byrds in the distance, smelling the fresh air and getting warmed by the small beams of sunlight coming through a window above, you decide it's not worth the hassle and take a nap instead."
     ],
     "OPTIONS": [
-      "[Dig it up] #rLoose #r",
+      "[Dig it up] #rLose #r",
       " #rHP, #gbecome #gblessed: #gInnocence",
       "[Break it] #rBecome #rcursed: #rRegret, #gobtain #ga #gspecial #grelic",
       "[Rest] #gheal #g",
       " #gHP",
+      "[Leave]"
+    ]
+  },
+  "StuffTheSpire:Horseman": {
+    "NAME": "The Horseman",
+    "DESCRIPTIONS": [
+      "Up ahead you see a pale shadowy figure, beckoning you with a long bony finger",
+      "Approaching the figure the image before you shifts and you see the man atop a white horse, you feel a sense of darkness creep upon you the more you look at the horseman.",
+      "Words start to form themselves in your mind in an almost painful echo as your head starts to spin in agony. \"Behold ye who walks the path of the divine, take this gift but leave your soul. Accept this burden and power you shall behold\"",
+      "Your final steps you see the figure up close as it holds out a light in its outstretched hand, a light that permeated darkness at the same time.",
+      "You decide following the horseman is not worth it.",
+      "Damaged, but filled with new power you stumble away from the figure and continue ascending the spire."
+    ],
+    "OPTIONS": [
+      "[Run Away]",
+      "[Follow him] #rLose #r",
+      " #rHP",
+      "[Follow] #rLose #r",
+      " #rHP",
+      "[Touch the Light] #rLose #r",
+      " #rHP, #gobtain #ga #grandom #gspecial #gblessing",
+      "[Leave]"
+    ]
+  },
+  "StuffTheSpire:Wunderkammer": {
+    "NAME": "Wonderful Wunderkammer",
+    "DESCRIPTIONS": [
+      "In front of you stands an odd automaton, looking like a fancy cupboard with legs and arms. The automaton approaches you, revealing his insides. You can see all sorts of strange relics it has collected. The wunderkammer points on itself, then on you. Looks like it wants to trade.",
+      "You hand the desired relic to the strange machine. Satisfied, the wunderkammer gives you it's blessing.",
+      "You hand your signature relic to the strange machine. Surprised, the wunderkammer pull's out an occult apparatus out of it's collection and hands it to you.",
+      "You manage to steal one of the strange machine's relics and flee. You hear the wunderkammer cursing behind your back.",
+      "~DISAPPOINTMENT~ ~NOISES~"
+    ],
+    "OPTIONS": [
+      "[Offer ",
+      "] #gChoose #1 #gout #g3 #grandom #gblessings",
+      "[Locked] Requires: Common relic",
+      "[Offer ",
+      "] #gObtain #ga #gspecial #grelic",
+      "[Locked] Requires: Starter relic",
+      "[Steal] #gObtain #ga #grandom #grelic, #rbecome #rcursed: #rWondercurse",
+      "[Refuse]",
       "[Leave]"
     ]
   }

@@ -75,5 +75,12 @@
       "Next turn, the first card you play is played twice.",
       "The first card you play this turn is played twice."
     ]
+  },
+  "StuffTheSpire:StrengthDown": {
+    "NAME": "Relieve",
+    "DESCRIPTIONS": [
+      "Over the next ",
+      " turns, loose 1 Strength at the end of your turn."
+    ]
   }
 }
