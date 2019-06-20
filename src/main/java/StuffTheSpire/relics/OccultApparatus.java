@@ -27,12 +27,14 @@ public class OccultApparatus extends CustomRelic {
 
     @Override
     public void onUseCard(AbstractCard targetCard, UseCardAction useCardAction) {
-        this.counter += 1;
-        if (this.counter % 3 == 0) {
-            this.counter = 0;
-            flash();
-            AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ApparatusPower(AbstractDungeon.player, 1), 1));
+        if (targetCard.type == AbstractCard.CardType.SKILL) {
+            this.counter += 1;
+            if (this.counter % 3 == 0) {
+                this.counter = 0;
+                flash();
+                AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ApparatusPower(AbstractDungeon.player, 1), 1));
+            }
         }
     }
 

@@ -82,5 +82,11 @@
       "Over the next ",
       " turns, loose 1 Strength at the end of your turn."
     ]
+  },
+  "StuffTheSpire:ApparatusPower": {
+    "NAME": "Apparatus",
+    "DESCRIPTIONS": [
+      "The next card you play is exhausted and a copy of it is added to your hand next turn."
+    ]
   }
 }

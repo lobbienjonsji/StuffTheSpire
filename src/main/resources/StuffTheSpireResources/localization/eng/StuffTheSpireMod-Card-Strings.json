@@ -302,6 +302,15 @@
     "DESCRIPTION": "Unplayable. NL Startup: A random enemy loses !M! Strength. NL Ethereal.",
     "UPGRADE_DESCRIPTION": "Unplayable. NL When this card is exhausted, a random enemy looses !M! Strength. NL Startup: A random enemy loses !M! Strength. NL Ethereal."
   },
+  "StuffTheSpire:CuriosityCurse": {
+    "NAME": "Curious Curse",
+    "DESCRIPTION": "Unplayable. NL Startup: Add a random Curse to your draw pile. NL Ethereal."
+  },
+  "StuffTheSpire:Perfection": {
+    "NAME": "Perfection",
+    "DESCRIPTION": "Unplayable. Upon pickup, upgrade !M! random cards.",
+    "UPGRADE_DESCRIPTION": "Fleeting."
+  },
   "ShivArchetype": {
     "NAME": "ShivArche",
     "DESCRIPTION": " NL stuffthespire:Archetype: Shivs."

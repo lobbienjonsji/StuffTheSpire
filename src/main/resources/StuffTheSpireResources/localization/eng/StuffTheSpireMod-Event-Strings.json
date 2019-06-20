@@ -80,16 +80,17 @@
       "You hand the desired relic to the strange machine. Satisfied, the wunderkammer gives you it's blessing.",
       "You hand your signature relic to the strange machine. Surprised, the wunderkammer pull's out an occult apparatus out of it's collection and hands it to you.",
       "You manage to steal one of the strange machine's relics and flee. You hear the wunderkammer cursing behind your back.",
-      "~DISAPPOINTMENT~ ~NOISES~"
+      "~DISAPPOINTMENT~ ~NOISES~",
+      "Add a Blessing to your Deck."
     ],
     "OPTIONS": [
       "[Offer ",
-      "] #gChoose #1 #gout #g3 #grandom #gblessings",
+      "] #gChoose #g1 #gout #g3 #grandom #gblessings",
       "[Locked] Requires: Common relic",
       "[Offer ",
       "] #gObtain #ga #gspecial #grelic",
       "[Locked] Requires: Starter relic",
-      "[Steal] #gObtain #ga #grandom #grelic, #rbecome #rcursed: #rWondercurse",
+      "[Steal] #gObtain #ga #grandom #grelic, #rbecome #rcursed: #rCurious #rCurse",
       "[Refuse]",
       "[Leave]"
     ]
