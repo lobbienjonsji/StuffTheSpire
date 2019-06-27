@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+
 import java.util.HashMap;
 
 import static StuffTheSpire.StuffTheSpireMod.Dark_Fade;
@@ -111,6 +112,11 @@ public class DarkFadePower extends AbstractPower implements CloneablePowerInterf
     @Override
     public void onRemove()
     {
+        Dark_Fade.ishidden = true;
+    }
+
+    @Override
+    public void onDeath() {
         Dark_Fade.ishidden = true;
     }
 }

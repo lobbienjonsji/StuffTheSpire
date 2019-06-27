@@ -80,7 +80,7 @@
       "You hand the desired relic to the strange machine. Satisfied, the wunderkammer gives you it's blessing.",
       "You hand your signature relic to the strange machine. Surprised, the wunderkammer pull's out an occult apparatus out of it's collection and hands it to you.",
       "You manage to steal one of the strange machine's relics and flee. You hear the wunderkammer cursing behind your back.",
-      "~DISAPPOINTMENT~ ~NOISES~",
+      "~D~I~S~A~P~P~O~I~N~T~M~E~N~T~ ~N~O~I~S~E~S~",
       "Add a Blessing to your Deck."
     ],
     "OPTIONS": [
@@ -92,6 +92,23 @@
       "[Locked] Requires: Starter relic",
       "[Steal] #gObtain #ga #grandom #grelic, #rbecome #rcursed: #rCurious #rCurse",
       "[Refuse]",
+      "[Leave]"
+    ]
+  },
+  "StuffTheSpire:GreaterSnecko": {
+    "NAME": "Greater Snecko",
+    "DESCRIPTIONS": [
+      "Suddenly A large creature in front of you emerges. An ancient titan, the greater snecko. Moving towards you, it stares at you with it's large, hypnotizing eye.",
+      "The snecko hisses an obscure spell and your eyes start widening. You can see it all now.",
+      "You feel the snecko's mighty gaze in your neck. You refuse to turn around. #rYou #rare #rstronger #rthan #rit! You finally turn around and after a wild struggle you manage to cut out one of it's eyes.",
+      "You slowly retreat, as the snecko starts to fade."
+    ],
+    "OPTIONS": [
+      "[Reciprocate] #rLose #r",
+      " #r% #rof #ryour #rmax. #rHP, #gbecome #gblessed: #gBrain #gWave",
+      "[Resist] #rLose #r",
+      " #rHP, #gobtain #ga #gspecial #grelic.",
+      "[Flee]",
       "[Leave]"
     ]
   }

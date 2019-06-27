@@ -308,7 +308,7 @@
   },
   "StuffTheSpire:Perfection": {
     "NAME": "Perfection",
-    "DESCRIPTION": "Unplayable. Upon pickup, upgrade !M! random cards.",
+    "DESCRIPTION": "Unplayable. NL Upon pickup, upgrade !M! random cards.",
     "UPGRADE_DESCRIPTION": "Fleeting."
   },
   "ShivArchetype": {

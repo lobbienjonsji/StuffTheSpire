@@ -3,7 +3,7 @@
     "NAME": "Neows Tribute",
     "FLAVOR": "It is said, that Neow rewards those who have achieved great things.",
     "DESCRIPTIONS": [
-      "Right Click during Combat: Consume 1 Charge to gain 1 Intangible. Defeat Elites to gain Charges."
+      "Right Click during Combat: Consume #b1 Charge to gain #b1 Intangible. Defeat Elites to gain Charges."
     ]
   },
   "StuffTheSpire:RunicHypercube": {
@@ -53,7 +53,7 @@
     "NAME": "Nightcore",
     "FLAVOR": "Your eardrums are broken.",
     "DESCRIPTIONS": [
-      "At the start of each combat gain #b2 #ystuffthespire:Dark_fade."
+      "At the start of each combat gain #b1 #ystuffthespire:Dark_fade."
     ]
   },
   "StuffTheSpire:Kangaroo": {
@@ -116,7 +116,7 @@
     "NAME": "Gunfinga",
     "FLAVOR": "It's a bad man signal",
     "DESCRIPTIONS": [
-      "At the start of each turn gain 3 #yStrength until the end of the turn or until you play an #yAttack."
+      "At the start of each turn gain #b3 #yStrength until the end of the turn or until you play an #yAttack."
     ]
   },
   "StuffTheSpire:ForceGauntlet": {
@@ -158,7 +158,9 @@
   "StuffTheSpire:BlackoutCurse": {
     "NAME": "Blackout Curse",
     "FLAVOR": "Hello Darkness",
-    "DESCRIPTIONS": ["Deal 50% less attack damage."]
+    "DESCRIPTIONS": [
+      "Deal #r50% less attack damage."
+    ]
   },
   "StuffTheSpire:ColdMirror": {
     "NAME": "Cold Mirror",
@@ -180,7 +182,7 @@
     "NAME": "Chain Archetype",
     "FLAVOR": "Only the cool kids could draw those back in the day.",
     "DESCRIPTIONS": [
-      "Additional card rewards for the Chain Archetype may now appear with a 33% chance.",
+      "Additional card rewards for the Chain Archetype may now appear with a #b33% chance.",
       "Chain Archetype card"
     ]
   },
@@ -203,7 +205,7 @@
     "NAME": "Rhap's Scallions",
     "FLAVOR": "Get it? Because, like, scallions are a vegetable?",
     "DESCRIPTIONS": [
-      "Upon pickup remove a card from your deck, then gain max. HP equal to 60 divided by your deck size.",
+      "Upon pickup remove a card from your deck, then gain max. HP equal to #b60 divided by your deck size.",
       "Choose a card to remove from your deck."
     ]
   },
@@ -211,7 +213,7 @@
     "NAME": "Shiv Archetype",
     "FLAVOR": "Stabby stab!",
     "DESCRIPTIONS": [
-      "Additional card rewards for the Shiv Archetype may now appear with a 33% chance.",
+      "Additional card rewards for the Shiv Archetype may now appear with a #b33% chance.",
       "Shiv Archetype card"
     ]
   },
@@ -219,7 +221,7 @@
     "NAME": "Lightning Archetype",
     "FLAVOR": "THUNDER oaoaoaoAAAAAOA!",
     "DESCRIPTIONS": [
-      "Additional card rewards for the Lightning Archetype may now appear with a 33% chance.",
+      "Additional card rewards for the Lightning Archetype may now appear with a #b33% chance.",
       "Lightning Archetype card"
     ]
   },
@@ -227,7 +229,7 @@
     "NAME": "Strike Archetype",
     "FLAVOR": "Im struck.",
     "DESCRIPTIONS": [
-      "Additional card rewards for the Strike Archetype may now appear with a 33% chance.",
+      "Additional card rewards for the Strike Archetype may now appear with a #b33% chance.",
       "Strike Archetype card"
     ]
   },
@@ -235,7 +237,7 @@
     "NAME": "Discard Archetype",
     "FLAVOR": "Discarded and rejected. Not this time!",
     "DESCRIPTIONS": [
-      "Additional card rewards for the Discard Archetype may now appear with a 33% chance.",
+      "Additional card rewards for the Discard Archetype may now appear with a #b33% chance.",
       "Discard Archetype card"
     ]
   },
@@ -243,7 +245,7 @@
     "NAME": "Frost Archetype",
     "FLAVOR": "You're as cold as ice!",
     "DESCRIPTIONS": [
-      "Additional card rewards for the Frost Archetype may now appear with a 33% chance.",
+      "Additional card rewards for the Frost Archetype may now appear with a #b33% chance.",
       "Frost Archetype card"
     ]
   },
@@ -266,6 +268,27 @@
     "FLAVOR": "The intricate gearbox keeps the gears spinning indefinitely, providing an infinite source of power.",
     "DESCRIPTIONS": [
       "Whenever you play #b3 Skills in one turn, the next card you play is exhausted and a copy of it is added to your hand next turn."
+    ]
+  },
+  "StuffTheSpire:GreaterSneckoEye": {
+    "NAME": "Greater Snecko Eye",
+    "FLAVOR": "This one is even more confusing.",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, randomize the cost of all other cards in your hand."
+    ]
+  },
+  "StuffTheSpire:Experiment12": {
+    "NAME": "Experiment 12",
+    "FLAVOR": "Would you like some beer with your clichee?",
+    "DESCRIPTIONS": [
+      "Whenever you play a card that costs #b2 or more gain #b2 temporary HP."
+    ]
+  },
+  "StuffTheSpire:Saxophone": {
+    "NAME": "Saxophone",
+    "FLAVOR": "Hot patotie, bless my soul!",
+    "DESCRIPTIONS": [
+      "Whenever you obtain a curse, also obtain a blessing."
     ]
   }
 }

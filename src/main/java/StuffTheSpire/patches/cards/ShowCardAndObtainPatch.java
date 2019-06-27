@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.cards.red.PerfectedStrike;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 
 import java.util.ArrayList;
@@ -58,6 +59,9 @@ public class ShowCardAndObtainPatch {
                 relic.updateDescription(AbstractDungeon.player.chosenClass);
                 AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, relic);
             }
+            if (card.type == AbstractCard.CardType.CURSE && AbstractDungeon.player.hasRelic(Saxophone.ID)) {
+                AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(StuffTheSpireMod.Blessings.getRandomCard(true).makeStatEquivalentCopy(), Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+            }
             if (card.cardID.equals(Perfection.ID)) {
                 ArrayList<AbstractCard> upgradableCards = new ArrayList();
                 for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
@@ -96,15 +100,15 @@ public class ShowCardAndObtainPatch {
                         AbstractDungeon.player.bottledCardUpgradeCheck(upgradableCards.get(2));
                         AbstractDungeon.topLevelEffects.add(new ShowCardBrieflyEffect(
 
-                                upgradableCards.get(0).makeStatEquivalentCopy(), Settings.WIDTH / 2.0F - AbstractCard.IMG_WIDTH / 2.0F - 20.0F * Settings.scale, Settings.HEIGHT / 2.0F));
+                                upgradableCards.get(0).makeStatEquivalentCopy(), Settings.WIDTH / 2.0F - AbstractCard.IMG_WIDTH - 20.0F * Settings.scale, Settings.HEIGHT / 2.0F));
 
                         AbstractDungeon.topLevelEffects.add(new ShowCardBrieflyEffect(
 
-                                upgradableCards.get(1).makeStatEquivalentCopy(), Settings.WIDTH / 2.0F + AbstractCard.IMG_WIDTH / 2.0F + 20.0F * Settings.scale, Settings.HEIGHT / 2.0F));
+                                upgradableCards.get(1).makeStatEquivalentCopy(), Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
 
                         AbstractDungeon.topLevelEffects.add(new ShowCardBrieflyEffect(
 
-                                upgradableCards.get(2).makeStatEquivalentCopy(), Settings.WIDTH / 2.0F + AbstractCard.IMG_WIDTH / 2.0F + 20.0F * Settings.scale, Settings.HEIGHT / 2.0F));
+                                upgradableCards.get(2).makeStatEquivalentCopy(), Settings.WIDTH / 2.0F + AbstractCard.IMG_WIDTH + 20.0F * Settings.scale, Settings.HEIGHT / 2.0F));
 
                         AbstractDungeon.topLevelEffects.add(new UpgradeShineEffect(Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
                     }

@@ -35,6 +35,7 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.Exordium;
+import com.megacrit.cardcrawl.dungeons.TheBeyond;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
@@ -57,7 +58,8 @@ public class StuffTheSpireMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         PostInitializeSubscriber,
-        PreStartGameSubscriber {
+        PreStartGameSubscriber,
+        PostDeathSubscriber {
     public static final Logger logger = LogManager.getLogger(StuffTheSpireMod.class.getName());
     private static String modID;
     public static boolean HasArchetypeAPI;
@@ -239,6 +241,7 @@ public class StuffTheSpireMod implements
         BaseMod.addEvent(FlowerFields.ID, FlowerFields.class, Exordium.ID);
         BaseMod.addEvent(Horseman.ID, Horseman.class, TheCity.ID);
         BaseMod.addEvent(Wunderkammer.ID, Wunderkammer.class);
+        BaseMod.addEvent(GreaterSnecko.ID, GreaterSnecko.class, TheBeyond.ID);
         CommonChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         UncommonChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         RareChainArchetype = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
@@ -332,6 +335,9 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new BottledEssence(), RelicType.SHARED);
         BaseMod.addRelic(new RedRose(), RelicType.SHARED);
         BaseMod.addRelic(new OccultApparatus(), RelicType.SHARED);
+        BaseMod.addRelic(new GreaterSneckoEye(), RelicType.SHARED);
+        BaseMod.addRelic(new Experiment12(), RelicType.SHARED);
+        BaseMod.addRelic(new Saxophone(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -461,12 +467,14 @@ public class StuffTheSpireMod implements
             CardGroup IronCladCards = AbstractArchetype.getArchetypeSelectCards(AbstractPlayer.PlayerClass.IRONCLAD);
             for (int i = 0; i < SilentCards.size(); i++) {
                 ArchetypeSelectCard B = (ArchetypeSelectCard) SilentCards.getNCardFromTop(i);
+                logger.info(B.name);
                 if (B.getArchetypeName().equals("Shiv")) {
                     B.archetypeEffect(ShivArchetype);
                     for (AbstractCard C : ShivArchetype.group) {
                         logger.info(C.name);
                     }
                 }
+
                 if (B.getArchetypeName().equals("Discard")) {
                     B.archetypeEffect(DiscardArchetype);
                     for (AbstractCard C : DiscardArchetype.group) {
@@ -503,5 +511,10 @@ public class StuffTheSpireMod implements
             }
         }
         HasArchetypeRelic = false;
+    }
+
+    @Override
+    public void receivePostDeath() {
+        Dark_Fade.ishidden = true;
     }
 }

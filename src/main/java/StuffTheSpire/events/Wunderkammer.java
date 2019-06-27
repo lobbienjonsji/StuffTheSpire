@@ -117,7 +117,7 @@ public class Wunderkammer extends AbstractImageEvent {
                         screenNum = 1;
                         break;
                     case 3:
-                        this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
+                        this.imageEventText.updateBodyText(DESCRIPTIONS[4]);
                         this.imageEventText.updateDialogOption(0, OPTIONS[8]);
                         this.imageEventText.clearRemainingOptions();
                         screenNum = 1;
