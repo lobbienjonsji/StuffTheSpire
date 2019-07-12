@@ -3,12 +3,17 @@ package StuffTheSpire.patches.relics;
 import StuffTheSpire.relics.BottledEssence;
 import StuffTheSpire.relics.DarkSteelAnvil;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.ExhaustiveField;
-import com.evacipated.cardcrawl.modthespire.lib.*;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import javassist.CtBehavior;
+import com.megacrit.cardcrawl.localization.CardStrings;
 
 public class AbstractCardPatches {
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("ExhaustiveCard");
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     @SpirePatch(clz = AbstractCard.class, method = "upgradeDamage")
     public static class DamagePatch {
         @SpirePrefixPatch
@@ -50,21 +55,15 @@ public class AbstractCardPatches {
 
     @SpirePatch(clz = AbstractCard.class, method = "makeStatEquivalentCopy")
     public static class ExhaustivePatch {
-        @SpireInsertPatch(locator = Locator.class, localvars = {"card"})
-        public static void Patch(AbstractCard __instance, AbstractCard card) {
+        @SpirePostfixPatch
+        public static AbstractCard Patch(AbstractCard card, AbstractCard __instance) {
             if (AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(BottledEssence.ID) && card.exhaust) {
                 card.exhaust = false;
                 ExhaustiveField.ExhaustiveFields.exhaustive.set(card, 2);
+                card.rawDescription += DESCRIPTION;
+                card.initializeDescription();
             }
-        }
-
-        private static class Locator extends SpireInsertLocator {
-            @Override
-            public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
-                Matcher finalMatcher = new Matcher.FieldAccessMatcher(AbstractCard.class, "name");
-                int[] found = LineFinder.findAllInOrder(ctMethodToPatch, finalMatcher);
-                return new int[]{found[found.length - 1]};
-            }
+            return card;
         }
     }
 }

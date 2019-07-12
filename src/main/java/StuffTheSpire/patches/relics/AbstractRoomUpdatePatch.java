@@ -4,7 +4,9 @@ import StuffTheSpire.relics.*;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.rooms.MonsterRoomElite;
 import javassist.CtBehavior;
 
 @SpirePatch (
@@ -45,6 +47,13 @@ public class AbstractRoomUpdatePatch {
         if (FrostArcheType != null) {
             FrostArcheType.onTrigger();
             AbstractDungeon.combatRewardScreen.setupItemReward();
+        }
+        if (AbstractDungeon.getCurrRoom() instanceof MonsterRoomElite && AbstractDungeon.player.hasRelic(TintedRock.ID)) {
+            for (RewardItem r : AbstractDungeon.getCurrRoom().rewards) {
+                if (r.type == RewardItem.RewardType.GOLD) {
+                    r.incrementGold(r.goldAmt);
+                }
+            }
         }
     }
 

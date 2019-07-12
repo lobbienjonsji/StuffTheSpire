@@ -290,5 +290,19 @@
     "DESCRIPTIONS": [
       "Whenever you obtain a curse, also obtain a blessing."
     ]
+  },
+  "StuffTheSpire:Barrel": {
+    "NAME": "Barrel",
+    "FLAVOR": "\"Money does not buy you happiness, therefore imma sit in this barrel now\" - Greek Philosophy Man",
+    "DESCRIPTIONS": [
+      "If you have 50 or less gold at the end of combat, heal #b8 HP."
+    ]
+  },
+  "StuffTheSpire:TintedRock": {
+    "NAME": "Tinted Rock",
+    "FLAVOR": "Don't miss it!",
+    "DESCRIPTIONS": [
+      "Gain double gold from elite combats."
+    ]
   }
 }

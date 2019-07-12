@@ -26,6 +26,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -38,6 +39,7 @@ import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheBeyond;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -92,7 +94,12 @@ public class StuffTheSpireMod implements
     private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/bg_skill_default_gray.png";
     private static final String POWER_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/bg_power_default_gray.png";
     private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "StuffTheSpireResources/images/1024/card_default_gray_orb.png";
+    public static TextureAtlas.AtlasRegion Frame;
+    public static Texture BlessingBg;
+    public static Texture BigFrame;
     public static CardGroup Blessings;
+    public static TextureAtlas BlessingBgAtlas;
+    public static TextureAtlas.AtlasRegion BlessingBgRegion;
 
     public static String makeCardPath(String resourcePath) {
         return getModID() + "Resources/images/cards/" + resourcePath;
@@ -222,6 +229,10 @@ public class StuffTheSpireMod implements
         settingsPanel.addUIElement(new ModLabel("StuffTheSpireMod doesn't have any settings! An example of those may come later.", 400.0f, 700.0f,
                 settingsPanel, (me) -> {
         }));
+        BlessingBg = TextureLoader.getTexture("StuffTheSpireResources/images/512/bg_skill_default_gray.png");
+        BlessingBgAtlas = new TextureAtlas();
+        BlessingBgAtlas.addRegion("BlessBg", BlessingBg, 0, 0, BlessingBg.getWidth(), BlessingBg.getHeight());
+        BlessingBgRegion = BlessingBgAtlas.findRegion("BlessBg");
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
         logger.info("Done loading badge Image and mod options");
         Plasmapunch.create();
@@ -293,6 +304,8 @@ public class StuffTheSpireMod implements
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Claw-Archetype-Addon.json");
             loadArchetypes(getModID() + "Resources/localization/eng/StuffTheSpireMod-Power-Archetype-Addon.json");
         }
+        Frame = ImageMaster.CARD_FRAME_SKILL_COMMON;
+        BigFrame = ImageMaster.CARD_FRAME_SKILL_COMMON_L.getTexture();
     }
 
     @Override
@@ -338,6 +351,8 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new GreaterSneckoEye(), RelicType.SHARED);
         BaseMod.addRelic(new Experiment12(), RelicType.SHARED);
         BaseMod.addRelic(new Saxophone(), RelicType.SHARED);
+        BaseMod.addRelic(new Barrel(), RelicType.SHARED);
+        BaseMod.addRelic(new TintedRock(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
@@ -517,4 +532,6 @@ public class StuffTheSpireMod implements
     public void receivePostDeath() {
         Dark_Fade.ishidden = true;
     }
+
+
 }

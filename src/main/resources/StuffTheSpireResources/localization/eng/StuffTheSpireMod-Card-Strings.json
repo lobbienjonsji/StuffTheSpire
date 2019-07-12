@@ -311,6 +311,7 @@
     "DESCRIPTION": "Unplayable. NL Upon pickup, upgrade !M! random cards.",
     "UPGRADE_DESCRIPTION": "Fleeting."
   },
+
   "ShivArchetype": {
     "NAME": "ShivArche",
     "DESCRIPTION": " NL stuffthespire:Archetype: Shivs."
@@ -330,5 +331,9 @@
   "FrostArchetype": {
     "NAME": "",
     "DESCRIPTION": " NL stuffthespire:Archetype: Frost."
+  },
+  "ExhaustiveCard": {
+    "NAME": "",
+    "DESCRIPTION": " NL Exhaustive !stslib:ex!."
   }
 }

@@ -3,7 +3,7 @@
     <groupId>StuufTheSpire</groupId>
     <artifactId>StuffTheSpire</artifactId>
     <!--<version>1.4.0</version>-->
-    <version>1.4.3</version>
+    <version>1.5.6</version>
     <name>StuffTheSpire</name>
 
     <properties>
@@ -60,7 +60,7 @@
         <dependency>
             <groupId>Gifthespirelib</groupId>
             <artifactId>GifTheSpireLib</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.5</version>
             <scope>system</scope>
         <systemPath>${Steam.path}/workshop/content/646570/1685625583/GifTheSpireLib.jar</systemPath>
         <!--<systemPath>${basedir}/../lib/StSLib.jar</systemPath>-->

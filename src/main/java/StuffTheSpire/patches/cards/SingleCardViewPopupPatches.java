@@ -2,8 +2,8 @@ package StuffTheSpire.patches.cards;
 
 import StuffTheSpire.cards.AbstractBlessing;
 import basemod.ReflectionHacks;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -18,7 +18,7 @@ public class SingleCardViewPopupPatches {
         private static String[] Text = CardCrawlGame.languagePack.getUIString("AbstractBlessing").TEXT;
 
         @SpireInsertPatch(locator = Locator.class, localvars = {"tmpImg"})
-        public static void patch(SingleCardViewPopup __instance, SpriteBatch sb, @ByRef Texture[] tmpImg) {
+        public static void patch(SingleCardViewPopup __instance, SpriteBatch sb, @ByRef TextureAtlas.AtlasRegion[] tmpImg) {
             if (((AbstractCard) ReflectionHacks.getPrivate(__instance, SingleCardViewPopup.class, "card")).type == CardTypes.BLESSING) {
                 tmpImg[0] = ImageMaster.CARD_FRAME_SKILL_COMMON_L;
             }
@@ -65,6 +65,5 @@ public class SingleCardViewPopupPatches {
             }
             return SpireReturn.Continue();
         }
-
     }
 }

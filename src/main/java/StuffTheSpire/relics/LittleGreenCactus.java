@@ -1,5 +1,5 @@
 package StuffTheSpire.relics;
-
+/*
 import StuffTheSpire.StuffTheSpireMod;
 import StuffTheSpire.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
@@ -38,3 +38,4 @@ public class LittleGreenCactus extends CustomRelic {
         return damageAmount;
     }
 }
+*/

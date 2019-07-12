@@ -1,6 +1,7 @@
 package StuffTheSpire.relics;
 
 import StuffTheSpire.StuffTheSpireMod;
+import StuffTheSpire.actions.ShuffleCardCostsAction;
 import StuffTheSpire.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
@@ -24,11 +25,10 @@ public class GreaterSneckoEye extends CustomRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        for (AbstractCard a : AbstractDungeon.player.hand.group) {
-            int i = AbstractDungeon.cardRandomRng.random(0, 3);
-            a.setCostForTurn(i);
-        }
+        AbstractDungeon.actionManager.addToBottom(new ShuffleCardCostsAction());
     }
+
+
 
     @Override
     public String getUpdatedDescription() {

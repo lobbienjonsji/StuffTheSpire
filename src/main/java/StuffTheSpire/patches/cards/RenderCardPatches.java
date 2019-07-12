@@ -1,9 +1,9 @@
 package StuffTheSpire.patches.cards;
 
-import StuffTheSpire.cards.AbstractBlessing;
+import StuffTheSpire.StuffTheSpireMod;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,17 +19,18 @@ public class RenderCardPatches {
         @SpirePrefixPatch
         public static SpireReturn patch(AbstractCard __instance, SpriteBatch sb, float x, float y) {
             if (__instance.type == CardTypes.BLESSING) {
-                renderHelper(sb, Color.WHITE.cpy(), AbstractBlessing.texture, x, y, __instance);
+                renderHelper(sb, Color.WHITE.cpy(), StuffTheSpireMod.BlessingBgRegion, x, y, __instance);
                 return SpireReturn.Return(null);
             }
             return SpireReturn.Continue();
         }
 
-        private static void renderHelper(SpriteBatch sb, Color color, Texture img, float drawX, float drawY, AbstractCard __instance) {
+        private static void renderHelper(SpriteBatch sb, Color color, TextureAtlas.AtlasRegion img, float drawX, float drawY, AbstractCard __instance) {
             sb.setColor(color);
 
             try {
-                sb.draw(img, drawX, drawY, 256.0F, 256.0F, 512.0F, 512.0F, __instance.drawScale * Settings.scale, __instance.drawScale * Settings.scale, __instance.angle, 0, 0, 512, 512, false, false);
+                sb.draw(img, drawX + img.offsetX - (float) img.originalWidth / 2.0F, drawY + img.offsetY - (float) img.originalHeight / 2.0F, (float) img.originalWidth / 2.0F - img.offsetX, (float) img.originalHeight / 2.0F - img.offsetY, (float) img.packedWidth, (float) img.packedHeight, __instance.drawScale * Settings.scale, __instance.drawScale * Settings.scale, __instance.angle);
+                //sb.draw(img, drawX, drawY, 256.0F, 256.0F, 512.0F, 512.0F, __instance.drawScale * Settings.scale, __instance.drawScale * Settings.scale, __instance.angle, 0, 0, 512, 512, false, false);
             } catch (Exception var7) {
                 logger.error(var7);
             }
@@ -42,15 +43,16 @@ public class RenderCardPatches {
         @SpirePrefixPatch
         public static void patch(AbstractCard __instance, SpriteBatch sb, float x, float y) {
             if (__instance.type == CardTypes.BLESSING) {
-                renderHelper(sb, Color.WHITE.cpy(), ImageMaster.CARD_FRAME_SKILL_COMMON, x, y, __instance);
+                renderHelper(sb, Color.WHITE.cpy(), StuffTheSpireMod.Frame, x, y, __instance);
             }
         }
 
-        private static void renderHelper(SpriteBatch sb, Color color, Texture img, float drawX, float drawY, AbstractCard __instance) {
+        private static void renderHelper(SpriteBatch sb, Color color, TextureAtlas.AtlasRegion img, float drawX, float drawY, AbstractCard __instance) {
             sb.setColor(color);
 
             try {
-                sb.draw(img, drawX, drawY, 256.0F, 256.0F, 512.0F, 512.0F, __instance.drawScale * Settings.scale, __instance.drawScale * Settings.scale, __instance.angle, 0, 0, 512, 512, false, false);
+                sb.draw(img, drawX + img.offsetX - (float) img.originalWidth / 2.0F, drawY + img.offsetY - (float) img.originalHeight / 2.0F, (float) img.originalWidth / 2.0F - img.offsetX, (float) img.originalHeight / 2.0F - img.offsetY, (float) img.packedWidth, (float) img.packedHeight, __instance.drawScale * Settings.scale, __instance.drawScale * Settings.scale, __instance.angle);
+
             } catch (Exception var7) {
                 logger.error(var7);
             }
@@ -76,6 +78,17 @@ public class RenderCardPatches {
                 int[] found = LineFinder.findAllInOrder(ctMethodToPatch, finalMatcher);
                 return found;
             }
+        }
+    }
+
+    @SpirePatch(clz = AbstractCard.class, method = "getCardBgAtlas")
+    public static class BGAtlasPatch {
+        @SpirePrefixPatch
+        public static SpireReturn<TextureAtlas.AtlasRegion> patch(AbstractCard __instance) {
+            if (__instance.type == CardTypes.BLESSING) {
+                return SpireReturn.Return(ImageMaster.CARD_SKILL_BG_SILHOUETTE);
+            }
+            return SpireReturn.Continue();
         }
     }
 
