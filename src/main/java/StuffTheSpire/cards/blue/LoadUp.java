@@ -38,6 +38,7 @@ public class LoadUp extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        this.exhaust = true;
     }
 
     @Override

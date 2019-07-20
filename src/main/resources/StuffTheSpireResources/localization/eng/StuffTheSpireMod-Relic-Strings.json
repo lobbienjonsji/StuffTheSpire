@@ -109,7 +109,7 @@
     "NAME": "Withered Skull",
     "FLAVOR": "They are so rare",
     "DESCRIPTIONS": [
-      "While below 50% of your max. HP apply #b2 #yPoison to all enemies at the end of your turn."
+      "While below 50% of your max. HP apply #b3 #yPoison to all enemies at the end of your turn."
     ]
   },
   "StuffTheSpire:Gunfinga": {
@@ -302,7 +302,7 @@
     "NAME": "Tinted Rock",
     "FLAVOR": "Don't miss it!",
     "DESCRIPTIONS": [
-      "Gain double gold from elite combats."
+      "Gain #b300% more gold from elite combats."
     ]
   }
 }

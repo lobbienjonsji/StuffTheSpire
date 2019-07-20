@@ -22,9 +22,9 @@ public class CleanHardDrive extends AbstractDecreasingCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 2;
+    private static final int MAGICNUMBER = 3;
     private static final int BLOCK = 0;
 
     public CleanHardDrive() {

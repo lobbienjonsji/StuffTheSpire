@@ -21,7 +21,7 @@ public class Vigor extends AbstractBlessing {
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final int COST = -2;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 5;
+    private static final int MAGICNUMBER = 3;
     private static final int BLOCK = 0;
 
     public Vigor() {

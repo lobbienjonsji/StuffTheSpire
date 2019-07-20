@@ -51,7 +51,7 @@ public class AbstractRoomUpdatePatch {
         if (AbstractDungeon.getCurrRoom() instanceof MonsterRoomElite && AbstractDungeon.player.hasRelic(TintedRock.ID)) {
             for (RewardItem r : AbstractDungeon.getCurrRoom().rewards) {
                 if (r.type == RewardItem.RewardType.GOLD) {
-                    r.incrementGold(r.goldAmt);
+                    r.incrementGold(r.goldAmt * 3);
                 }
             }
         }

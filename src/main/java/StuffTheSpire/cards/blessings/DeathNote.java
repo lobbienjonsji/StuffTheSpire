@@ -4,6 +4,7 @@ import StuffTheSpire.StuffTheSpireMod;
 import StuffTheSpire.cards.AbstractBlessing;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -72,6 +73,11 @@ public class DeathNote extends AbstractBlessing {
                 }
             }
         }
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        AbstractDungeon.actionManager.addToTop(new DrawCardAction(AbstractDungeon.player, 1, false));
     }
 
     @Override

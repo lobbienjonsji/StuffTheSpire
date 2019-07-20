@@ -18,7 +18,7 @@ public class HistoryBook extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("history_book.png"));
     public static final Logger logger = LogManager.getLogger(StuffTheSpireMod.class.getName());
     public HistoryBook() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.MAGICAL);
     }
 
     @Override

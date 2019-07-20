@@ -48,7 +48,7 @@ public class WitherSkull extends CustomRelic {
         this.pulse = true;
         if (!this.isActive && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
             AbstractPlayer p = AbstractDungeon.player;
-            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new NoxiousFumesPower(p, 2), 2));
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new NoxiousFumesPower(p, 3), 2));
             AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             this.isActive = true;
             AbstractDungeon.player.hand.applyPowers();

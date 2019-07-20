@@ -23,7 +23,7 @@ public class CopiaOfFamine extends AbstractBlessing implements StartupCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final int COST = -2;
-    private static final int MAGICNUMBER = 3;
+    private static final int MAGICNUMBER = 4;
 
 
     public CopiaOfFamine() {

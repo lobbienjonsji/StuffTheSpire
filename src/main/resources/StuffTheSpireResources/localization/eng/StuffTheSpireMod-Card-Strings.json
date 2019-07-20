@@ -58,7 +58,7 @@
   },
   "StuffTheSpire:LoadUp": {
     "NAME": "Overload",
-    "DESCRIPTION": "Loose 1 Focus. NL Channel !M! Lightning. Next turn add a copy of stuffthespire:Discharge to your hand."
+    "DESCRIPTION": "Loose 1 Focus. NL Channel !M! Lightning. Next turn add a copy of stuffthespire:Discharge to your hand. NL Exhaust."
   },
   "StuffTheSpire:Discharge": {
     "NAME": "Discharge",
@@ -294,8 +294,8 @@
   },
   "StuffTheSpire:DeathNote": {
     "NAME": "Death Note",
-    "DESCRIPTION": "Unplayable. On turn 10 deal 200 damage to a random enemy. Current turn: !M!",
-    "UPGRADE_DESCRIPTION": "Unplayable. On turn 10 deal 200 damage to all enemies. Current turn: !M!"
+    "DESCRIPTION": "Unplayable. On turn 10 deal 200 damage to a random enemy. When drawn, draw 1 card. Current turn: !M!",
+    "UPGRADE_DESCRIPTION": "Unplayable. On turn 10 deal 200 damage to all enemies. When drawn, draw 1 card. Current turn: !M!"
   },
   "StuffTheSpire:CopiaOfFamine": {
     "NAME": "Copia of Famine",
