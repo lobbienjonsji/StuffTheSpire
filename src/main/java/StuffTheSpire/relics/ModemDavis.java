@@ -5,7 +5,9 @@ import StuffTheSpire.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static StuffTheSpire.StuffTheSpireMod.makeRelicOutlinePath;
@@ -20,10 +22,12 @@ public class ModemDavis extends CustomRelic {
 
     public ModemDavis() {
         super(ID, IMG, OUTLINE, TIER, LandingSound.MAGICAL);
+        initializeTips();
     }
 
     @Override
     public String getUpdatedDescription() {
+        this.tips.add(new PowerTip(DESCRIPTIONS[1], DESCRIPTIONS[2]));
         return DESCRIPTIONS[0];
     }
 
@@ -39,6 +43,9 @@ public class ModemDavis extends CustomRelic {
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
         if (c.cost == 1) {
             counter++;
+            if (counter == 2) {
+                CardCrawlGame.sound.play("EINSUNDEINS", 0.5F);
+            }
         }
     }
 

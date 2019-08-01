@@ -309,7 +309,9 @@
     "NAME": "Modem D'Avis",
     "FLAVOR": "Hallo. Ich bin Marcell D'Avis. Leiter für Kundenzufriedenheit bei 1&1!",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of each turn. You can't play more than #b2 1 cost cards per turn. #p(Pixel #part #pby #pGalileel!)"
+      "Gain [E] at the start of each turn. You can't play more than #b2 #b1 cost cards per turn.",
+      "Art Credits",
+      "#pPixel #part #pby #pGalileel!"
     ]
   }
 }

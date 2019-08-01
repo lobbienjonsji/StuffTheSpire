@@ -61,7 +61,8 @@ public class StuffTheSpireMod implements
         EditKeywordsSubscriber,
         PostInitializeSubscriber,
         PreStartGameSubscriber,
-        PostDeathSubscriber {
+        PostDeathSubscriber,
+        AddAudioSubscriber {
     public static final Logger logger = LogManager.getLogger(StuffTheSpireMod.class.getName());
     private static String modID;
     public static boolean HasArchetypeAPI;
@@ -535,4 +536,8 @@ public class StuffTheSpireMod implements
     }
 
 
+    @Override
+    public void receiveAddAudio() {
+        BaseMod.addAudio("EINSUNDEINS", "StuffTheSpireResources/sounds/einsundeins.wav");
+    }
 }
