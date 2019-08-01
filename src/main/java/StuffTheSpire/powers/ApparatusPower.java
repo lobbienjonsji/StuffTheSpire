@@ -49,4 +49,9 @@ public class ApparatusPower extends AbstractPower implements CloneablePowerInter
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new NightmarePower(AbstractDungeon.player, 1, a)));
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, this.ID));
     }
+
+    @Override
+    public void updateDescription() {
+        description = DESCRIPTIONS[0];
+    }
 }

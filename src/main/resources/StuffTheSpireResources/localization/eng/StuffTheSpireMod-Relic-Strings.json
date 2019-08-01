@@ -304,5 +304,12 @@
     "DESCRIPTIONS": [
       "Gain #b300% more gold from elite combats."
     ]
+  },
+  "StuffTheSpire:ModemDavis": {
+    "NAME": "Modem D'Avis",
+    "FLAVOR": "Hallo. Ich bin Marcell D'Avis. Leiter für Kundenzufriedenheit bei 1&1!",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of each turn. You can't play more than #b2 1 cost cards per turn. #p(Pixel #part #pby #pGalileel!)"
+    ]
   }
 }

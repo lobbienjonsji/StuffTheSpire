@@ -1,10 +1,12 @@
 package StuffTheSpire.patches.cards;
 
 import StuffTheSpire.StuffTheSpireMod;
+import StuffTheSpire.actions.ObtainBlessingAction;
 import StuffTheSpire.cards.blessings.Perfection;
 import StuffTheSpire.relics.*;
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.SoulGroup;
@@ -16,7 +18,6 @@ import com.megacrit.cardcrawl.cards.red.PerfectedStrike;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 
 import java.util.ArrayList;
@@ -59,9 +60,7 @@ public class ShowCardAndObtainPatch {
                 relic.updateDescription(AbstractDungeon.player.chosenClass);
                 AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, relic);
             }
-            if (card.type == AbstractCard.CardType.CURSE && AbstractDungeon.player.hasRelic(Saxophone.ID)) {
-                AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(StuffTheSpireMod.Blessings.getRandomCard(true).makeStatEquivalentCopy(), Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
-            }
+
             if (card.cardID.equals(Perfection.ID)) {
                 ArrayList<AbstractCard> upgradableCards = new ArrayList();
                 for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
@@ -115,6 +114,16 @@ public class ShowCardAndObtainPatch {
                 }
             }
             return SpireReturn.Continue();
+        }
+    }
+
+    @SpirePatch(clz = SoulGroup.class, method = "obtain")
+    public static class ShowCardAndObtainEffectPostfixPatch {
+        @SpirePostfixPatch
+        public static void Postfix(SoulGroup __instance, AbstractCard card, boolean obtainCard) {
+            if (card.type == AbstractCard.CardType.CURSE && AbstractDungeon.player.hasRelic(Saxophone.ID)) {
+                AbstractDungeon.topLevelEffects.add(new ObtainBlessingAction());
+            }
         }
     }
 }

@@ -353,6 +353,7 @@ public class StuffTheSpireMod implements
         BaseMod.addRelic(new Saxophone(), RelicType.SHARED);
         BaseMod.addRelic(new Barrel(), RelicType.SHARED);
         BaseMod.addRelic(new TintedRock(), RelicType.SHARED);
+        BaseMod.addRelic(new ModemDavis(), RelicType.SHARED);
         //BaseMod.addRelic(new LittleGreenCactus(), RelicType.SHARED); NOPE!!!
         logger.info("Done adding relics!");
     }
